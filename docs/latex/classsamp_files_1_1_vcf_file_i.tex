@@ -1,0 +1,146 @@
+\hypertarget{classsamp_files_1_1_vcf_file_i}{}\section{samp\+Files\+:\+:Vcf\+FileI Class Reference}
+\label{classsamp_files_1_1_vcf_file_i}\index{samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}}
+
+
+V\+CF file input class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for samp\+Files\+:\+:Vcf\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classsamp_files_1_1_vcf_file_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for samp\+Files\+:\+:Vcf\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classsamp_files_1_1_vcf_file_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a91b26cab24ec10961dd4e71ba83bcadc}\label{classsamp_files_1_1_vcf_file_i_a91b26cab24ec10961dd4e71ba83bcadc}} 
+\hyperlink{classsamp_files_1_1_vcf_file_i_a91b26cab24ec10961dd4e71ba83bcadc}{Vcf\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48}{Vcf\+FileI} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_aea8c5c1d14d64aae142a051792da6891}\label{classsamp_files_1_1_vcf_file_i_aea8c5c1d14d64aae142a051792da6891}} 
+\hyperlink{classsamp_files_1_1_vcf_file_i_aea8c5c1d14d64aae142a051792da6891}{Vcf\+FileI} (const \hyperlink{classsamp_files_1_1_vcf_file_i}{Vcf\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a09e7ba3c990255b4bf0688f895f5f084}\label{classsamp_files_1_1_vcf_file_i_a09e7ba3c990255b4bf0688f895f5f084}} 
+\hyperlink{classsamp_files_1_1_vcf_file_i}{Vcf\+FileI} \& \hyperlink{classsamp_files_1_1_vcf_file_i_a09e7ba3c990255b4bf0688f895f5f084}{operator=} (const \hyperlink{classsamp_files_1_1_vcf_file_i}{Vcf\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a96496e65f2557cd98a9df7639ccde54c}\label{classsamp_files_1_1_vcf_file_i_a96496e65f2557cd98a9df7639ccde54c}} 
+\hyperlink{classsamp_files_1_1_vcf_file_i_a96496e65f2557cd98a9df7639ccde54c}{Vcf\+FileI} (\hyperlink{classsamp_files_1_1_vcf_file_i}{Vcf\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a176773eed34f95061bcb254cfada231c}\label{classsamp_files_1_1_vcf_file_i_a176773eed34f95061bcb254cfada231c}} 
+\hyperlink{classsamp_files_1_1_vcf_file_i}{Vcf\+FileI} \& \hyperlink{classsamp_files_1_1_vcf_file_i_a176773eed34f95061bcb254cfada231c}{operator=} (\hyperlink{classsamp_files_1_1_vcf_file_i}{Vcf\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a413fcb2f9d9b959546a3fac8226ce239}\label{classsamp_files_1_1_vcf_file_i_a413fcb2f9d9b959546a3fac8226ce239}} 
+\hyperlink{classsamp_files_1_1_vcf_file_i_a413fcb2f9d9b959546a3fac8226ce239}{$\sim$\+Vcf\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a9e8cbc1c8cbd01d656df2ccd8c5293b0}\label{classsamp_files_1_1_vcf_file_i_a9e8cbc1c8cbd01d656df2ccd8c5293b0}} 
+void \hyperlink{classsamp_files_1_1_vcf_file_i_a9e8cbc1c8cbd01d656df2ccd8c5293b0}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream to read. \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93}{sample} (\hyperlink{classsamp_files_1_1_vcf_file_o}{Vcf\+FileO} \&out, const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Sample S\+N\+Ps and save to V\+CF file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a0a344d8392bfdff30dcf02ee63385ab0}\label{classsamp_files_1_1_vcf_file_i_a0a344d8392bfdff30dcf02ee63385ab0}} 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_vcf_file_i_a0a344d8392bfdff30dcf02ee63385ab0}{nsnp} ()
+\begin{DoxyCompactList}\small\item\em Number of S\+N\+Ps in the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_vcf_file_i_a02f2494cc78e8d83733a2bb0c9a84602}{\+\_\+num\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of S\+N\+Ps in the V\+CF file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+V\+CF file input class. 
+
+Reads V\+CF files, skipping or copying the header as necessary; .idx files are ignored. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48}\label{classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48}} 
+\index{samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}!Vcf\+FileI@{Vcf\+FileI}}
+\index{Vcf\+FileI@{Vcf\+FileI}!samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}}
+\subsubsection{\texorpdfstring{Vcf\+File\+I()}{VcfFileI()}}
+{\footnotesize\ttfamily samp\+Files\+::\+Vcf\+File\+I\+::\+Vcf\+FileI (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file\+Name} & file name including extension \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a02f2494cc78e8d83733a2bb0c9a84602}\label{classsamp_files_1_1_vcf_file_i_a02f2494cc78e8d83733a2bb0c9a84602}} 
+\index{samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}!\+\_\+num\+Lines@{\+\_\+num\+Lines}}
+\index{\+\_\+num\+Lines@{\+\_\+num\+Lines}!samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Lines()}{\_numLines()}}
+{\footnotesize\ttfamily uint64\+\_\+t Vcf\+File\+I\+::\+\_\+num\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get number of S\+N\+Ps in the V\+CF file. 
+
+Assumes Unix-\/like line endings. Header is not counted.
+
+\begin{DoxyReturn}{Returns}
+number of S\+N\+Ps 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93}\label{classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93}} 
+\index{samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}!sample@{sample}}
+\index{sample@{sample}!samp\+Files\+::\+Vcf\+FileI@{samp\+Files\+::\+Vcf\+FileI}}
+\subsubsection{\texorpdfstring{sample()}{sample()}}
+{\footnotesize\ttfamily void Vcf\+File\+I\+::sample (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_vcf_file_o}{Vcf\+FileO} \&}]{out,  }\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Sample S\+N\+Ps and save to V\+CF file. 
+
+Sample $n$ S\+N\+Ps without replacement from the file represented by the current object and save to the {\ttfamily out} object. Uses Vitter\textquotesingle{}s \cite{vitter87a} method. Number of samples has to be smaller that the number of S\+N\+Ps in the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em out} & output object \\
+\hline
+\mbox{\tt in}  & {\em n} & number of S\+N\+Ps to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

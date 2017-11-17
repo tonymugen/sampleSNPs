@@ -1,0 +1,30 @@
+This distribution consists of three parts. One, a program ({\itshape sample\+S\+N\+Ps}) that creates and saves ordered random samples of S\+N\+Ps from a variety of formats. Two, a program ({\itshape sample\+LD}) that calculates linkage disequilibrium (LD) among randomly chosen (without replacement) pairs of S\+N\+Ps from a \href{http://zzz.bwh.harvard.edu/plink/data.shtml#bed}{\tt binary variant format file}. Three, a library ({\itshape libsamp\+Files.\+a}) that allows users to build similar applications taking advantage of the fast sampling algorithms used in the two programs mentioned above.
+
+\section*{Requirements}
+
+The software is build for Unix-\/like systems. Neither compilation nor running was checked under Windows and there are reasons to believe it will not compile on that OS. There are no dependencies other than a compiler that understands the C++11 standard. Random number generation employs the {\ttfamily R\+D\+R\+A\+ND} C\+PU instruction if supported by the processor, otherwise an implementation of the 64-\/bit Mersenne Twister \cite{matsumoto98a} is substituted. Intel Ivy Bridge or later support {\ttfamily R\+D\+R\+A\+ND}. With A\+MD it is not completely clear. Opteron definitely does not support it. Zen architectures (Ryzen) claim to support it, but I did not have access to one so I cannot personally vouch for it. The R\+NG choice is made automatically at run time.
+
+\section*{Installation}
+
+The simplest way to install everything is to run \begin{DoxyVerb}make all
+sudo make install
+\end{DoxyVerb}
+
+
+in the directory with the source code. This will install the executables ({\itshape sample\+S\+N\+Ps} and {\itshape sample\+LD}) in \+\_\+/usr/local/bin/\+\_\+ and the library in the appropriate folders in \+\_\+/usr/local/\+\_\+. The included Makefile can be modified to change where things go. The headers {\itshape \hyperlink{varfiles_8hpp}{varfiles.\+hpp}}, {\itshape \hyperlink{populations_8hpp}{populations.\+hpp}}, and {\itshape \hyperlink{random_8hpp}{random.\+hpp}} have to be included in your code as necessary.
+
+\section*{Testing}
+
+The {\itshape tests/} directory contains example .bed, .tped, .vcf, and .hmp.\+txt files to try running the programs on. To keep sizes manageable for distribution, the .bed file has 50,000 loci, while the text files have only 5,000. Make sure your samples do not exceed these values. Uncompress the directory and run, for example, \begin{DoxyVerb}./sampleSNPs -i tests/sample -t BED -s 5000
+\end{DoxyVerb}
+
+
+This should sample 5,000 S\+N\+Ps from the included {\itshape sample\+\_\+\+A\+L\+L.\+bed} and {\itshape sample\+\_\+\+A\+L\+L.\+bim} files and save the results into files with the {\itshape sample\+\_\+\+A\+L\+L\+\_\+s5000} prefix.
+
+Note that {\itshape sample\+LD} supports only the .bed format.
+
+Running {\itshape sample\+S\+N\+Ps} and {\itshape sample\+LD} without flags will cause these programs to print flag descriptions and exit.
+
+\section*{Timing}
+
+Expanding the {\itshape timing\+Trials.\+tar.\+gz} archive will generate a directory with separate software, depending only on \hyperlink{random_8cpp}{random.\+cpp} and .hpp, that performs analyses of execution time using Vitter\textquotesingle{}s Method D and Method S. There is a R\+E\+A\+D\+M\+E.\+md file that explains how to compile and run these analyses. 

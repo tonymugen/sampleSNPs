@@ -1,0 +1,127 @@
+\hypertarget{classvarfiles_1_1_hmp_file}{}\section{varfiles\+:\+:Hmp\+File Class Reference}
+\label{classvarfiles_1_1_hmp_file}\index{varfiles\+::\+Hmp\+File@{varfiles\+::\+Hmp\+File}}
+
+
+Hapmap (H\+MP) file base class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Hmp\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvarfiles_1_1_hmp_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for varfiles\+:\+:Hmp\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classvarfiles_1_1_hmp_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a1233c1cf4827d5401e9315d5353970e1}\label{classvarfiles_1_1_hmp_file_a1233c1cf4827d5401e9315d5353970e1}} 
+\hyperlink{classvarfiles_1_1_hmp_file_a1233c1cf4827d5401e9315d5353970e1}{Hmp\+File} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_hmp_file_a0dc8516bceccd0fc31115a60f3f4c58c}{Hmp\+File} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor with file name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a551f1b488116655ebeeefb836eb5f2e9}\label{classvarfiles_1_1_hmp_file_a551f1b488116655ebeeefb836eb5f2e9}} 
+\hyperlink{classvarfiles_1_1_hmp_file_a551f1b488116655ebeeefb836eb5f2e9}{Hmp\+File} (const \hyperlink{classvarfiles_1_1_hmp_file}{Hmp\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a87ab285be0ffe0efed6076a9abc024ef}\label{classvarfiles_1_1_hmp_file_a87ab285be0ffe0efed6076a9abc024ef}} 
+\hyperlink{classvarfiles_1_1_hmp_file}{Hmp\+File} \& \hyperlink{classvarfiles_1_1_hmp_file_a87ab285be0ffe0efed6076a9abc024ef}{operator=} (const \hyperlink{classvarfiles_1_1_hmp_file}{Hmp\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a4b6b531eb9087151ec34326c53d73bbe}\label{classvarfiles_1_1_hmp_file_a4b6b531eb9087151ec34326c53d73bbe}} 
+\hyperlink{classvarfiles_1_1_hmp_file_a4b6b531eb9087151ec34326c53d73bbe}{Hmp\+File} (\hyperlink{classvarfiles_1_1_hmp_file}{Hmp\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a016f5adae4b155bbc1faf28a36b7942c}\label{classvarfiles_1_1_hmp_file_a016f5adae4b155bbc1faf28a36b7942c}} 
+\hyperlink{classvarfiles_1_1_hmp_file}{Hmp\+File} \& \hyperlink{classvarfiles_1_1_hmp_file_a016f5adae4b155bbc1faf28a36b7942c}{operator=} (\hyperlink{classvarfiles_1_1_hmp_file}{Hmp\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_af9323ec0d264150c806c7c9de4cc0466}\label{classvarfiles_1_1_hmp_file_af9323ec0d264150c806c7c9de4cc0466}} 
+\hyperlink{classvarfiles_1_1_hmp_file_af9323ec0d264150c806c7c9de4cc0466}{$\sim$\+Hmp\+File} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a9430402ecd28c046d27852ee29f275bb}\label{classvarfiles_1_1_hmp_file_a9430402ecd28c046d27852ee29f275bb}} 
+void \hyperlink{classvarfiles_1_1_hmp_file_a9430402ecd28c046d27852ee29f275bb}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream (does nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a72b0f031c2260be66397752be52c929f}\label{classvarfiles_1_1_hmp_file_a72b0f031c2260be66397752be52c929f}} 
+void \hyperlink{classvarfiles_1_1_hmp_file_a72b0f031c2260be66397752be52c929f}{close} ()
+\begin{DoxyCompactList}\small\item\em Close stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_hmp_file_a7f349e751b8a95cb1b4ded06eef85af9}{\+\_\+num\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of S\+N\+Ps in the H\+MP file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_abd91d75a5f4ac520752d67c58af13e96}\label{classvarfiles_1_1_hmp_file_abd91d75a5f4ac520752d67c58af13e96}} 
+string \hyperlink{classvarfiles_1_1_hmp_file_abd91d75a5f4ac520752d67c58af13e96}{\+\_\+file\+Name}
+\begin{DoxyCompactList}\small\item\em File name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hapmap (H\+MP) file base class. 
+
+Sets up streams for H\+MP files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a0dc8516bceccd0fc31115a60f3f4c58c}\label{classvarfiles_1_1_hmp_file_a0dc8516bceccd0fc31115a60f3f4c58c}} 
+\index{varfiles\+::\+Hmp\+File@{varfiles\+::\+Hmp\+File}!Hmp\+File@{Hmp\+File}}
+\index{Hmp\+File@{Hmp\+File}!varfiles\+::\+Hmp\+File@{varfiles\+::\+Hmp\+File}}
+\subsubsection{\texorpdfstring{Hmp\+File()}{HmpFile()}}
+{\footnotesize\ttfamily varfiles\+::\+Hmp\+File\+::\+Hmp\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file\+Name} & file name \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classvarfiles_1_1_hmp_file_a0dc8516bceccd0fc31115a60f3f4c58c_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_hmp_file_a7f349e751b8a95cb1b4ded06eef85af9}\label{classvarfiles_1_1_hmp_file_a7f349e751b8a95cb1b4ded06eef85af9}} 
+\index{varfiles\+::\+Hmp\+File@{varfiles\+::\+Hmp\+File}!\+\_\+num\+Lines@{\+\_\+num\+Lines}}
+\index{\+\_\+num\+Lines@{\+\_\+num\+Lines}!varfiles\+::\+Hmp\+File@{varfiles\+::\+Hmp\+File}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Lines()}{\_numLines()}}
+{\footnotesize\ttfamily uint64\+\_\+t Hmp\+File\+::\+\_\+num\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Get number of S\+N\+Ps in the H\+MP file. 
+
+Assumes Unix-\/like line endings. Header is not counted.
+
+\begin{DoxyReturn}{Returns}
+number of S\+N\+Ps 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classvarfiles_1_1_var_file_a029a1a5577fb735c338750d2dec62ab6}{varfiles\+::\+Var\+File}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

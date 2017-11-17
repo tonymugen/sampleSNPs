@@ -1,0 +1,20 @@
+<map id="sampFiles::VarFile" name="sampFiles::VarFile">
+<area shape="rect" id="node2" href="$classsamp_files_1_1_gbin_file.html" title="Generic binary file base class. " alt="" coords="184,104,323,129"/>
+<area shape="rect" id="node8" href="$classsamp_files_1_1_gtxt_file.html" title="Generic text file base class. " alt="" coords="186,251,321,276"/>
+<area shape="rect" id="node3" href="$classsamp_files_1_1_bed_file.html" title="BED file base class. " alt="" coords="379,29,513,55"/>
+<area shape="rect" id="node6" href="$classsamp_files_1_1_gbin_file_i.html" title="Binary file input class. " alt="" coords="375,79,517,104"/>
+<area shape="rect" id="node7" href="$classsamp_files_1_1_gbin_file_o.html" title="Generic binary file output class. " alt="" coords="371,128,521,153"/>
+<area shape="rect" id="node4" href="$classsamp_files_1_1_bed_file_i.html" title="BED file input class. " alt="" coords="575,5,714,31"/>
+<area shape="rect" id="node5" href="$classsamp_files_1_1_bed_file_o.html" title="BED file output class. " alt="" coords="572,55,717,80"/>
+<area shape="rect" id="node9" href="$classsamp_files_1_1_gtxt_file_i.html" title="Text file input class. " alt="" coords="376,177,516,203"/>
+<area shape="rect" id="node10" href="$classsamp_files_1_1_gtxt_file_o.html" title="Generic text file output class. " alt="" coords="373,227,519,252"/>
+<area shape="rect" id="node11" href="$classsamp_files_1_1_hmp_file.html" title="Hapmap (HMP) file base class. " alt="" coords="376,276,516,301"/>
+<area shape="rect" id="node14" href="$classsamp_files_1_1_tped_file.html" title="TPED file base class. " alt="" coords="375,325,517,351"/>
+<area shape="rect" id="node17" href="$classsamp_files_1_1_vcf_file.html" title="VCF file base class. " alt="" coords="381,424,511,449"/>
+<area shape="rect" id="node12" href="$classsamp_files_1_1_hmp_file_i.html" title="HMP file input class. " alt="" coords="573,227,716,252"/>
+<area shape="rect" id="node13" href="$classsamp_files_1_1_hmp_file_o.html" title="HMP file output class. " alt="" coords="570,276,719,301"/>
+<area shape="rect" id="node15" href="$classsamp_files_1_1_tped_file_i.html" title="TPED file input class. " alt="" coords="572,325,717,351"/>
+<area shape="rect" id="node16" href="$classsamp_files_1_1_tped_file_o.html" title="TPED file output class. " alt="" coords="569,375,720,400"/>
+<area shape="rect" id="node18" href="$classsamp_files_1_1_vcf_file_i.html" title="VCF file input class. " alt="" coords="578,424,712,449"/>
+<area shape="rect" id="node19" href="$classsamp_files_1_1_vcf_file_o.html" title="VCF file output class. " alt="" coords="574,473,715,499"/>
+</map>

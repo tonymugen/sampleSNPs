@@ -1,0 +1,313 @@
+\hypertarget{classsamp_files_1_1_bed_file_i}{}\section{samp\+Files\+:\+:Bed\+FileI Class Reference}
+\label{classsamp_files_1_1_bed_file_i}\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+
+
+B\+ED file input class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for samp\+Files\+:\+:Bed\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classsamp_files_1_1_bed_file_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for samp\+Files\+:\+:Bed\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsamp_files_1_1_bed_file_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a8199fdbd94df701b0de0cbab46cddbed}\label{classsamp_files_1_1_bed_file_i_a8199fdbd94df701b0de0cbab46cddbed}} 
+\hyperlink{classsamp_files_1_1_bed_file_i_a8199fdbd94df701b0de0cbab46cddbed}{Bed\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8}{Bed\+FileI} (const string \&stub\+Name)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ae7aaf5d849475010fd5f9d1154a18b34}\label{classsamp_files_1_1_bed_file_i_ae7aaf5d849475010fd5f9d1154a18b34}} 
+\hyperlink{classsamp_files_1_1_bed_file_i_ae7aaf5d849475010fd5f9d1154a18b34}{Bed\+FileI} (const \hyperlink{classsamp_files_1_1_bed_file_i}{Bed\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a720c177b75980289a6eb9cfb2564ba2f}\label{classsamp_files_1_1_bed_file_i_a720c177b75980289a6eb9cfb2564ba2f}} 
+\hyperlink{classsamp_files_1_1_bed_file_i}{Bed\+FileI} \& \hyperlink{classsamp_files_1_1_bed_file_i_a720c177b75980289a6eb9cfb2564ba2f}{operator=} (const \hyperlink{classsamp_files_1_1_bed_file_i}{Bed\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ad22ff60c09b7fd0d64f5866451f2d861}\label{classsamp_files_1_1_bed_file_i_ad22ff60c09b7fd0d64f5866451f2d861}} 
+\hyperlink{classsamp_files_1_1_bed_file_i_ad22ff60c09b7fd0d64f5866451f2d861}{Bed\+FileI} (\hyperlink{classsamp_files_1_1_bed_file_i}{Bed\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a9c99aae36f0c6d710f7940affe35cf58}\label{classsamp_files_1_1_bed_file_i_a9c99aae36f0c6d710f7940affe35cf58}} 
+\hyperlink{classsamp_files_1_1_bed_file_i}{Bed\+FileI} \& \hyperlink{classsamp_files_1_1_bed_file_i_a9c99aae36f0c6d710f7940affe35cf58}{operator=} (\hyperlink{classsamp_files_1_1_bed_file_i}{Bed\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a87823c162cc37744aba01c6617ff682e}\label{classsamp_files_1_1_bed_file_i_a87823c162cc37744aba01c6617ff682e}} 
+\hyperlink{classsamp_files_1_1_bed_file_i_a87823c162cc37744aba01c6617ff682e}{$\sim$\+Bed\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a36ff04242d3c4bd65c9f1d8be5153997}\label{classsamp_files_1_1_bed_file_i_a36ff04242d3c4bd65c9f1d8be5153997}} 
+void \hyperlink{classsamp_files_1_1_bed_file_i_a36ff04242d3c4bd65c9f1d8be5153997}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream to read. \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3}{sample} (\hyperlink{classsamp_files_1_1_bed_file_o}{Bed\+FileO} \&out, const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Sample S\+N\+Ps and save to B\+ED file. \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694}{sample\+LD} (const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Linkage disequilibrium among sampled sites. \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1}{sample\+LD} (const \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index} \&pop\+ID, const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em LD among sampled sites within populations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a181f38c42bf368a7b1b688088cf2ce7d}\label{classsamp_files_1_1_bed_file_i_a181f38c42bf368a7b1b688088cf2ce7d}} 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_bed_file_i_a181f38c42bf368a7b1b688088cf2ce7d}{nsnp} ()
+\begin{DoxyCompactList}\small\item\em Number of S\+N\+Ps in the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a0077f55f0f23fcbaab6b62a09a626c78}\label{classsamp_files_1_1_bed_file_i_a0077f55f0f23fcbaab6b62a09a626c78}} 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_bed_file_i_a0077f55f0f23fcbaab6b62a09a626c78}{nindiv} ()
+\begin{DoxyCompactList}\small\item\em Number of individuals in the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_bed_file_i_ae0a3bbe25250cb77336d1eb07643c03e}{\+\_\+num\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of lines in the {\ttfamily \+\_\+bim\+File} \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_bed_file_i_a40dbd1c78781d4eb32f59620624bfa8a}{\+\_\+fam\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of lines in the {\ttfamily \+\_\+fam\+File} \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_bed_file_i_ad0898ea2f902dbd7c01e66ae3133c0b9}{\+\_\+fam\+Lines} (fstream \&fam)
+\begin{DoxyCompactList}\small\item\em Copy the .fam file and count number of lines. \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_bed_file_i_a9b6f8cbb9ae05056a7cd3d487fb26c30}{\+\_\+ld} (const char $\ast$snp1, const char $\ast$snp2, const size\+\_\+t \&N, const unsigned short \&pad, double \&r\+Sq, double \&Dprime, double \&dcnt1, double \&dcnt2)
+\begin{DoxyCompactList}\small\item\em Between-\/\+S\+NP linkage disequilibrium (LD) \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1}{\+\_\+ld} (const char $\ast$snp1, const char $\ast$snp2, const \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index} \&pop\+ID, vector$<$ double $>$ \&r\+Sq, vector$<$ double $>$ \&Dprime, vector$<$ double $>$ \&dcnt1, vector$<$ double $>$ \&dcnt2)
+\begin{DoxyCompactList}\small\item\em Between-\/\+S\+NP LD within populations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+B\+ED file input class. 
+
+Reads B\+ED files and the auxiliary files that come with them (.fam and .bim) as necessary. Only the S\+N\+P-\/major version is supported. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8}\label{classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!Bed\+FileI@{Bed\+FileI}}
+\index{Bed\+FileI@{Bed\+FileI}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{Bed\+File\+I()}{BedFileI()}}
+{\footnotesize\ttfamily samp\+Files\+::\+Bed\+File\+I\+::\+Bed\+FileI (\begin{DoxyParamCaption}\item[{const string \&}]{stub\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stub\+Name} & file name minus the extension \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a40dbd1c78781d4eb32f59620624bfa8a}\label{classsamp_files_1_1_bed_file_i_a40dbd1c78781d4eb32f59620624bfa8a}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!\+\_\+fam\+Lines@{\+\_\+fam\+Lines}}
+\index{\+\_\+fam\+Lines@{\+\_\+fam\+Lines}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Lines()}{\_famLines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Bed\+File\+I\+::\+\_\+fam\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get number of lines in the {\ttfamily \+\_\+fam\+File} 
+
+Assumes Unix-\/like line endings. The result is equal to the number of individuals.
+
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+fam\+File} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ad0898ea2f902dbd7c01e66ae3133c0b9}\label{classsamp_files_1_1_bed_file_i_ad0898ea2f902dbd7c01e66ae3133c0b9}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!\+\_\+fam\+Lines@{\+\_\+fam\+Lines}}
+\index{\+\_\+fam\+Lines@{\+\_\+fam\+Lines}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Lines()}{\_famLines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Bed\+File\+I\+::\+\_\+fam\+Lines (\begin{DoxyParamCaption}\item[{fstream \&}]{fam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy the .fam file and count number of lines. 
+
+Assumes Unix-\/like line endings. The result is equal to the number of individuals. The current object\textquotesingle{}s .fam file is copied to the provided file stream, which should be open for raading. If not, the function throws a {\itshape string} object ``\+Output .fam filestream not open\textquotesingle{}\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fam} & .fam file stream\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+fam\+File} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_a9b6f8cbb9ae05056a7cd3d487fb26c30}\label{classsamp_files_1_1_bed_file_i_a9b6f8cbb9ae05056a7cd3d487fb26c30}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!\+\_\+ld@{\+\_\+ld}}
+\index{\+\_\+ld@{\+\_\+ld}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+ld()}{\_ld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::\+\_\+ld (\begin{DoxyParamCaption}\item[{const char $\ast$}]{snp1,  }\item[{const char $\ast$}]{snp2,  }\item[{const size\+\_\+t \&}]{N,  }\item[{const unsigned short \&}]{pad,  }\item[{double \&}]{r\+Sq,  }\item[{double \&}]{Dprime,  }\item[{double \&}]{dcnt1,  }\item[{double \&}]{dcnt2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Between-\/\+S\+NP linkage disequilibrium (LD) 
+
+Calculates two LD statistics ( $ r^2 $ and $ D' $) between two S\+N\+Ps from a B\+ED file. Missing values are ignored. If there are fewer than three haplotypes with data present at both loci, the return values are -\/9. This value is also returned if one of the loci is monomorphic after taking out missing data at the other S\+NP. Minor (not necessarily derived) allele counts are also reported to enable downstream filtering. Note that the populations are assumed diploid and the counts are of haploid chromosomes (i.\+e. one homozygote yields count of 2).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em snp1} & first S\+NP \\
+\hline
+\mbox{\tt in}  & {\em snp2} & second S\+NP \\
+\hline
+\mbox{\tt in}  & {\em N} & length of the genotype vector in bytes (four genotypes per byte) \\
+\hline
+\mbox{\tt in}  & {\em pad} & number of bit pairs of padding in the last byte \\
+\hline
+\mbox{\tt out}  & {\em r\+Sq} & the $ r^2 $ estimate \\
+\hline
+\mbox{\tt out}  & {\em Dprime} & the $ D' $ estimate \\
+\hline
+\mbox{\tt out}  & {\em dcnt1} & minor allele count at locus 1 \\
+\hline
+\mbox{\tt out}  & {\em dcnt2} & minor allele count at locus 2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1}\label{classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!\+\_\+ld@{\+\_\+ld}}
+\index{\+\_\+ld@{\+\_\+ld}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+ld()}{\_ld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::\+\_\+ld (\begin{DoxyParamCaption}\item[{const char $\ast$}]{snp1,  }\item[{const char $\ast$}]{snp2,  }\item[{const \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index} \&}]{pop\+ID,  }\item[{vector$<$ double $>$ \&}]{r\+Sq,  }\item[{vector$<$ double $>$ \&}]{Dprime,  }\item[{vector$<$ double $>$ \&}]{dcnt1,  }\item[{vector$<$ double $>$ \&}]{dcnt2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Between-\/\+S\+NP LD within populations. 
+
+Calculates two LD statistics ( $ r^2 $ and $ D' $) between two S\+N\+Ps from a B\+ED file. Missing values are ignored. If there are fewer than three haplotypes with data present at both loci, the return values are -\/9. This value is also returned if one of the loci is monomorphic after taking out missing data at the other S\+NP. Minor (not necessarily derived) allele counts are also reported to enable downstream filtering. Note that the populations are assumed diploid and the counts are of haploid chromosomes (i.\+e. one homozygote yields count of 2). The values are calculted within each population as indicated by the {\ttfamily \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index}} object. The results are returned in the supplied vectors, which are assumed to be of correct size. Since this is an internal function unexposed to the user, this is not chaecked to save on compuation steps. Care must be taken that the {\ttfamily char} arrays passed to the function have lengths compatible with the number of individuals indexed by {\ttfamily \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index}}. This is not checked.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em snp1} & first S\+NP \\
+\hline
+\mbox{\tt in}  & {\em snp2} & second S\+NP \\
+\hline
+\mbox{\tt in}  & {\em pop\+ID} & population index \\
+\hline
+\mbox{\tt out}  & {\em r\+Sq} & vector of $ r^2 $ estimates \\
+\hline
+\mbox{\tt out}  & {\em Dprime} & vector of $ D' $ estimates \\
+\hline
+\mbox{\tt out}  & {\em dcnt1} & vector of minor allele counts at locus 1 \\
+\hline
+\mbox{\tt out}  & {\em dcnt2} & vector of minor allele counts at locus 2 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ae0a3bbe25250cb77336d1eb07643c03e}\label{classsamp_files_1_1_bed_file_i_ae0a3bbe25250cb77336d1eb07643c03e}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!\+\_\+num\+Lines@{\+\_\+num\+Lines}}
+\index{\+\_\+num\+Lines@{\+\_\+num\+Lines}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Lines()}{\_numLines()}}
+{\footnotesize\ttfamily uint64\+\_\+t Bed\+File\+I\+::\+\_\+num\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get number of lines in the {\ttfamily \+\_\+bim\+File} 
+
+Assumes Unix-\/like line endings. The result is equal to the number of S\+N\+Ps.
+
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+bim\+File} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3}\label{classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!sample@{sample}}
+\index{sample@{sample}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{sample()}{sample()}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::sample (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_bed_file_o}{Bed\+FileO} \&}]{out,  }\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Sample S\+N\+Ps and save to B\+ED file. 
+
+Sample $n$ S\+N\+Ps without replacement from the file represented by the current object and save to the {\ttfamily out} object. Uses Vitter\textquotesingle{}s \cite{vitter87a} method. Number of samples has to be smaller that the number of S\+N\+Ps in the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em out} & output object \\
+\hline
+\mbox{\tt in}  & {\em n} & number of S\+N\+Ps to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694}\label{classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!sample\+LD@{sample\+LD}}
+\index{sample\+LD@{sample\+LD}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{sample\+L\+D()}{sampleLD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::sample\+LD (\begin{DoxyParamCaption}\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Linkage disequilibrium among sampled sites. 
+
+Samples sequential pairs of S\+N\+Ps and calculates two LD measures ( $ r^2 $ and $ D' $). Saves to a file with the same name as the one preceding the .bed etc extensions, but adds \+\_\+\+L\+D.\+tsv at the end. Each line is tab-\/delimited with the chromosome number (from the .bim file), between-\/\+S\+NP distance, non-\/reference allele count for each S\+NP, $ r^2 $, and $ D' $. Missing data are ignored (only pairwise-\/complete observations are included). If one of the S\+N\+Ps is monomorphic or if the total number of pairwise present genotypes is fewer than three (exclusive), the LD measures are returned as -\/9 to indicate missing values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & number of S\+NP pairs to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1}\label{classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1}} 
+\index{samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}!sample\+LD@{sample\+LD}}
+\index{sample\+LD@{sample\+LD}!samp\+Files\+::\+Bed\+FileI@{samp\+Files\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{sample\+L\+D()}{sampleLD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::sample\+LD (\begin{DoxyParamCaption}\item[{const \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index} \&}]{pop\+ID,  }\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+LD among sampled sites within populations. 
+
+Samples sequential pairs of S\+N\+Ps and calculates two LD measures ( $ r^2 $ and $ D' $) within populations indicated by {\ttfamily \hyperlink{classsamp_files_1_1_pop_index}{Pop\+Index}}. Saves to a file with the same name as the one preceding the .bed etc extensions, but adds \+\_\+\+L\+D.\+tsv at the end. Each line is tab-\/delimited with the chromosome number (from the .bim file), between-\/\+S\+NP distance, non-\/reference allele count for each S\+NP, $ r^2 $, and $ D' $. Missing data are ignored (only pairwise-\/complete observations are included). If one of the S\+N\+Ps is monomorphic or if the total number of pairwise present genotypes is fewer than three (exclusive), the LD measures are returned as -\/9 to indicate missing values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pop\+ID} & population index \\
+\hline
+\mbox{\tt in}  & {\em n} & number of S\+NP pairs to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

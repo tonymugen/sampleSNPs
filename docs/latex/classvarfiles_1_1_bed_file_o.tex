@@ -1,0 +1,98 @@
+\hypertarget{classvarfiles_1_1_bed_file_o}{}\section{varfiles\+:\+:Bed\+FileO Class Reference}
+\label{classvarfiles_1_1_bed_file_o}\index{varfiles\+::\+Bed\+FileO@{varfiles\+::\+Bed\+FileO}}
+
+
+B\+ED file output class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Bed\+FileO\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classvarfiles_1_1_bed_file_o__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for varfiles\+:\+:Bed\+FileO\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvarfiles_1_1_bed_file_o__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_abf7e2434bbcf1899be23dbe648c2c529}\label{classvarfiles_1_1_bed_file_o_abf7e2434bbcf1899be23dbe648c2c529}} 
+\hyperlink{classvarfiles_1_1_bed_file_o_abf7e2434bbcf1899be23dbe648c2c529}{Bed\+FileO} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_bed_file_o_ae05c2a79d05548b9026900cd7c6b1a27}{Bed\+FileO} (const string \&stub\+Name)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_a7c7e5ede2ef06fff3729ebf2203873c1}\label{classvarfiles_1_1_bed_file_o_a7c7e5ede2ef06fff3729ebf2203873c1}} 
+\hyperlink{classvarfiles_1_1_bed_file_o_a7c7e5ede2ef06fff3729ebf2203873c1}{Bed\+FileO} (const \hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_ad69fa9f3d2c2ef59abdb9d8ab8279814}\label{classvarfiles_1_1_bed_file_o_ad69fa9f3d2c2ef59abdb9d8ab8279814}} 
+\hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \& \hyperlink{classvarfiles_1_1_bed_file_o_ad69fa9f3d2c2ef59abdb9d8ab8279814}{operator=} (const \hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_ae2802956eb4b0177c710de6efc21ebe1}\label{classvarfiles_1_1_bed_file_o_ae2802956eb4b0177c710de6efc21ebe1}} 
+\hyperlink{classvarfiles_1_1_bed_file_o_ae2802956eb4b0177c710de6efc21ebe1}{Bed\+FileO} (\hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_ad1ab09d90f0f005709717b8e6cd84d94}\label{classvarfiles_1_1_bed_file_o_ad1ab09d90f0f005709717b8e6cd84d94}} 
+\hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \& \hyperlink{classvarfiles_1_1_bed_file_o_ad1ab09d90f0f005709717b8e6cd84d94}{operator=} (\hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_ae4b5539e5df7e4c4c6403e054b30ca2b}\label{classvarfiles_1_1_bed_file_o_ae4b5539e5df7e4c4c6403e054b30ca2b}} 
+\hyperlink{classvarfiles_1_1_bed_file_o_ae4b5539e5df7e4c4c6403e054b30ca2b}{$\sim$\+Bed\+FileO} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_a70bee4622ebf338c6f17859f2409d17c}\label{classvarfiles_1_1_bed_file_o_a70bee4622ebf338c6f17859f2409d17c}} 
+void \hyperlink{classvarfiles_1_1_bed_file_o_a70bee4622ebf338c6f17859f2409d17c}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream to write. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_a83903ab2cdc6179910bbb04232c007ea}\label{classvarfiles_1_1_bed_file_o_a83903ab2cdc6179910bbb04232c007ea}} 
+class {\bfseries Bed\+FileI}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+B\+ED file output class. 
+
+Writes to B\+ED files and the auxiliary files that come with them (.fam and .bim) as necessary. Data are written in the S\+N\+P-\/major format. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_o_ae05c2a79d05548b9026900cd7c6b1a27}\label{classvarfiles_1_1_bed_file_o_ae05c2a79d05548b9026900cd7c6b1a27}} 
+\index{varfiles\+::\+Bed\+FileO@{varfiles\+::\+Bed\+FileO}!Bed\+FileO@{Bed\+FileO}}
+\index{Bed\+FileO@{Bed\+FileO}!varfiles\+::\+Bed\+FileO@{varfiles\+::\+Bed\+FileO}}
+\subsubsection{\texorpdfstring{Bed\+File\+O()}{BedFileO()}}
+{\footnotesize\ttfamily varfiles\+::\+Bed\+File\+O\+::\+Bed\+FileO (\begin{DoxyParamCaption}\item[{const string \&}]{stub\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stub\+Name} & file name minus the extension \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classvarfiles_1_1_bed_file_o_ae05c2a79d05548b9026900cd7c6b1a27_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

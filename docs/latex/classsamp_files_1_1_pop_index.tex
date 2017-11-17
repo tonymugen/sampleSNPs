@@ -1,0 +1,232 @@
+\hypertarget{classsamp_files_1_1_pop_index}{}\section{samp\+Files\+:\+:Pop\+Index Class Reference}
+\label{classsamp_files_1_1_pop_index}\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+
+
+Population index.  
+
+
+
+
+{\ttfamily \#include $<$populations.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a4490c400619ba5725c6e14bfb5bcc069}\label{classsamp_files_1_1_pop_index_a4490c400619ba5725c6e14bfb5bcc069}} 
+\hyperlink{classsamp_files_1_1_pop_index_a4490c400619ba5725c6e14bfb5bcc069}{Pop\+Index} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_pop_index_a27367217cfb5f85abda425baa1d755b9}{Pop\+Index} (const int $\ast$arr, const size\+\_\+t \&N)
+\begin{DoxyCompactList}\small\item\em Array constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_pop_index_aaf4cec726d9befe823c7d6ff4d36d5ce}{Pop\+Index} (const string \&in\+File\+Name)
+\begin{DoxyCompactList}\small\item\em File read constructor. \end{DoxyCompactList}\item 
+vector$<$ size\+\_\+t $>$ \& \hyperlink{classsamp_files_1_1_pop_index_ad3e3ff5964bea3b17bf54c2fc3af231c}{operator\mbox{[}$\,$\mbox{]}} (const size\+\_\+t \&i)
+\begin{DoxyCompactList}\small\item\em Vector subscript operator. \end{DoxyCompactList}\item 
+const vector$<$ size\+\_\+t $>$ \& \hyperlink{classsamp_files_1_1_pop_index_a56dea775828fc2a6b8b5b110429f67a5}{operator\mbox{[}$\,$\mbox{]}} (const size\+\_\+t \&i) const
+\begin{DoxyCompactList}\small\item\em {\ttfamily const} vector subscript operator \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classsamp_files_1_1_pop_index_a5a58b623938c025a287711de86a4021a}{pop\+Size} (const size\+\_\+t \&i)
+\begin{DoxyCompactList}\small\item\em Population size. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classsamp_files_1_1_pop_index_aef299f007e2123b430d6d36fa50d4d16}{pop\+Size} (const size\+\_\+t \&i) const
+\begin{DoxyCompactList}\small\item\em {\ttfamily const} population size \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042}{size} ()
+\begin{DoxyCompactList}\small\item\em Total sample size. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classsamp_files_1_1_pop_index_a251a3004894d15691b6f12adb84b0ad5}{size} () const
+\begin{DoxyCompactList}\small\item\em {\ttfamily const} total sample size \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856}{pop\+Number} ()
+\begin{DoxyCompactList}\small\item\em Number of populations. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classsamp_files_1_1_pop_index_a6dde50396274681751d41b058af376d7}{pop\+Number} () const
+\begin{DoxyCompactList}\small\item\em {\ttfamily const} number of populations \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Population index. 
+
+For each population, contains indexes of the lines that belong to it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a27367217cfb5f85abda425baa1d755b9}\label{classsamp_files_1_1_pop_index_a27367217cfb5f85abda425baa1d755b9}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!Pop\+Index@{Pop\+Index}}
+\index{Pop\+Index@{Pop\+Index}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{Pop\+Index()}{PopIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pop\+Index\+::\+Pop\+Index (\begin{DoxyParamCaption}\item[{const int $\ast$}]{arr,  }\item[{const size\+\_\+t \&}]{N }\end{DoxyParamCaption})}
+
+
+
+Array constructor. 
+
+The input array has an element for each line, and the value of that element is the population ID in the form of an {\itshape int} that is base-\/1 (i.\+e., if line N is in the first population, then {\ttfamily arr\mbox{[}N\mbox{]} == 1}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em arr} & array of population I\+Ds \\
+\hline
+\mbox{\tt in}  & {\em N} & array length \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_aaf4cec726d9befe823c7d6ff4d36d5ce}\label{classsamp_files_1_1_pop_index_aaf4cec726d9befe823c7d6ff4d36d5ce}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!Pop\+Index@{Pop\+Index}}
+\index{Pop\+Index@{Pop\+Index}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{Pop\+Index()}{PopIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pop\+Index\+::\+Pop\+Index (\begin{DoxyParamCaption}\item[{const string \&}]{in\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+File read constructor. 
+
+The input file has an entry for each line (separated by white space), and the value of that entry is the population ID in the form of an {\itshape int} that is base-\/1 (i.\+e., if line N is in the first population, then {\ttfamily arr\mbox{[}N\mbox{]} == 1}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em in\+File\+Name} & input file name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_ad3e3ff5964bea3b17bf54c2fc3af231c}\label{classsamp_files_1_1_pop_index_ad3e3ff5964bea3b17bf54c2fc3af231c}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vector$<$size\+\_\+t$>$\& samp\+Files\+::\+Pop\+Index\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vector subscript operator. 
+
+Returns the index of population {\itshape i}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & population index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of line I\+Ds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a56dea775828fc2a6b8b5b110429f67a5}\label{classsamp_files_1_1_pop_index_a56dea775828fc2a6b8b5b110429f67a5}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const vector$<$size\+\_\+t$>$\& samp\+Files\+::\+Pop\+Index\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ttfamily const} vector subscript operator 
+
+Returns the index of population {\itshape i}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & population index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of line I\+Ds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856}\label{classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!pop\+Number@{pop\+Number}}
+\index{pop\+Number@{pop\+Number}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{pop\+Number()}{popNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t samp\+Files\+::\+Pop\+Index\+::pop\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Number of populations. 
+
+\begin{DoxyReturn}{Returns}
+number of populations 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a6dde50396274681751d41b058af376d7}\label{classsamp_files_1_1_pop_index_a6dde50396274681751d41b058af376d7}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!pop\+Number@{pop\+Number}}
+\index{pop\+Number@{pop\+Number}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{pop\+Number()}{popNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t samp\+Files\+::\+Pop\+Index\+::pop\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ttfamily const} number of populations 
+
+\begin{DoxyReturn}{Returns}
+number of populations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a5a58b623938c025a287711de86a4021a}\label{classsamp_files_1_1_pop_index_a5a58b623938c025a287711de86a4021a}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!pop\+Size@{pop\+Size}}
+\index{pop\+Size@{pop\+Size}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{pop\+Size()}{popSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t samp\+Files\+::\+Pop\+Index\+::pop\+Size (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Population size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & population index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size of the \+\_\+i\+\_\+th population 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_aef299f007e2123b430d6d36fa50d4d16}\label{classsamp_files_1_1_pop_index_aef299f007e2123b430d6d36fa50d4d16}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!pop\+Size@{pop\+Size}}
+\index{pop\+Size@{pop\+Size}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{pop\+Size()}{popSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t samp\+Files\+::\+Pop\+Index\+::pop\+Size (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ttfamily const} population size 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & population index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size of the \+\_\+i\+\_\+th population 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042}\label{classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!size@{size}}
+\index{size@{size}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t samp\+Files\+::\+Pop\+Index\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Total sample size. 
+
+\begin{DoxyReturn}{Returns}
+total sample size 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_pop_index_a251a3004894d15691b6f12adb84b0ad5}\label{classsamp_files_1_1_pop_index_a251a3004894d15691b6f12adb84b0ad5}} 
+\index{samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}!size@{size}}
+\index{size@{size}!samp\+Files\+::\+Pop\+Index@{samp\+Files\+::\+Pop\+Index}}
+\subsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t samp\+Files\+::\+Pop\+Index\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ttfamily const} total sample size 
+
+\begin{DoxyReturn}{Returns}
+total sample size 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{populations_8hpp}{populations.\+hpp}\item 
+\hyperlink{populations_8cpp}{populations.\+cpp}\end{DoxyCompactItemize}

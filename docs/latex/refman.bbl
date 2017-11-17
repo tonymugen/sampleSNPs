@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{matsumoto98a}
+M~Matsumoto and T~Nishimura.
+\newblock Mersenne twister: a 623-dimensionally equidistributed uniform
+  pseudo-random number generator.
+\newblock {\em {ACM} {TOMACS}}, 8(1):3--30, 1998.
+
+\bibitem{vitter87a}
+Jeffrey~S. Vitter.
+\newblock An efficient algorithm for sequential random sampling.
+\newblock {\em {ACM} Trans. Math. Softw.}, 13(1):58--67, March 1987.
+
+\bibitem{vitter84a}
+Jeffrey~Scott Vitter.
+\newblock Faster methods for random sampling.
+\newblock {\em Commun. {ACM}}, 27(7):703--718, July 1984.
+
+\end{thebibliography}

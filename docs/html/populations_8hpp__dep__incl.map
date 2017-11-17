@@ -1,0 +1,7 @@
+<map id="populations.hpp" name="populations.hpp">
+<area shape="rect" id="node2" href="$populations_8cpp.html" title="Connect lines with populations. " alt="" coords="25,79,140,104"/>
+<area shape="rect" id="node3" href="$varfiles_8hpp.html" title="Read and write genetic variant files. " alt="" coords="165,79,254,104"/>
+<area shape="rect" id="node6" href="$varfiles_8cpp.html" title="Read and write genetic variant files. " alt="" coords="284,152,372,177"/>
+<area shape="rect" id="node4" href="$sample_l_d_8cpp.html" title="Sample&#45;based linkage disequilibrium. " alt="" coords="5,152,112,177"/>
+<area shape="rect" id="node5" href="$sample_s_n_ps_8cpp.html" title="Sample SNPs. " alt="" coords="135,152,259,177"/>
+</map>

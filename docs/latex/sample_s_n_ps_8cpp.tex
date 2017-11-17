@@ -1,0 +1,66 @@
+\hypertarget{sample_s_n_ps_8cpp}{}\section{sample\+S\+N\+Ps.\+cpp File Reference}
+\label{sample_s_n_ps_8cpp}\index{sample\+S\+N\+Ps.\+cpp@{sample\+S\+N\+Ps.\+cpp}}
+
+
+Sample S\+N\+Ps.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}varfiles.\+hpp\char`\"{}}\newline
+Include dependency graph for sample\+S\+N\+Ps.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sample_s_n_ps_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sample_s_n_ps_8cpp_ae94e706bbc3d28e9cccaf5420a999820}{parse\+CL} (int \&argc, char $\ast$$\ast$argv, unordered\+\_\+map$<$ char, string $>$ \&cli)
+\begin{DoxyCompactList}\small\item\em Command line parser. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sample_s_n_ps_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{sample_s_n_ps_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sample S\+N\+Ps. 
+
+\begin{DoxyAuthor}{Author}
+Anthony J. Greenberg 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2017 Anthony J. Greenberg 
+\end{DoxyCopyright}
+\begin{DoxyVersion}{Version}
+0.\+5
+\end{DoxyVersion}
+Using the {\itshape varfiles} library to sampple S\+N\+Ps from a variety of file formats. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sample_s_n_ps_8cpp_ae94e706bbc3d28e9cccaf5420a999820}\label{sample_s_n_ps_8cpp_ae94e706bbc3d28e9cccaf5420a999820}} 
+\index{sample\+S\+N\+Ps.\+cpp@{sample\+S\+N\+Ps.\+cpp}!parse\+CL@{parse\+CL}}
+\index{parse\+CL@{parse\+CL}!sample\+S\+N\+Ps.\+cpp@{sample\+S\+N\+Ps.\+cpp}}
+\subsubsection{\texorpdfstring{parse\+C\+L()}{parseCL()}}
+{\footnotesize\ttfamily void parse\+CL (\begin{DoxyParamCaption}\item[{int \&}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{unordered\+\_\+map$<$ char, string $>$ \&}]{cli }\end{DoxyParamCaption})}
+
+
+
+Command line parser. 
+
+Maps flags to values. Flags assumed to be of the form -\/x.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em argc} & size of the {\ttfamily argv} array \\
+\hline
+\mbox{\tt in}  & {\em argv} & command line input array \\
+\hline
+\mbox{\tt out}  & {\em cli} & map of tags to values \\
+\hline
+\end{DoxyParams}

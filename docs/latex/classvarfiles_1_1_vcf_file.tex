@@ -1,0 +1,127 @@
+\hypertarget{classvarfiles_1_1_vcf_file}{}\section{varfiles\+:\+:Vcf\+File Class Reference}
+\label{classvarfiles_1_1_vcf_file}\index{varfiles\+::\+Vcf\+File@{varfiles\+::\+Vcf\+File}}
+
+
+V\+CF file base class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Vcf\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classvarfiles_1_1_vcf_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for varfiles\+:\+:Vcf\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classvarfiles_1_1_vcf_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_ab3135edea1e9a68346704e8efeece4d0}\label{classvarfiles_1_1_vcf_file_ab3135edea1e9a68346704e8efeece4d0}} 
+\hyperlink{classvarfiles_1_1_vcf_file_ab3135edea1e9a68346704e8efeece4d0}{Vcf\+File} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_vcf_file_a1e9b1de448031f679805360f6bc1042f}{Vcf\+File} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor with file name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_ac25324141a60b3934f35966bd75de409}\label{classvarfiles_1_1_vcf_file_ac25324141a60b3934f35966bd75de409}} 
+\hyperlink{classvarfiles_1_1_vcf_file_ac25324141a60b3934f35966bd75de409}{Vcf\+File} (const \hyperlink{classvarfiles_1_1_vcf_file}{Vcf\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_a738a69a53915d5d7a55424e57e35ef0f}\label{classvarfiles_1_1_vcf_file_a738a69a53915d5d7a55424e57e35ef0f}} 
+\hyperlink{classvarfiles_1_1_vcf_file}{Vcf\+File} \& \hyperlink{classvarfiles_1_1_vcf_file_a738a69a53915d5d7a55424e57e35ef0f}{operator=} (const \hyperlink{classvarfiles_1_1_vcf_file}{Vcf\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_ac8eeba4da3a7213a1469ea170702476a}\label{classvarfiles_1_1_vcf_file_ac8eeba4da3a7213a1469ea170702476a}} 
+\hyperlink{classvarfiles_1_1_vcf_file_ac8eeba4da3a7213a1469ea170702476a}{Vcf\+File} (\hyperlink{classvarfiles_1_1_vcf_file}{Vcf\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_a3b2f35c24bc912819010d2961cda29ee}\label{classvarfiles_1_1_vcf_file_a3b2f35c24bc912819010d2961cda29ee}} 
+\hyperlink{classvarfiles_1_1_vcf_file}{Vcf\+File} \& \hyperlink{classvarfiles_1_1_vcf_file_a3b2f35c24bc912819010d2961cda29ee}{operator=} (\hyperlink{classvarfiles_1_1_vcf_file}{Vcf\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_a95e6e9273f5e92b763c7f248640a94a2}\label{classvarfiles_1_1_vcf_file_a95e6e9273f5e92b763c7f248640a94a2}} 
+\hyperlink{classvarfiles_1_1_vcf_file_a95e6e9273f5e92b763c7f248640a94a2}{$\sim$\+Vcf\+File} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_a02343915a34d18b346885c260409e6ae}\label{classvarfiles_1_1_vcf_file_a02343915a34d18b346885c260409e6ae}} 
+void \hyperlink{classvarfiles_1_1_vcf_file_a02343915a34d18b346885c260409e6ae}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream (does nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_a42acb5069085bdab92e26257b7cd7e47}\label{classvarfiles_1_1_vcf_file_a42acb5069085bdab92e26257b7cd7e47}} 
+void \hyperlink{classvarfiles_1_1_vcf_file_a42acb5069085bdab92e26257b7cd7e47}{close} ()
+\begin{DoxyCompactList}\small\item\em Close stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_vcf_file_aaafc33a691977c8f60c9b129c920ee76}{\+\_\+num\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of S\+N\+Ps in the V\+CF file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_abd693793f8da2f13d8298d8139785d13}\label{classvarfiles_1_1_vcf_file_abd693793f8da2f13d8298d8139785d13}} 
+string \hyperlink{classvarfiles_1_1_vcf_file_abd693793f8da2f13d8298d8139785d13}{\+\_\+file\+Name}
+\begin{DoxyCompactList}\small\item\em File name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+V\+CF file base class. 
+
+Sets up streams for V\+CF files. Any accompanying .idx files are ignored. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_a1e9b1de448031f679805360f6bc1042f}\label{classvarfiles_1_1_vcf_file_a1e9b1de448031f679805360f6bc1042f}} 
+\index{varfiles\+::\+Vcf\+File@{varfiles\+::\+Vcf\+File}!Vcf\+File@{Vcf\+File}}
+\index{Vcf\+File@{Vcf\+File}!varfiles\+::\+Vcf\+File@{varfiles\+::\+Vcf\+File}}
+\subsubsection{\texorpdfstring{Vcf\+File()}{VcfFile()}}
+{\footnotesize\ttfamily varfiles\+::\+Vcf\+File\+::\+Vcf\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file\+Name} & file name \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classvarfiles_1_1_vcf_file_a1e9b1de448031f679805360f6bc1042f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_vcf_file_aaafc33a691977c8f60c9b129c920ee76}\label{classvarfiles_1_1_vcf_file_aaafc33a691977c8f60c9b129c920ee76}} 
+\index{varfiles\+::\+Vcf\+File@{varfiles\+::\+Vcf\+File}!\+\_\+num\+Lines@{\+\_\+num\+Lines}}
+\index{\+\_\+num\+Lines@{\+\_\+num\+Lines}!varfiles\+::\+Vcf\+File@{varfiles\+::\+Vcf\+File}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Lines()}{\_numLines()}}
+{\footnotesize\ttfamily uint64\+\_\+t Vcf\+File\+::\+\_\+num\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Get number of S\+N\+Ps in the V\+CF file. 
+
+Assumes Unix-\/like line endings. Header is not counted.
+
+\begin{DoxyReturn}{Returns}
+number of S\+N\+Ps 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classvarfiles_1_1_var_file_a029a1a5577fb735c338750d2dec62ab6}{varfiles\+::\+Var\+File}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

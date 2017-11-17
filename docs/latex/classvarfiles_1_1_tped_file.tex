@@ -1,0 +1,167 @@
+\hypertarget{classvarfiles_1_1_tped_file}{}\section{varfiles\+:\+:Tped\+File Class Reference}
+\label{classvarfiles_1_1_tped_file}\index{varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}}
+
+
+T\+P\+ED file base class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Tped\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvarfiles_1_1_tped_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for varfiles\+:\+:Tped\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classvarfiles_1_1_tped_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_ac37863ce046f137b2944b8ddcb0f5afa}\label{classvarfiles_1_1_tped_file_ac37863ce046f137b2944b8ddcb0f5afa}} 
+\hyperlink{classvarfiles_1_1_tped_file_ac37863ce046f137b2944b8ddcb0f5afa}{Tped\+File} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_tped_file_af2850446a85d8a6024a04d8648fd4987}{Tped\+File} (const string \&stub\+Name)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_a37125cebec64cb044431fcb309473e71}\label{classvarfiles_1_1_tped_file_a37125cebec64cb044431fcb309473e71}} 
+\hyperlink{classvarfiles_1_1_tped_file_a37125cebec64cb044431fcb309473e71}{Tped\+File} (const \hyperlink{classvarfiles_1_1_tped_file}{Tped\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_ad5277ba64ad063f9eabee182da83a492}\label{classvarfiles_1_1_tped_file_ad5277ba64ad063f9eabee182da83a492}} 
+\hyperlink{classvarfiles_1_1_tped_file}{Tped\+File} \& \hyperlink{classvarfiles_1_1_tped_file_ad5277ba64ad063f9eabee182da83a492}{operator=} (const \hyperlink{classvarfiles_1_1_tped_file}{Tped\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_a7181b4ecfbed4d8a2c0b81d22609033a}\label{classvarfiles_1_1_tped_file_a7181b4ecfbed4d8a2c0b81d22609033a}} 
+\hyperlink{classvarfiles_1_1_tped_file_a7181b4ecfbed4d8a2c0b81d22609033a}{Tped\+File} (\hyperlink{classvarfiles_1_1_tped_file}{Tped\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_a3a37fd70881b8c8cf52111ec66a6b43a}\label{classvarfiles_1_1_tped_file_a3a37fd70881b8c8cf52111ec66a6b43a}} 
+\hyperlink{classvarfiles_1_1_tped_file}{Tped\+File} \& \hyperlink{classvarfiles_1_1_tped_file_a3a37fd70881b8c8cf52111ec66a6b43a}{operator=} (\hyperlink{classvarfiles_1_1_tped_file}{Tped\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_aa8ffb24aabf16bdb2b3aeb58aa27572e}\label{classvarfiles_1_1_tped_file_aa8ffb24aabf16bdb2b3aeb58aa27572e}} 
+\hyperlink{classvarfiles_1_1_tped_file_aa8ffb24aabf16bdb2b3aeb58aa27572e}{$\sim$\+Tped\+File} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_abf9a9f82f6d82091c9a56bc9a36a5080}\label{classvarfiles_1_1_tped_file_abf9a9f82f6d82091c9a56bc9a36a5080}} 
+virtual void \hyperlink{classvarfiles_1_1_tped_file_abf9a9f82f6d82091c9a56bc9a36a5080}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream (does nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_a3723eb70be770eff95515effb282faad}\label{classvarfiles_1_1_tped_file_a3723eb70be770eff95515effb282faad}} 
+void \hyperlink{classvarfiles_1_1_tped_file_a3723eb70be770eff95515effb282faad}{close} ()
+\begin{DoxyCompactList}\small\item\em Close stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_tped_file_af980d8b7900488c642980a5e59b5a379}{\+\_\+fam\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of lines in the {\ttfamily \+\_\+tfam\+File} \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_tped_file_a871c29be16893541ed02d8518808a301}{\+\_\+fam\+Lines} (fstream \&fam)
+\begin{DoxyCompactList}\small\item\em Copy the .tfam file and count number of lines. \end{DoxyCompactList}\item 
+void \hyperlink{classvarfiles_1_1_tped_file_ae0151eb62fa59641ba375ada61458e7c}{\+\_\+fam\+Copy} (fstream \&fam)
+\begin{DoxyCompactList}\small\item\em Copy the .tfam file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_aa2d0f0d04aa2f63efa7dcd3f83bf89c5}\label{classvarfiles_1_1_tped_file_aa2d0f0d04aa2f63efa7dcd3f83bf89c5}} 
+fstream \hyperlink{classvarfiles_1_1_tped_file_aa2d0f0d04aa2f63efa7dcd3f83bf89c5}{\+\_\+tfam\+File}
+\begin{DoxyCompactList}\small\item\em Corresponding .tfam file stream. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_a10b088a91d8c8620c7c6d5405ca05477}\label{classvarfiles_1_1_tped_file_a10b088a91d8c8620c7c6d5405ca05477}} 
+string \hyperlink{classvarfiles_1_1_tped_file_a10b088a91d8c8620c7c6d5405ca05477}{\+\_\+file\+Stub}
+\begin{DoxyCompactList}\small\item\em File name stub (minus the extension) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+P\+ED file base class. 
+
+Sets up the stream for the corresponding .tfam file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_af2850446a85d8a6024a04d8648fd4987}\label{classvarfiles_1_1_tped_file_af2850446a85d8a6024a04d8648fd4987}} 
+\index{varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}!Tped\+File@{Tped\+File}}
+\index{Tped\+File@{Tped\+File}!varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}}
+\subsubsection{\texorpdfstring{Tped\+File()}{TpedFile()}}
+{\footnotesize\ttfamily varfiles\+::\+Tped\+File\+::\+Tped\+File (\begin{DoxyParamCaption}\item[{const string \&}]{stub\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stub\+Name} & file name minus the extension \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classvarfiles_1_1_tped_file_af2850446a85d8a6024a04d8648fd4987_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_ae0151eb62fa59641ba375ada61458e7c}\label{classvarfiles_1_1_tped_file_ae0151eb62fa59641ba375ada61458e7c}} 
+\index{varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}!\+\_\+fam\+Copy@{\+\_\+fam\+Copy}}
+\index{\+\_\+fam\+Copy@{\+\_\+fam\+Copy}!varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Copy()}{\_famCopy()}}
+{\footnotesize\ttfamily void Tped\+File\+::\+\_\+fam\+Copy (\begin{DoxyParamCaption}\item[{fstream \&}]{fam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy the .tfam file. 
+
+The current object\textquotesingle{}s .tfam file is copied to the provided file stream, which should already be open for writing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fam} & .tfam file stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_af980d8b7900488c642980a5e59b5a379}\label{classvarfiles_1_1_tped_file_af980d8b7900488c642980a5e59b5a379}} 
+\index{varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}!\+\_\+fam\+Lines@{\+\_\+fam\+Lines}}
+\index{\+\_\+fam\+Lines@{\+\_\+fam\+Lines}!varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Lines()}{\_famLines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Tped\+File\+::\+\_\+fam\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get number of lines in the {\ttfamily \+\_\+tfam\+File} 
+
+Assumes Unix-\/like line endings. The result is equal to the number of individuals. The {\ttfamily \+\_\+tfam\+File} should already be open for reading.
+
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+tfam\+File} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvarfiles_1_1_tped_file_a871c29be16893541ed02d8518808a301}\label{classvarfiles_1_1_tped_file_a871c29be16893541ed02d8518808a301}} 
+\index{varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}!\+\_\+fam\+Lines@{\+\_\+fam\+Lines}}
+\index{\+\_\+fam\+Lines@{\+\_\+fam\+Lines}!varfiles\+::\+Tped\+File@{varfiles\+::\+Tped\+File}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Lines()}{\_famLines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Tped\+File\+::\+\_\+fam\+Lines (\begin{DoxyParamCaption}\item[{fstream \&}]{fam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy the .tfam file and count number of lines. 
+
+Assumes Unix-\/like line endings. The result is equal to the number of individuals. The current object\textquotesingle{}s .tfam file is copied to the provided file stream, which should already be open for writing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fam} & .tfam file stream\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+tfam\+File} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="sampFiles::VcfFile" name="sampFiles::VcfFile">
+<area shape="rect" id="node4" href="$classsamp_files_1_1_vcf_file_i.html" title="VCF file input class. " alt="" coords="5,225,139,251"/>
+<area shape="rect" id="node5" href="$classsamp_files_1_1_vcf_file_o.html" title="VCF file output class. " alt="" coords="163,225,304,251"/>
+<area shape="rect" id="node2" href="$classsamp_files_1_1_gtxt_file.html" title="Generic text file base class. " alt="" coords="85,79,220,104"/>
+<area shape="rect" id="node3" href="$classsamp_files_1_1_var_file.html" title="Base variant file class. " alt="" coords="87,5,218,31"/>
+</map>

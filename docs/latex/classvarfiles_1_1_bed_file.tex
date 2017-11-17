@@ -1,0 +1,179 @@
+\hypertarget{classvarfiles_1_1_bed_file}{}\section{varfiles\+:\+:Bed\+File Class Reference}
+\label{classvarfiles_1_1_bed_file}\index{varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}}
+
+
+B\+ED file base class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Bed\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classvarfiles_1_1_bed_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for varfiles\+:\+:Bed\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvarfiles_1_1_bed_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a0853371d06c87876859d5cf3c711c8e3}\label{classvarfiles_1_1_bed_file_a0853371d06c87876859d5cf3c711c8e3}} 
+\hyperlink{classvarfiles_1_1_bed_file_a0853371d06c87876859d5cf3c711c8e3}{Bed\+File} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_bed_file_a69631d96080c22e686e8acb75cf2cc89}{Bed\+File} (const string \&stub\+Name)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a8d8df3d81d30bfa05993063067672bb6}\label{classvarfiles_1_1_bed_file_a8d8df3d81d30bfa05993063067672bb6}} 
+\hyperlink{classvarfiles_1_1_bed_file_a8d8df3d81d30bfa05993063067672bb6}{Bed\+File} (const \hyperlink{classvarfiles_1_1_bed_file}{Bed\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_ada51133e368986219e8ca65087dd6eed}\label{classvarfiles_1_1_bed_file_ada51133e368986219e8ca65087dd6eed}} 
+\hyperlink{classvarfiles_1_1_bed_file}{Bed\+File} \& \hyperlink{classvarfiles_1_1_bed_file_ada51133e368986219e8ca65087dd6eed}{operator=} (const \hyperlink{classvarfiles_1_1_bed_file}{Bed\+File} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a529807ccc868221446908cdff56dc2c8}\label{classvarfiles_1_1_bed_file_a529807ccc868221446908cdff56dc2c8}} 
+\hyperlink{classvarfiles_1_1_bed_file_a529807ccc868221446908cdff56dc2c8}{Bed\+File} (\hyperlink{classvarfiles_1_1_bed_file}{Bed\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a4bbcda06f28e69bda83d69aef4772600}\label{classvarfiles_1_1_bed_file_a4bbcda06f28e69bda83d69aef4772600}} 
+\hyperlink{classvarfiles_1_1_bed_file}{Bed\+File} \& \hyperlink{classvarfiles_1_1_bed_file_a4bbcda06f28e69bda83d69aef4772600}{operator=} (\hyperlink{classvarfiles_1_1_bed_file}{Bed\+File} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a8e6b512579968f51763ac693c1c4432b}\label{classvarfiles_1_1_bed_file_a8e6b512579968f51763ac693c1c4432b}} 
+\hyperlink{classvarfiles_1_1_bed_file_a8e6b512579968f51763ac693c1c4432b}{$\sim$\+Bed\+File} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_ac0c3f99521807ca8a9e7970509c13f01}\label{classvarfiles_1_1_bed_file_ac0c3f99521807ca8a9e7970509c13f01}} 
+virtual void \hyperlink{classvarfiles_1_1_bed_file_ac0c3f99521807ca8a9e7970509c13f01}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream (does nothing) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_acc8796c6ea50710287b0e2117c4b381e}\label{classvarfiles_1_1_bed_file_acc8796c6ea50710287b0e2117c4b381e}} 
+void \hyperlink{classvarfiles_1_1_bed_file_acc8796c6ea50710287b0e2117c4b381e}{close} ()
+\begin{DoxyCompactList}\small\item\em Close stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_bed_file_a927cd985ae4d5897a052c2219391eae3}{\+\_\+num\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of lines in the {\ttfamily \+\_\+bim\+File} \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_bed_file_a0e1a2245d0ed290c6d333272868d8a74}{\+\_\+fam\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of lines in the {\ttfamily \+\_\+fam\+File} \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_bed_file_a646e0a39517924cfd4f8f6ea394dd940}{\+\_\+fam\+Lines} (fstream \&fam)
+\begin{DoxyCompactList}\small\item\em Copy the .fam file and count number of lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_ae8abd6f900b719b8b5a5e9b283098a37}\label{classvarfiles_1_1_bed_file_ae8abd6f900b719b8b5a5e9b283098a37}} 
+fstream \hyperlink{classvarfiles_1_1_bed_file_ae8abd6f900b719b8b5a5e9b283098a37}{\+\_\+fam\+File}
+\begin{DoxyCompactList}\small\item\em Corresponding .fam file stream. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a183816d8a43637896a434db71238470b}\label{classvarfiles_1_1_bed_file_a183816d8a43637896a434db71238470b}} 
+fstream \hyperlink{classvarfiles_1_1_bed_file_a183816d8a43637896a434db71238470b}{\+\_\+bim\+File}
+\begin{DoxyCompactList}\small\item\em Corresponding .bim file stream. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_abb8aa2e09e51ad278cf7b9e7951530bd}\label{classvarfiles_1_1_bed_file_abb8aa2e09e51ad278cf7b9e7951530bd}} 
+string \hyperlink{classvarfiles_1_1_bed_file_abb8aa2e09e51ad278cf7b9e7951530bd}{\+\_\+file\+Stub}
+\begin{DoxyCompactList}\small\item\em File name stub (minus the extension) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+B\+ED file base class. 
+
+Sets up streams for the auxiliary files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a69631d96080c22e686e8acb75cf2cc89}\label{classvarfiles_1_1_bed_file_a69631d96080c22e686e8acb75cf2cc89}} 
+\index{varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}!Bed\+File@{Bed\+File}}
+\index{Bed\+File@{Bed\+File}!varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}}
+\subsubsection{\texorpdfstring{Bed\+File()}{BedFile()}}
+{\footnotesize\ttfamily Bed\+File\+::\+Bed\+File (\begin{DoxyParamCaption}\item[{const string \&}]{stub\+Name }\end{DoxyParamCaption})}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stub\+Name} & file name minus the extension \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a0e1a2245d0ed290c6d333272868d8a74}\label{classvarfiles_1_1_bed_file_a0e1a2245d0ed290c6d333272868d8a74}} 
+\index{varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}!\+\_\+fam\+Lines@{\+\_\+fam\+Lines}}
+\index{\+\_\+fam\+Lines@{\+\_\+fam\+Lines}!varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Lines()}{\_famLines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Bed\+File\+::\+\_\+fam\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get number of lines in the {\ttfamily \+\_\+fam\+File} 
+
+Assumes Unix-\/like line endings. The result is equal to the number of individuals. The {\ttfamily \+\_\+fam\+File} should already be open for reading.
+
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+fam\+File} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvarfiles_1_1_bed_file_a0e1a2245d0ed290c6d333272868d8a74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a646e0a39517924cfd4f8f6ea394dd940}\label{classvarfiles_1_1_bed_file_a646e0a39517924cfd4f8f6ea394dd940}} 
+\index{varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}!\+\_\+fam\+Lines@{\+\_\+fam\+Lines}}
+\index{\+\_\+fam\+Lines@{\+\_\+fam\+Lines}!varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}}
+\subsubsection{\texorpdfstring{\+\_\+fam\+Lines()}{\_famLines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Bed\+File\+::\+\_\+fam\+Lines (\begin{DoxyParamCaption}\item[{fstream \&}]{fam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy the .fam file and count number of lines. 
+
+Assumes Unix-\/like line endings. The result is equal to the number of individuals. The current object\textquotesingle{}s .fam file is copied to the provided file stream, which should already be open for writing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fam} & .fam file stream\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+fam\+File} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_a927cd985ae4d5897a052c2219391eae3}\label{classvarfiles_1_1_bed_file_a927cd985ae4d5897a052c2219391eae3}} 
+\index{varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}!\+\_\+num\+Lines@{\+\_\+num\+Lines}}
+\index{\+\_\+num\+Lines@{\+\_\+num\+Lines}!varfiles\+::\+Bed\+File@{varfiles\+::\+Bed\+File}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Lines()}{\_numLines()}}
+{\footnotesize\ttfamily uint64\+\_\+t Bed\+File\+::\+\_\+num\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Get number of lines in the {\ttfamily \+\_\+bim\+File} 
+
+Assumes Unix-\/like line endings. The result is equal to the number of S\+N\+Ps. The {\ttfamily \+\_\+bim\+File} should already be open for reading.
+
+\begin{DoxyReturn}{Returns}
+number of lines in {\ttfamily \+\_\+bim\+File} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classvarfiles_1_1_var_file_a029a1a5577fb735c338750d2dec62ab6}{varfiles\+::\+Var\+File}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classvarfiles_1_1_bed_file_a927cd985ae4d5897a052c2219391eae3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="sampFiles::GbinFile" name="sampFiles::GbinFile">
+<area shape="rect" id="node3" href="$classsamp_files_1_1_bed_file.html" title="BED file base class. " alt="" coords="90,152,225,177"/>
+<area shape="rect" id="node6" href="$classsamp_files_1_1_gbin_file_i.html" title="Binary file input class. " alt="" coords="248,152,391,177"/>
+<area shape="rect" id="node7" href="$classsamp_files_1_1_gbin_file_o.html" title="Generic binary file output class. " alt="" coords="416,152,565,177"/>
+<area shape="rect" id="node2" href="$classsamp_files_1_1_var_file.html" title="Base variant file class. " alt="" coords="254,5,385,31"/>
+<area shape="rect" id="node4" href="$classsamp_files_1_1_bed_file_i.html" title="BED file input class. " alt="" coords="5,225,144,251"/>
+<area shape="rect" id="node5" href="$classsamp_files_1_1_bed_file_o.html" title="BED file output class. " alt="" coords="167,225,312,251"/>
+</map>

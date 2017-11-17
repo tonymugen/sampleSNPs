@@ -1,0 +1,156 @@
+\hypertarget{classsamp_files_1_1_gbin_file_i}{}\section{samp\+Files\+:\+:Gbin\+FileI Class Reference}
+\label{classsamp_files_1_1_gbin_file_i}\index{samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}}
+
+
+Binary file input class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for samp\+Files\+:\+:Gbin\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classsamp_files_1_1_gbin_file_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for samp\+Files\+:\+:Gbin\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classsamp_files_1_1_gbin_file_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_a41599498567932edd1ed3961efbb4dd7}\label{classsamp_files_1_1_gbin_file_i_a41599498567932edd1ed3961efbb4dd7}} 
+\hyperlink{classsamp_files_1_1_gbin_file_i_a41599498567932edd1ed3961efbb4dd7}{Gbin\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a}{Gbin\+FileI} (const string \&file\+Name, const size\+\_\+t \&n\+Cols, const size\+\_\+t \&elem\+Size)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_aa72b1178ae2bf593812e9db019362388}\label{classsamp_files_1_1_gbin_file_i_aa72b1178ae2bf593812e9db019362388}} 
+\hyperlink{classsamp_files_1_1_gbin_file_i_aa72b1178ae2bf593812e9db019362388}{Gbin\+FileI} (const \hyperlink{classsamp_files_1_1_gbin_file_i}{Gbin\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_aeb231168e0b13ea71cb8382c2bfa2e5a}\label{classsamp_files_1_1_gbin_file_i_aeb231168e0b13ea71cb8382c2bfa2e5a}} 
+\hyperlink{classsamp_files_1_1_gbin_file_i}{Gbin\+FileI} \& \hyperlink{classsamp_files_1_1_gbin_file_i_aeb231168e0b13ea71cb8382c2bfa2e5a}{operator=} (const \hyperlink{classsamp_files_1_1_gbin_file_i}{Gbin\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_a62f43b4cacd682e70c3ad8ae5d674d08}\label{classsamp_files_1_1_gbin_file_i_a62f43b4cacd682e70c3ad8ae5d674d08}} 
+\hyperlink{classsamp_files_1_1_gbin_file_i_a62f43b4cacd682e70c3ad8ae5d674d08}{Gbin\+FileI} (\hyperlink{classsamp_files_1_1_gbin_file_i}{Gbin\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_a7ad74147ff93849a4e5f8e5c6414a89f}\label{classsamp_files_1_1_gbin_file_i_a7ad74147ff93849a4e5f8e5c6414a89f}} 
+\hyperlink{classsamp_files_1_1_gbin_file_i}{Gbin\+FileI} \& \hyperlink{classsamp_files_1_1_gbin_file_i_a7ad74147ff93849a4e5f8e5c6414a89f}{operator=} (\hyperlink{classsamp_files_1_1_gbin_file_i}{Gbin\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_a71dcb1dfbd6fd14b7084621dbab316f6}\label{classsamp_files_1_1_gbin_file_i_a71dcb1dfbd6fd14b7084621dbab316f6}} 
+\hyperlink{classsamp_files_1_1_gbin_file_i_a71dcb1dfbd6fd14b7084621dbab316f6}{$\sim$\+Gbin\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_af32079a08976e9343e2c9a4cb849e4e4}\label{classsamp_files_1_1_gbin_file_i_af32079a08976e9343e2c9a4cb849e4e4}} 
+void \hyperlink{classsamp_files_1_1_gbin_file_i_af32079a08976e9343e2c9a4cb849e4e4}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream to read. \end{DoxyCompactList}\item 
+void \hyperlink{classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e}{sample} (\hyperlink{classsamp_files_1_1_gbin_file_o}{Gbin\+FileO} \&out, const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Sample rows and save to a binary file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_a702074c0aa85213bee9f6ec19ef98de2}\label{classsamp_files_1_1_gbin_file_i_a702074c0aa85213bee9f6ec19ef98de2}} 
+uint64\+\_\+t \hyperlink{classsamp_files_1_1_gbin_file_i_a702074c0aa85213bee9f6ec19ef98de2}{nlines} ()
+\begin{DoxyCompactList}\small\item\em Number of rows in the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual uint64\+\_\+t \hyperlink{classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0}{\+\_\+num\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Get number of rows in the binary file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Binary file input class. 
+
+Reads binary files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a}\label{classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a}} 
+\index{samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}!Gbin\+FileI@{Gbin\+FileI}}
+\index{Gbin\+FileI@{Gbin\+FileI}!samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}}
+\subsubsection{\texorpdfstring{Gbin\+File\+I()}{GbinFileI()}}
+{\footnotesize\ttfamily samp\+Files\+::\+Gbin\+File\+I\+::\+Gbin\+FileI (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{const size\+\_\+t \&}]{n\+Cols,  }\item[{const size\+\_\+t \&}]{elem\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file\+Name} & file name including extension \\
+\hline
+\mbox{\tt in}  & {\em n\+Cols} & number of columns, or elements in a row \\
+\hline
+\mbox{\tt in}  & {\em elem\+Size} & size of each element in bytes \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0}\label{classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0}} 
+\index{samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}!\+\_\+num\+Lines@{\+\_\+num\+Lines}}
+\index{\+\_\+num\+Lines@{\+\_\+num\+Lines}!samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Lines()}{\_numLines()}}
+{\footnotesize\ttfamily uint64\+\_\+t Gbin\+File\+I\+::\+\_\+num\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Get number of rows in the binary file. 
+
+Requires knowledge of the number of elements in a row and their size in bytes. Throws a {\itshape string} object ``\+Number of elements not divisible by row size\textquotesingle{}\textquotesingle{} if the total number of elements in the file is not divisible by the product of the number of columns and element size.
+
+\begin{DoxyReturn}{Returns}
+number of rows 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e}\label{classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e}} 
+\index{samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}!sample@{sample}}
+\index{sample@{sample}!samp\+Files\+::\+Gbin\+FileI@{samp\+Files\+::\+Gbin\+FileI}}
+\subsubsection{\texorpdfstring{sample()}{sample()}}
+{\footnotesize\ttfamily void Gbin\+File\+I\+::sample (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_gbin_file_o}{Gbin\+FileO} \&}]{out,  }\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Sample rows and save to a binary file. 
+
+Sample $n$ lines without replacement from the file represented by the current object and save to the {\ttfamily out} object. Uses Vitter\textquotesingle{}s \cite{vitter87a} method. Number of samples has to be smaller that the number of rows in the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em out} & output object \\
+\hline
+\mbox{\tt in}  & {\em n} & number of rows to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

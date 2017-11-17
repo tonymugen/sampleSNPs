@@ -1,0 +1,156 @@
+\hypertarget{classvarfiles_1_1_generate}{}\section{varfiles\+:\+:Generate Class Reference}
+\label{classvarfiles_1_1_generate}\index{varfiles\+::\+Generate@{varfiles\+::\+Generate}}
+
+
+Abstract base random number class.  
+
+
+
+
+{\ttfamily \#include $<$random.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Generate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classvarfiles_1_1_generate__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_generate_a9eb23e1f95562da88f6e607277eb1714}\label{classvarfiles_1_1_generate_a9eb23e1f95562da88f6e607277eb1714}} 
+virtual \hyperlink{classvarfiles_1_1_generate_a9eb23e1f95562da88f6e607277eb1714}{$\sim$\+Generate} ()
+\begin{DoxyCompactList}\small\item\em Protected destructor. \end{DoxyCompactList}\item 
+virtual volatile uint64\+\_\+t \hyperlink{classvarfiles_1_1_generate_a8cac7a586f21a0def82cd68c379f9f86}{ran\+Int} ()=0
+\begin{DoxyCompactList}\small\item\em \hyperlink{classvarfiles_1_1_generate}{Generate} a (pseudo-\/)random 64-\/bit unsigned integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_generate_ab765be55656fbbe52b3613f0c8ae9bcc}\label{classvarfiles_1_1_generate_ab765be55656fbbe52b3613f0c8ae9bcc}} 
+\hyperlink{classvarfiles_1_1_generate_ab765be55656fbbe52b3613f0c8ae9bcc}{Generate} ()
+\begin{DoxyCompactList}\small\item\em Protected default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_generate_a43cb2d24eceed4049a01ebfcbe5b66fb}{Generate} (const \hyperlink{classvarfiles_1_1_generate}{Generate} \&old)
+\begin{DoxyCompactList}\small\item\em Protected copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_generate_ac6d367676afc2e1ab4c10dddc792edc0}{Generate} (\hyperlink{classvarfiles_1_1_generate}{Generate} \&\&old)
+\begin{DoxyCompactList}\small\item\em Protected move constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_generate}{Generate} \& \hyperlink{classvarfiles_1_1_generate_ab43453509b0f73a13b111e11e0dcb498}{operator=} (const \hyperlink{classvarfiles_1_1_generate}{Generate} \&old)=default
+\begin{DoxyCompactList}\small\item\em Protected copy assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_generate}{Generate} \& \hyperlink{classvarfiles_1_1_generate_a6e63f2d9f9570f38d4d67f51a770a0b2}{operator=} (\hyperlink{classvarfiles_1_1_generate}{Generate} \&\&old)=default
+\begin{DoxyCompactList}\small\item\em Protected move assignment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base random number class. 
+
+Provides the interface for random or pseudorandom (depending on derived class) generation. For internal use by the {\ttfamily \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw}} interface class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_generate_a43cb2d24eceed4049a01ebfcbe5b66fb}\label{classvarfiles_1_1_generate_a43cb2d24eceed4049a01ebfcbe5b66fb}} 
+\index{varfiles\+::\+Generate@{varfiles\+::\+Generate}!Generate@{Generate}}
+\index{Generate@{Generate}!varfiles\+::\+Generate@{varfiles\+::\+Generate}}
+\subsubsection{\texorpdfstring{Generate()}{Generate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily varfiles\+::\+Generate\+::\+Generate (\begin{DoxyParamCaption}\item[{const \hyperlink{classvarfiles_1_1_generate}{Generate} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Protected copy constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_generate_ac6d367676afc2e1ab4c10dddc792edc0}\label{classvarfiles_1_1_generate_ac6d367676afc2e1ab4c10dddc792edc0}} 
+\index{varfiles\+::\+Generate@{varfiles\+::\+Generate}!Generate@{Generate}}
+\index{Generate@{Generate}!varfiles\+::\+Generate@{varfiles\+::\+Generate}}
+\subsubsection{\texorpdfstring{Generate()}{Generate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily varfiles\+::\+Generate\+::\+Generate (\begin{DoxyParamCaption}\item[{\hyperlink{classvarfiles_1_1_generate}{Generate} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Protected move constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to move \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classvarfiles_1_1_generate_ac6d367676afc2e1ab4c10dddc792edc0_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_generate_ab43453509b0f73a13b111e11e0dcb498}\label{classvarfiles_1_1_generate_ab43453509b0f73a13b111e11e0dcb498}} 
+\index{varfiles\+::\+Generate@{varfiles\+::\+Generate}!operator=@{operator=}}
+\index{operator=@{operator=}!varfiles\+::\+Generate@{varfiles\+::\+Generate}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classvarfiles_1_1_generate}{Generate}\& varfiles\+::\+Generate\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classvarfiles_1_1_generate}{Generate} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Protected copy assignment operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to copy \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvarfiles_1_1_generate_ab43453509b0f73a13b111e11e0dcb498_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_generate_a6e63f2d9f9570f38d4d67f51a770a0b2}\label{classvarfiles_1_1_generate_a6e63f2d9f9570f38d4d67f51a770a0b2}} 
+\index{varfiles\+::\+Generate@{varfiles\+::\+Generate}!operator=@{operator=}}
+\index{operator=@{operator=}!varfiles\+::\+Generate@{varfiles\+::\+Generate}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classvarfiles_1_1_generate}{Generate}\& varfiles\+::\+Generate\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classvarfiles_1_1_generate}{Generate} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Protected move assignment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to move \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_generate_a8cac7a586f21a0def82cd68c379f9f86}\label{classvarfiles_1_1_generate_a8cac7a586f21a0def82cd68c379f9f86}} 
+\index{varfiles\+::\+Generate@{varfiles\+::\+Generate}!ran\+Int@{ran\+Int}}
+\index{ran\+Int@{ran\+Int}!varfiles\+::\+Generate@{varfiles\+::\+Generate}}
+\subsubsection{\texorpdfstring{ran\+Int()}{ranInt()}}
+{\footnotesize\ttfamily virtual volatile uint64\+\_\+t varfiles\+::\+Generate\+::ran\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\hyperlink{classvarfiles_1_1_generate}{Generate} a (pseudo-\/)random 64-\/bit unsigned integer. 
+
+\begin{DoxyReturn}{Returns}
+random or pseudo-\/random 64-\/bit unsigned integer 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classvarfiles_1_1_generate_m_t_a500e163265b6fdae0a30fdacc1c37f80}{varfiles\+::\+Generate\+MT}, and \hyperlink{classvarfiles_1_1_generate_h_r_ac0c560c9ea17bc67470124040e0bd796}{varfiles\+::\+Generate\+HR}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvarfiles_1_1_generate_a8cac7a586f21a0def82cd68c379f9f86_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{random_8hpp}{random.\+hpp}\end{DoxyCompactItemize}

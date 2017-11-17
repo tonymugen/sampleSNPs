@@ -1,0 +1,101 @@
+\hypertarget{varfiles_8hpp}{}\section{varfiles.\+hpp File Reference}
+\label{varfiles_8hpp}\index{varfiles.\+hpp@{varfiles.\+hpp}}
+
+
+Read and write genetic variant files.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}populations.\+hpp\char`\"{}}\newline
+Include dependency graph for varfiles.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{varfiles_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{varfiles_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsamp_files_1_1_var_file}{samp\+Files\+::\+Var\+File}
+\begin{DoxyCompactList}\small\item\em Base variant file class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_gbin_file}{samp\+Files\+::\+Gbin\+File}
+\begin{DoxyCompactList}\small\item\em Generic binary file base class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_gbin_file_i}{samp\+Files\+::\+Gbin\+FileI}
+\begin{DoxyCompactList}\small\item\em Binary file input class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_gbin_file_o}{samp\+Files\+::\+Gbin\+FileO}
+\begin{DoxyCompactList}\small\item\em Generic binary file output class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_bed_file}{samp\+Files\+::\+Bed\+File}
+\begin{DoxyCompactList}\small\item\em B\+ED file base class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_bed_file_i}{samp\+Files\+::\+Bed\+FileI}
+\begin{DoxyCompactList}\small\item\em B\+ED file input class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_bed_file_o}{samp\+Files\+::\+Bed\+FileO}
+\begin{DoxyCompactList}\small\item\em B\+ED file output class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_gtxt_file}{samp\+Files\+::\+Gtxt\+File}
+\begin{DoxyCompactList}\small\item\em Generic text file base class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_gtxt_file_i}{samp\+Files\+::\+Gtxt\+FileI}
+\begin{DoxyCompactList}\small\item\em Text file input class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_gtxt_file_o}{samp\+Files\+::\+Gtxt\+FileO}
+\begin{DoxyCompactList}\small\item\em Generic text file output class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_tped_file}{samp\+Files\+::\+Tped\+File}
+\begin{DoxyCompactList}\small\item\em T\+P\+ED file base class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_tped_file_i}{samp\+Files\+::\+Tped\+FileI}
+\begin{DoxyCompactList}\small\item\em T\+P\+ED file input class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_tped_file_o}{samp\+Files\+::\+Tped\+FileO}
+\begin{DoxyCompactList}\small\item\em T\+P\+ED file output class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_vcf_file}{samp\+Files\+::\+Vcf\+File}
+\begin{DoxyCompactList}\small\item\em V\+CF file base class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_vcf_file_i}{samp\+Files\+::\+Vcf\+FileI}
+\begin{DoxyCompactList}\small\item\em V\+CF file input class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_vcf_file_o}{samp\+Files\+::\+Vcf\+FileO}
+\begin{DoxyCompactList}\small\item\em V\+CF file output class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_hmp_file}{samp\+Files\+::\+Hmp\+File}
+\begin{DoxyCompactList}\small\item\em Hapmap (H\+MP) file base class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_hmp_file_i}{samp\+Files\+::\+Hmp\+FileI}
+\begin{DoxyCompactList}\small\item\em H\+MP file input class. \end{DoxyCompactList}\item 
+class \hyperlink{classsamp_files_1_1_hmp_file_o}{samp\+Files\+::\+Hmp\+FileO}
+\begin{DoxyCompactList}\small\item\em H\+MP file output class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{varfiles_8hpp_a858f9bab37fa8cda6930f8d8eb0a344e}\label{varfiles_8hpp_a858f9bab37fa8cda6930f8d8eb0a344e}} 
+const double \hyperlink{varfiles_8hpp_a858f9bab37fa8cda6930f8d8eb0a344e}{samp\+Files\+::\+E\+PS} = numeric\+\_\+limits$<$double$>$\+::epsilon()
+\begin{DoxyCompactList}\small\item\em Machine $\epsilon$. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{varfiles_8hpp_a1f33790d73509b67dd3529521c2b58a2}\label{varfiles_8hpp_a1f33790d73509b67dd3529521c2b58a2}} 
+const double \hyperlink{varfiles_8hpp_a1f33790d73509b67dd3529521c2b58a2}{samp\+Files\+::\+PI} = 3.\+14159265358979323846264338328
+\begin{DoxyCompactList}\small\item\em pi \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Read and write genetic variant files. 
+
+\begin{DoxyAuthor}{Author}
+Anthony J. Greenberg 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2017 Anthony J. Greenberg 
+\end{DoxyCopyright}
+\begin{DoxyVersion}{Version}
+0.\+1
+\end{DoxyVersion}
+Definitions and interface documentation for classes that read and write various genetic variant file formats.
+
+Currently supported formats\+:
+\begin{DoxyItemize}
+\item {\itshape plink} B\+ED
+\item {\itshape plink} T\+P\+ED
+\item V\+CF
+\item Hapmap (.hmp.\+txt) 
+\end{DoxyItemize}

@@ -1,0 +1,296 @@
+\hypertarget{classvarfiles_1_1_bed_file_i}{}\section{varfiles\+:\+:Bed\+FileI Class Reference}
+\label{classvarfiles_1_1_bed_file_i}\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+
+
+B\+ED file input class.  
+
+
+
+
+{\ttfamily \#include $<$varfiles.\+hpp$>$}
+
+
+
+Inheritance diagram for varfiles\+:\+:Bed\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classvarfiles_1_1_bed_file_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for varfiles\+:\+:Bed\+FileI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvarfiles_1_1_bed_file_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_ace85c86d9964ec488e1085a08e925cee}\label{classvarfiles_1_1_bed_file_i_ace85c86d9964ec488e1085a08e925cee}} 
+\hyperlink{classvarfiles_1_1_bed_file_i_ace85c86d9964ec488e1085a08e925cee}{Bed\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_bed_file_i_a08cbc6ce12b27682fe9742317be1d434}{Bed\+FileI} (const string \&stub\+Name)
+\begin{DoxyCompactList}\small\item\em File name constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a05199e1d75a2579a18f721df3b76d8f0}\label{classvarfiles_1_1_bed_file_i_a05199e1d75a2579a18f721df3b76d8f0}} 
+\hyperlink{classvarfiles_1_1_bed_file_i_a05199e1d75a2579a18f721df3b76d8f0}{Bed\+FileI} (const \hyperlink{classvarfiles_1_1_bed_file_i}{Bed\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a227bced32a25274d9c402906eb9f9221}\label{classvarfiles_1_1_bed_file_i_a227bced32a25274d9c402906eb9f9221}} 
+\hyperlink{classvarfiles_1_1_bed_file_i}{Bed\+FileI} \& \hyperlink{classvarfiles_1_1_bed_file_i_a227bced32a25274d9c402906eb9f9221}{operator=} (const \hyperlink{classvarfiles_1_1_bed_file_i}{Bed\+FileI} \&in)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a59ca0c9bb1c0501ba4badb8c11136957}\label{classvarfiles_1_1_bed_file_i_a59ca0c9bb1c0501ba4badb8c11136957}} 
+\hyperlink{classvarfiles_1_1_bed_file_i_a59ca0c9bb1c0501ba4badb8c11136957}{Bed\+FileI} (\hyperlink{classvarfiles_1_1_bed_file_i}{Bed\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_afab862c9ccdac2cd9f677695110bb72a}\label{classvarfiles_1_1_bed_file_i_afab862c9ccdac2cd9f677695110bb72a}} 
+\hyperlink{classvarfiles_1_1_bed_file_i}{Bed\+FileI} \& \hyperlink{classvarfiles_1_1_bed_file_i_afab862c9ccdac2cd9f677695110bb72a}{operator=} (\hyperlink{classvarfiles_1_1_bed_file_i}{Bed\+FileI} \&\&in)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a1dc7dab19e5cbb96e744182a868caa5d}\label{classvarfiles_1_1_bed_file_i_a1dc7dab19e5cbb96e744182a868caa5d}} 
+\hyperlink{classvarfiles_1_1_bed_file_i_a1dc7dab19e5cbb96e744182a868caa5d}{$\sim$\+Bed\+FileI} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a36ff04242d3c4bd65c9f1d8be5153997}\label{classvarfiles_1_1_bed_file_i_a36ff04242d3c4bd65c9f1d8be5153997}} 
+void \hyperlink{classvarfiles_1_1_bed_file_i_a36ff04242d3c4bd65c9f1d8be5153997}{open} ()
+\begin{DoxyCompactList}\small\item\em Open stream to read. \end{DoxyCompactList}\item 
+void \hyperlink{classvarfiles_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3}{sample} (\hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \&out, const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Sample S\+N\+Ps and save to B\+ED file. \end{DoxyCompactList}\item 
+void \hyperlink{classvarfiles_1_1_bed_file_i_ae502304386c409e9312a090a189ab694}{sample\+LD} (const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em Linkage disequilibrium among sampled sites. \end{DoxyCompactList}\item 
+void \hyperlink{classvarfiles_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1}{sample\+LD} (const \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index} \&pop\+ID, const uint64\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em LD among sampled sites within populations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_ae55d0621562683d8f5aa23716c706bf7}\label{classvarfiles_1_1_bed_file_i_ae55d0621562683d8f5aa23716c706bf7}} 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_bed_file_i_ae55d0621562683d8f5aa23716c706bf7}{nsnp} ()
+\begin{DoxyCompactList}\small\item\em Number of S\+N\+Ps in the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a083c4457b8fc9d762e45878e83826b4d}\label{classvarfiles_1_1_bed_file_i_a083c4457b8fc9d762e45878e83826b4d}} 
+uint64\+\_\+t \hyperlink{classvarfiles_1_1_bed_file_i_a083c4457b8fc9d762e45878e83826b4d}{nindiv} ()
+\begin{DoxyCompactList}\small\item\em Number of individuals in the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvarfiles_1_1_bed_file_i_a9b6f8cbb9ae05056a7cd3d487fb26c30}{\+\_\+ld} (const char $\ast$snp1, const char $\ast$snp2, const size\+\_\+t \&N, const unsigned short \&pad, double \&r\+Sq, double \&Dprime, double \&dcnt1, double \&dcnt2)
+\begin{DoxyCompactList}\small\item\em Between-\/\+S\+NP linkage disequilibrium (LD) \end{DoxyCompactList}\item 
+void \hyperlink{classvarfiles_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1}{\+\_\+ld} (const char $\ast$snp1, const char $\ast$snp2, const \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index} \&pop\+ID, vector$<$ double $>$ \&r\+Sq, vector$<$ double $>$ \&Dprime, vector$<$ double $>$ \&dcnt1, vector$<$ double $>$ \&dcnt2)
+\begin{DoxyCompactList}\small\item\em Between-\/\+S\+NP LD within populations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const vector$<$ char $>$ \hyperlink{classvarfiles_1_1_bed_file_i_a6f65201e88cd1cb3f0fb077af2624d44}{\+\_\+masks} = \{static\+\_\+cast$<$char$>$(0x03), static\+\_\+cast$<$char$>$(0x0\+C), static\+\_\+cast$<$char$>$(0x30), static\+\_\+cast$<$char$>$(0x\+C0)\}
+\begin{DoxyCompactList}\small\item\em Genotype bit masks. \end{DoxyCompactList}\item 
+static const unordered\+\_\+map$<$ char, string $>$ \hyperlink{classvarfiles_1_1_bed_file_i_a1dcd5f68e2cf5acdd5227ef226af81f3}{\+\_\+tests}
+\begin{DoxyCompactList}\small\item\em Genotype bit tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+B\+ED file input class. 
+
+Reads B\+ED files and the auxiliary files that come with them (.fam and .bim) as necessary. Only the S\+N\+P-\/major version is supported. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a08cbc6ce12b27682fe9742317be1d434}\label{classvarfiles_1_1_bed_file_i_a08cbc6ce12b27682fe9742317be1d434}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!Bed\+FileI@{Bed\+FileI}}
+\index{Bed\+FileI@{Bed\+FileI}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{Bed\+File\+I()}{BedFileI()}}
+{\footnotesize\ttfamily varfiles\+::\+Bed\+File\+I\+::\+Bed\+FileI (\begin{DoxyParamCaption}\item[{const string \&}]{stub\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+File name constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stub\+Name} & file name minus the extension \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classvarfiles_1_1_bed_file_i_a08cbc6ce12b27682fe9742317be1d434_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a9b6f8cbb9ae05056a7cd3d487fb26c30}\label{classvarfiles_1_1_bed_file_i_a9b6f8cbb9ae05056a7cd3d487fb26c30}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!\+\_\+ld@{\+\_\+ld}}
+\index{\+\_\+ld@{\+\_\+ld}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+ld()}{\_ld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::\+\_\+ld (\begin{DoxyParamCaption}\item[{const char $\ast$}]{snp1,  }\item[{const char $\ast$}]{snp2,  }\item[{const size\+\_\+t \&}]{N,  }\item[{const unsigned short \&}]{pad,  }\item[{double \&}]{r\+Sq,  }\item[{double \&}]{Dprime,  }\item[{double \&}]{dcnt1,  }\item[{double \&}]{dcnt2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Between-\/\+S\+NP linkage disequilibrium (LD) 
+
+Calculates two LD statistics ( $ r^2 $ and $ D' $) between two S\+N\+Ps from a B\+ED file. Missing values are ignored. If there are fewer than three haplotypes with data present at both loci, the return values are -\/9. This value is also returned if one of the loci is monomorphic after taking out missing data at the other S\+NP. Minor (not necessarily derived) allele counts are also reported to enable downstream filtering. Note that the populations are assumed diploid and the counts are of haploid chromosomes (i.\+e. one homozygote yields count of 2).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em snp1} & first S\+NP \\
+\hline
+\mbox{\tt in}  & {\em snp2} & second S\+NP \\
+\hline
+\mbox{\tt in}  & {\em N} & length of the genotype vector in bytes (four genotypes per byte) \\
+\hline
+\mbox{\tt in}  & {\em pad} & number of bit pairs of padding in the last byte \\
+\hline
+\mbox{\tt out}  & {\em r\+Sq} & the $ r^2 $ estimate \\
+\hline
+\mbox{\tt out}  & {\em Dprime} & the $ D' $ estimate \\
+\hline
+\mbox{\tt out}  & {\em dcnt1} & minor allele count at locus 1 \\
+\hline
+\mbox{\tt out}  & {\em dcnt2} & minor allele count at locus 2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1}\label{classvarfiles_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!\+\_\+ld@{\+\_\+ld}}
+\index{\+\_\+ld@{\+\_\+ld}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+ld()}{\_ld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::\+\_\+ld (\begin{DoxyParamCaption}\item[{const char $\ast$}]{snp1,  }\item[{const char $\ast$}]{snp2,  }\item[{const \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index} \&}]{pop\+ID,  }\item[{vector$<$ double $>$ \&}]{r\+Sq,  }\item[{vector$<$ double $>$ \&}]{Dprime,  }\item[{vector$<$ double $>$ \&}]{dcnt1,  }\item[{vector$<$ double $>$ \&}]{dcnt2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Between-\/\+S\+NP LD within populations. 
+
+Calculates two LD statistics ( $ r^2 $ and $ D' $) between two S\+N\+Ps from a B\+ED file. Missing values are ignored. If there are fewer than three haplotypes with data present at both loci, the return values are -\/9. This value is also returned if one of the loci is monomorphic after taking out missing data at the other S\+NP. Minor (not necessarily derived) allele counts are also reported to enable downstream filtering. Note that the populations are assumed diploid and the counts are of haploid chromosomes (i.\+e. one homozygote yields count of 2). The values are calculted within each population as indicated by the {\ttfamily \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index}} object. The results are returned in the supplied vectors, which are assumed to be of correct size. Since this is an internal function unexposed to the user, this is not chaecked to save on compuation steps. Care must be taken that the {\ttfamily char} arrays passed to the function have lengths compatible with the number of individuals indexed by {\ttfamily \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index}}. This is not checked.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em snp1} & first S\+NP \\
+\hline
+\mbox{\tt in}  & {\em snp2} & second S\+NP \\
+\hline
+\mbox{\tt in}  & {\em pop\+ID} & population index \\
+\hline
+\mbox{\tt out}  & {\em r\+Sq} & vector of $ r^2 $ estimates \\
+\hline
+\mbox{\tt out}  & {\em Dprime} & vector of $ D' $ estimates \\
+\hline
+\mbox{\tt out}  & {\em dcnt1} & vector of minor allele counts at locus 1 \\
+\hline
+\mbox{\tt out}  & {\em dcnt2} & vector of minor allele counts at locus 2 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvarfiles_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3}\label{classvarfiles_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!sample@{sample}}
+\index{sample@{sample}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{sample()}{sample()}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::sample (\begin{DoxyParamCaption}\item[{\hyperlink{classvarfiles_1_1_bed_file_o}{Bed\+FileO} \&}]{out,  }\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Sample S\+N\+Ps and save to B\+ED file. 
+
+Sample $n$ S\+N\+Ps without replacement from the file represented by the current object and save to the {\ttfamily out} object. Uses Vitter\textquotesingle{}s \cite{vitter87a} method. Number of samples has to be smaller that the number of S\+N\+Ps in the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em out} & output object \\
+\hline
+\mbox{\tt in}  & {\em n} & number of S\+N\+Ps to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvarfiles_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_ae502304386c409e9312a090a189ab694}\label{classvarfiles_1_1_bed_file_i_ae502304386c409e9312a090a189ab694}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!sample\+LD@{sample\+LD}}
+\index{sample\+LD@{sample\+LD}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{sample\+L\+D()}{sampleLD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::sample\+LD (\begin{DoxyParamCaption}\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Linkage disequilibrium among sampled sites. 
+
+Samples sequential pairs of S\+N\+Ps and calculates two LD measures ( $ r^2 $ and $ D' $). Saves to a file with the same name as the one preceding the .bed etc extensions, but adds \+\_\+\+L\+D.\+tsv at the end. Each line is tab-\/delimited with the chromosome number (from the .bim file), between-\/\+S\+NP distance, non-\/reference allele count for each S\+NP, $ r^2 $, and $ D' $. Missing data are ignored (only pairwise-\/complete observations are included). If one of the S\+N\+Ps is monomorphic or if the total number of pairwise present genotypes is fewer than three (exclusive), the LD measures are returned as -\/9 to indicate missing values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & number of S\+NP pairs to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classvarfiles_1_1_bed_file_i_ae502304386c409e9312a090a189ab694_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1}\label{classvarfiles_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!sample\+LD@{sample\+LD}}
+\index{sample\+LD@{sample\+LD}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{sample\+L\+D()}{sampleLD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bed\+File\+I\+::sample\+LD (\begin{DoxyParamCaption}\item[{const \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index} \&}]{pop\+ID,  }\item[{const uint64\+\_\+t \&}]{n }\end{DoxyParamCaption})}
+
+
+
+LD among sampled sites within populations. 
+
+Samples sequential pairs of S\+N\+Ps and calculates two LD measures ( $ r^2 $ and $ D' $) within populations indicated by {\ttfamily \hyperlink{classvarfiles_1_1_pop_index}{Pop\+Index}}. Saves to a file with the same name as the one preceding the .bed etc extensions, but adds \+\_\+\+L\+D.\+tsv at the end. Each line is tab-\/delimited with the chromosome number (from the .bim file), between-\/\+S\+NP distance, non-\/reference allele count for each S\+NP, $ r^2 $, and $ D' $. Missing data are ignored (only pairwise-\/complete observations are included). If one of the S\+N\+Ps is monomorphic or if the total number of pairwise present genotypes is fewer than three (exclusive), the LD measures are returned as -\/9 to indicate missing values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pop\+ID} & population index \\
+\hline
+\mbox{\tt in}  & {\em n} & number of S\+NP pairs to sample \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classvarfiles_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a6f65201e88cd1cb3f0fb077af2624d44}\label{classvarfiles_1_1_bed_file_i_a6f65201e88cd1cb3f0fb077af2624d44}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!\+\_\+masks@{\+\_\+masks}}
+\index{\+\_\+masks@{\+\_\+masks}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+masks}{\_masks}}
+{\footnotesize\ttfamily const vector$<$ char $>$ Bed\+File\+I\+::\+\_\+masks = \{static\+\_\+cast$<$char$>$(0x03), static\+\_\+cast$<$char$>$(0x0\+C), static\+\_\+cast$<$char$>$(0x30), static\+\_\+cast$<$char$>$(0x\+C0)\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Genotype bit masks. 
+
+Used to isolate each of the four genotypes (moving from the last bit pair) from the .bed two-\/bit genotype coding. \mbox{\Hypertarget{classvarfiles_1_1_bed_file_i_a1dcd5f68e2cf5acdd5227ef226af81f3}\label{classvarfiles_1_1_bed_file_i_a1dcd5f68e2cf5acdd5227ef226af81f3}} 
+\index{varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}!\+\_\+tests@{\+\_\+tests}}
+\index{\+\_\+tests@{\+\_\+tests}!varfiles\+::\+Bed\+FileI@{varfiles\+::\+Bed\+FileI}}
+\subsubsection{\texorpdfstring{\+\_\+tests}{\_tests}}
+{\footnotesize\ttfamily const unordered\+\_\+map$<$ char, string $>$ Bed\+File\+I\+::\+\_\+tests\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \{\textcolor{charliteral}{'M'}, \{\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(0x01), static\_cast<char>(0x04), \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(0x10), static\_cast<char>(0
+      x40)\}\},
+    \{\textcolor{charliteral}{'H'}, \{\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(0x02), static\_cast<char>(0x08), \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(0x20), static\_cast<char>(0
+      x80)\}\}
+\}
+\end{DoxyCode}
+
+
+Genotype bit tests. 
+
+Used to test each of the four genotypes (moving from the last bit pair) from the .bed two-\/bit genotype coding for the possible states. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{varfiles_8hpp}{varfiles.\+hpp}\item 
+\hyperlink{varfiles_8cpp}{varfiles.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,235 @@
+\hypertarget{classvarfiles_1_1_ran_draw}{}\section{varfiles\+:\+:Ran\+Draw Class Reference}
+\label{classvarfiles_1_1_ran_draw}\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+
+
+Random number generating class.  
+
+
+
+
+{\ttfamily \#include $<$random.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvarfiles_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6}{Ran\+Draw} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a0041f7be024890f48f5db63fa37a5cc3}\label{classvarfiles_1_1_ran_draw_a0041f7be024890f48f5db63fa37a5cc3}} 
+\hyperlink{classvarfiles_1_1_ran_draw_a0041f7be024890f48f5db63fa37a5cc3}{$\sim$\+Ran\+Draw} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_ran_draw_a93397b17c6615fe3166a065a1667401f}{Ran\+Draw} (const \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&old)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_ran_draw_a1e4bf61c54ea31ff650707939a0d8fa3}{Ran\+Draw} (\hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&\&old)=default
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \& \hyperlink{classvarfiles_1_1_ran_draw_ac4576939ba8d09ad19b57ceb148864fa}{operator=} (const \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&old)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \& \hyperlink{classvarfiles_1_1_ran_draw_a167eaea1db130c17f343a57e240ce91c}{operator=} (\hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&\&old)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+volatile uint64\+\_\+t \hyperlink{classvarfiles_1_1_ran_draw_a8a6157061c5851d9ac79fbf479b19535}{ran\+Int} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classvarfiles_1_1_generate}{Generate} random integer. \end{DoxyCompactList}\item 
+volatile double \hyperlink{classvarfiles_1_1_ran_draw_a63126916400b75f8dead409118ee289c}{runif} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classvarfiles_1_1_generate}{Generate} a uniform deviate. \end{DoxyCompactList}\item 
+volatile double \hyperlink{classvarfiles_1_1_ran_draw_a5688bd202e487435398b1c1cb6f9ce30}{runifnz} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classvarfiles_1_1_generate}{Generate} a non-\/zero uniform deviate. \end{DoxyCompactList}\item 
+volatile uint64\+\_\+t \hyperlink{classvarfiles_1_1_ran_draw_a6319a7eac88ba9b4b54f67649121e3a7}{vitterA} (const double \&n, const double \&N)
+\begin{DoxyCompactList}\small\item\em Sample from Vitter\textquotesingle{}s distribution, method A. \end{DoxyCompactList}\item 
+volatile uint64\+\_\+t \hyperlink{classvarfiles_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701}{vitter} (const double \&n, const double \&N)
+\begin{DoxyCompactList}\small\item\em Sample from Vitter\textquotesingle{}s distribution, method D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Random number generating class. 
+
+Generates (pseudo-\/)random deviates from a number of distributions. If hardware random numbers are supported, uses them. Otherwise, falls back to 64-\/bit M\+T19937 (\char`\"{}\+Mersenne Twister\char`\"{}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6}\label{classvarfiles_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!Ran\+Draw@{Ran\+Draw}}
+\index{Ran\+Draw@{Ran\+Draw}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{Ran\+Draw()}{RanDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Ran\+Draw\+::\+Ran\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Checks if the processor provides hardware random number support. Seeds the Mersenne Twister if not. Throws \char`\"{}\+C\+P\+U\+\_\+unsupported\char`\"{} string object if the C\+PU is not A\+MD or Intel. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classvarfiles_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a93397b17c6615fe3166a065a1667401f}\label{classvarfiles_1_1_ran_draw_a93397b17c6615fe3166a065a1667401f}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!Ran\+Draw@{Ran\+Draw}}
+\index{Ran\+Draw@{Ran\+Draw}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{Ran\+Draw()}{RanDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily varfiles\+::\+Ran\+Draw\+::\+Ran\+Draw (\begin{DoxyParamCaption}\item[{const \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & pbject to be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a1e4bf61c54ea31ff650707939a0d8fa3}\label{classvarfiles_1_1_ran_draw_a1e4bf61c54ea31ff650707939a0d8fa3}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!Ran\+Draw@{Ran\+Draw}}
+\index{Ran\+Draw@{Ran\+Draw}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{Ran\+Draw()}{RanDraw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily varfiles\+::\+Ran\+Draw\+::\+Ran\+Draw (\begin{DoxyParamCaption}\item[{\hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & pbject to be moved \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_ac4576939ba8d09ad19b57ceb148864fa}\label{classvarfiles_1_1_ran_draw_ac4576939ba8d09ad19b57ceb148864fa}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!operator=@{operator=}}
+\index{operator=@{operator=}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw}\& varfiles\+::\+Ran\+Draw\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & pbject to be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a167eaea1db130c17f343a57e240ce91c}\label{classvarfiles_1_1_ran_draw_a167eaea1db130c17f343a57e240ce91c}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!operator=@{operator=}}
+\index{operator=@{operator=}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw}\& varfiles\+::\+Ran\+Draw\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classvarfiles_1_1_ran_draw}{Ran\+Draw} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & pbject to be moved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a8a6157061c5851d9ac79fbf479b19535}\label{classvarfiles_1_1_ran_draw_a8a6157061c5851d9ac79fbf479b19535}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!ran\+Int@{ran\+Int}}
+\index{ran\+Int@{ran\+Int}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{ran\+Int()}{ranInt()}}
+{\footnotesize\ttfamily volatile uint64\+\_\+t varfiles\+::\+Ran\+Draw\+::ran\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{classvarfiles_1_1_generate}{Generate} random integer. 
+
+\begin{DoxyReturn}{Returns}
+An unsigned random 64-\/bit integer 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classvarfiles_1_1_ran_draw_a8a6157061c5851d9ac79fbf479b19535_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a63126916400b75f8dead409118ee289c}\label{classvarfiles_1_1_ran_draw_a63126916400b75f8dead409118ee289c}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!runif@{runif}}
+\index{runif@{runif}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{runif()}{runif()}}
+{\footnotesize\ttfamily volatile double varfiles\+::\+Ran\+Draw\+::runif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{classvarfiles_1_1_generate}{Generate} a uniform deviate. 
+
+\begin{DoxyReturn}{Returns}
+A double-\/precision value from the $ U[0,1]$ distribution 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classvarfiles_1_1_ran_draw_a63126916400b75f8dead409118ee289c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a5688bd202e487435398b1c1cb6f9ce30}\label{classvarfiles_1_1_ran_draw_a5688bd202e487435398b1c1cb6f9ce30}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!runifnz@{runifnz}}
+\index{runifnz@{runifnz}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{runifnz()}{runifnz()}}
+{\footnotesize\ttfamily volatile double Ran\+Draw\+::runifnz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classvarfiles_1_1_generate}{Generate} a non-\/zero uniform deviate. 
+
+\begin{DoxyReturn}{Returns}
+A double-\/precision value from the $ U(0,1]$ distribution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701}\label{classvarfiles_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!vitter@{vitter}}
+\index{vitter@{vitter}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{vitter()}{vitter()}}
+{\footnotesize\ttfamily volatile uint64\+\_\+t Ran\+Draw\+::vitter (\begin{DoxyParamCaption}\item[{const double \&}]{n,  }\item[{const double \&}]{N }\end{DoxyParamCaption})}
+
+
+
+Sample from Vitter\textquotesingle{}s distribution, method D. 
+
+Given the number of remaining records in a file $N$ and the number of records $n$ remaining to be selected, sample the number of records to skip over. This function implements Vitter\textquotesingle{}s \cite{vitter84a} \cite{vitter87a} method D. It is useful for online one-\/pass sampling of records from a file. While the inputs are integer, we pass them in as {\itshape double} because that is more efficient for calculations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & number of records remaining to be picked \\
+\hline
+\mbox{\tt in}  & {\em N} & number of remaining records in the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of records to skip 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classvarfiles_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvarfiles_1_1_ran_draw_a6319a7eac88ba9b4b54f67649121e3a7}\label{classvarfiles_1_1_ran_draw_a6319a7eac88ba9b4b54f67649121e3a7}} 
+\index{varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}!vitterA@{vitterA}}
+\index{vitterA@{vitterA}!varfiles\+::\+Ran\+Draw@{varfiles\+::\+Ran\+Draw}}
+\subsubsection{\texorpdfstring{vitter\+A()}{vitterA()}}
+{\footnotesize\ttfamily volatile uint64\+\_\+t Ran\+Draw\+::vitterA (\begin{DoxyParamCaption}\item[{const double \&}]{n,  }\item[{const double \&}]{N }\end{DoxyParamCaption})}
+
+
+
+Sample from Vitter\textquotesingle{}s distribution, method A. 
+
+Given the number of remaining records in a file $N$ and the number of records $n$ remaining to be selected, sample the number of records to skip over. This function implements Vitter\textquotesingle{}s \cite{vitter84a} \cite{vitter87a} method A. It is useful for online one-\/pass sampling of records from a file. While the inputs are integer, we pass them in as {\itshape double} because that is more efficient for calculations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & number of records remaining to be picked \\
+\hline
+\mbox{\tt in}  & {\em N} & number of remaining records in the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of records to skip 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{random_8hpp}{random.\+hpp}\item 
+\hyperlink{random_8cpp}{random.\+cpp}\end{DoxyCompactItemize}

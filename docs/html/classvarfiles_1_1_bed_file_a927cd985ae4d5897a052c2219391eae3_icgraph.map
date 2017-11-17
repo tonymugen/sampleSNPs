@@ -1,0 +1,6 @@
+<map id="varfiles::BedFile::_numLines" name="varfiles::BedFile::_numLines">
+<area shape="rect" id="node2" href="$classvarfiles_1_1_tped_file_i.html#afa47ef808ac99f8800d19f2ea0056d2e" title="Sample SNPs and save to BED file. " alt="" coords="177,5,303,44"/>
+<area shape="rect" id="node3" href="$classvarfiles_1_1_tped_file_i.html#a1c43c823c70144dce61a3b67dd31e237" title="Number of SNPs in the object. " alt="" coords="177,68,303,107"/>
+<area shape="rect" id="node4" href="$classvarfiles_1_1_vcf_file_i.html#a1f8fcdba2d343654b3c9492a3dd80e93" title="Sample SNPs and save to VCF file. " alt="" coords="182,131,298,169"/>
+<area shape="rect" id="node5" href="$classvarfiles_1_1_hmp_file_i.html#afd02563de7ecb89a94e8af4110676710" title="Sample SNPs and save to VCF file. " alt="" coords="178,193,302,232"/>
+</map>

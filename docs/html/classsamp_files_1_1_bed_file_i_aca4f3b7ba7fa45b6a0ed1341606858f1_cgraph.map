@@ -1,0 +1,5 @@
+<map id="sampFiles::BedFileI::sampleLD" name="sampFiles::BedFileI::sampleLD">
+<area shape="rect" id="node2" href="$classsamp_files_1_1_pop_index.html#a1de6bf81252ebc9d7d2521f62487b042" title="Total sample size. " alt="" coords="192,5,338,44"/>
+<area shape="rect" id="node3" href="$classsamp_files_1_1_pop_index.html#ae478775b725c4cbae2be5b136c6e6856" title="Number of populations. " alt="" coords="192,68,338,107"/>
+<area shape="rect" id="node4" href="$classsamp_files_1_1_ran_draw.html#a2dcd2540f148c4fa271156a46640f701" title="Sample from Vitter&#39;s distribution, method D. " alt="" coords="192,131,337,169"/>
+</map>

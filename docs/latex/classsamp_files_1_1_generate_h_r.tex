@@ -1,0 +1,152 @@
+\hypertarget{classsamp_files_1_1_generate_h_r}{}\section{samp\+Files\+:\+:Generate\+HR Class Reference}
+\label{classsamp_files_1_1_generate_h_r}\index{samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}}
+
+
+Hardware random number generating class.  
+
+
+
+
+{\ttfamily \#include $<$random.\+hpp$>$}
+
+
+
+Inheritance diagram for samp\+Files\+:\+:Generate\+HR\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classsamp_files_1_1_generate_h_r__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for samp\+Files\+:\+:Generate\+HR\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classsamp_files_1_1_generate_h_r__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_a2b8e7405afb964ecfbb9c005b8afbf5f}\label{classsamp_files_1_1_generate_h_r_a2b8e7405afb964ecfbb9c005b8afbf5f}} 
+\hyperlink{classsamp_files_1_1_generate_h_r_a2b8e7405afb964ecfbb9c005b8afbf5f}{Generate\+HR} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_ad275775b4118f5147d200aed1d5cc48f}\label{classsamp_files_1_1_generate_h_r_ad275775b4118f5147d200aed1d5cc48f}} 
+\hyperlink{classsamp_files_1_1_generate_h_r_ad275775b4118f5147d200aed1d5cc48f}{$\sim$\+Generate\+HR} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate_h_r_aae078758c8b83665628601feb63d956a}{Generate\+HR} (const \hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&old)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae}{Generate\+HR} (\hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&\&old)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \& \hyperlink{classsamp_files_1_1_generate_h_r_a53cdc064c4d6ba7f1189948376f8b071}{operator=} (const \hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&old)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \& \hyperlink{classsamp_files_1_1_generate_h_r_aa415dd128cd0de2e567e86cb375bc919}{operator=} (\hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&\&old)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+volatile uint64\+\_\+t \hyperlink{classsamp_files_1_1_generate_h_r_ac0c560c9ea17bc67470124040e0bd796}{ran\+Int} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classsamp_files_1_1_generate}{Generate} a random 64-\/bit unsigned integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Hardware random number generating class. 
+
+Generates random deviates from a number of distributions, using hardware random numbers ({\itshape R\+D\+R\+A\+ND} processor instruction). Health of the R\+D\+R\+A\+ND generator is tested every time a new number is required. Throws a {\ttfamily string} object \char`\"{}\+R\+D\+R\+A\+N\+D\+\_\+failed\char`\"{} if the test fails. The implementation of random 64-\/bit integer generation follows \href{https://software.intel.com/en-us/articles/intel-digital-random-number-generator-drng-software-implementation-guide}{\tt Intel\textquotesingle{}s suggestions}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_aae078758c8b83665628601feb63d956a}\label{classsamp_files_1_1_generate_h_r_aae078758c8b83665628601feb63d956a}} 
+\index{samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}!Generate\+HR@{Generate\+HR}}
+\index{Generate\+HR@{Generate\+HR}!samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}}
+\subsubsection{\texorpdfstring{Generate\+H\+R()}{GenerateHR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily samp\+Files\+::\+Generate\+H\+R\+::\+Generate\+HR (\begin{DoxyParamCaption}\item[{const \hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae}\label{classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae}} 
+\index{samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}!Generate\+HR@{Generate\+HR}}
+\index{Generate\+HR@{Generate\+HR}!samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}}
+\subsubsection{\texorpdfstring{Generate\+H\+R()}{GenerateHR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily samp\+Files\+::\+Generate\+H\+R\+::\+Generate\+HR (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to move \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_a53cdc064c4d6ba7f1189948376f8b071}\label{classsamp_files_1_1_generate_h_r_a53cdc064c4d6ba7f1189948376f8b071}} 
+\index{samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}!operator=@{operator=}}
+\index{operator=@{operator=}!samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR}\& samp\+Files\+::\+Generate\+H\+R\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_aa415dd128cd0de2e567e86cb375bc919}\label{classsamp_files_1_1_generate_h_r_aa415dd128cd0de2e567e86cb375bc919}} 
+\index{samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}!operator=@{operator=}}
+\index{operator=@{operator=}!samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR}\& samp\+Files\+::\+Generate\+H\+R\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_generate_h_r}{Generate\+HR} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to move \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_h_r_ac0c560c9ea17bc67470124040e0bd796}\label{classsamp_files_1_1_generate_h_r_ac0c560c9ea17bc67470124040e0bd796}} 
+\index{samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}!ran\+Int@{ran\+Int}}
+\index{ran\+Int@{ran\+Int}!samp\+Files\+::\+Generate\+HR@{samp\+Files\+::\+Generate\+HR}}
+\subsubsection{\texorpdfstring{ran\+Int()}{ranInt()}}
+{\footnotesize\ttfamily volatile uint64\+\_\+t Generate\+H\+R\+::ran\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{classsamp_files_1_1_generate}{Generate} a random 64-\/bit unsigned integer. 
+
+Monitors the health of the C\+PU random number generator and throws a {\ttfamily string} object \char`\"{}\+R\+D\+R\+A\+N\+D\+\_\+failed\char`\"{} if a failure is detected after ten tries.
+
+\begin{DoxyReturn}{Returns}
+digital random 64-\/bit unsigned integer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e}{samp\+Files\+::\+Generate}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{random_8hpp}{random.\+hpp}\item 
+\hyperlink{random_8cpp}{random.\+cpp}\end{DoxyCompactItemize}

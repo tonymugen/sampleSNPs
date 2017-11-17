@@ -1,0 +1,6 @@
+<map id="sampFiles::HmpFile" name="sampFiles::HmpFile">
+<area shape="rect" id="node4" href="$classsamp_files_1_1_hmp_file_i.html" title="HMP file input class. " alt="" coords="5,225,148,251"/>
+<area shape="rect" id="node5" href="$classsamp_files_1_1_hmp_file_o.html" title="HMP file output class. " alt="" coords="173,225,322,251"/>
+<area shape="rect" id="node2" href="$classsamp_files_1_1_gtxt_file.html" title="Generic text file base class. " alt="" coords="94,79,230,104"/>
+<area shape="rect" id="node3" href="$classsamp_files_1_1_var_file.html" title="Base variant file class. " alt="" coords="97,5,227,31"/>
+</map>

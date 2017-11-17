@@ -1,0 +1,156 @@
+\hypertarget{classsamp_files_1_1_generate}{}\section{samp\+Files\+:\+:Generate Class Reference}
+\label{classsamp_files_1_1_generate}\index{samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}}
+
+
+Abstract base random number class.  
+
+
+
+
+{\ttfamily \#include $<$random.\+hpp$>$}
+
+
+
+Inheritance diagram for samp\+Files\+:\+:Generate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classsamp_files_1_1_generate__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_generate_af3b922c99cbfafe9d27a0ceafb87243c}\label{classsamp_files_1_1_generate_af3b922c99cbfafe9d27a0ceafb87243c}} 
+virtual \hyperlink{classsamp_files_1_1_generate_af3b922c99cbfafe9d27a0ceafb87243c}{$\sim$\+Generate} ()
+\begin{DoxyCompactList}\small\item\em Protected destructor. \end{DoxyCompactList}\item 
+virtual volatile uint64\+\_\+t \hyperlink{classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e}{ran\+Int} ()=0
+\begin{DoxyCompactList}\small\item\em \hyperlink{classsamp_files_1_1_generate}{Generate} a (pseudo-\/)random 64-\/bit unsigned integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsamp_files_1_1_generate_a3096583c518c65c4e7cf1c76165fef99}\label{classsamp_files_1_1_generate_a3096583c518c65c4e7cf1c76165fef99}} 
+\hyperlink{classsamp_files_1_1_generate_a3096583c518c65c4e7cf1c76165fef99}{Generate} ()
+\begin{DoxyCompactList}\small\item\em Protected default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate_a3b9ea63228daca88614be36e796ffea1}{Generate} (const \hyperlink{classsamp_files_1_1_generate}{Generate} \&old)
+\begin{DoxyCompactList}\small\item\em Protected copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea}{Generate} (\hyperlink{classsamp_files_1_1_generate}{Generate} \&\&old)
+\begin{DoxyCompactList}\small\item\em Protected move constructor. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate}{Generate} \& \hyperlink{classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66}{operator=} (const \hyperlink{classsamp_files_1_1_generate}{Generate} \&old)=default
+\begin{DoxyCompactList}\small\item\em Protected copy assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classsamp_files_1_1_generate}{Generate} \& \hyperlink{classsamp_files_1_1_generate_a7b7e395a2d6fe5235fe72f7bbc50e2a6}{operator=} (\hyperlink{classsamp_files_1_1_generate}{Generate} \&\&old)=default
+\begin{DoxyCompactList}\small\item\em Protected move assignment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base random number class. 
+
+Provides the interface for random or pseudorandom (depending on derived class) generation. For internal use by the {\ttfamily \hyperlink{classsamp_files_1_1_ran_draw}{Ran\+Draw}} interface class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_a3b9ea63228daca88614be36e796ffea1}\label{classsamp_files_1_1_generate_a3b9ea63228daca88614be36e796ffea1}} 
+\index{samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}!Generate@{Generate}}
+\index{Generate@{Generate}!samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}}
+\subsubsection{\texorpdfstring{Generate()}{Generate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily samp\+Files\+::\+Generate\+::\+Generate (\begin{DoxyParamCaption}\item[{const \hyperlink{classsamp_files_1_1_generate}{Generate} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Protected copy constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea}\label{classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea}} 
+\index{samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}!Generate@{Generate}}
+\index{Generate@{Generate}!samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}}
+\subsubsection{\texorpdfstring{Generate()}{Generate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily samp\+Files\+::\+Generate\+::\+Generate (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_generate}{Generate} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Protected move constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to move \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66}\label{classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66}} 
+\index{samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}!operator=@{operator=}}
+\index{operator=@{operator=}!samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classsamp_files_1_1_generate}{Generate}\& samp\+Files\+::\+Generate\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classsamp_files_1_1_generate}{Generate} \&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Protected copy assignment operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to copy \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_a7b7e395a2d6fe5235fe72f7bbc50e2a6}\label{classsamp_files_1_1_generate_a7b7e395a2d6fe5235fe72f7bbc50e2a6}} 
+\index{samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}!operator=@{operator=}}
+\index{operator=@{operator=}!samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classsamp_files_1_1_generate}{Generate}\& samp\+Files\+::\+Generate\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classsamp_files_1_1_generate}{Generate} \&\&}]{old }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Protected move assignment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old} & object to move \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e}\label{classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e}} 
+\index{samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}!ran\+Int@{ran\+Int}}
+\index{ran\+Int@{ran\+Int}!samp\+Files\+::\+Generate@{samp\+Files\+::\+Generate}}
+\subsubsection{\texorpdfstring{ran\+Int()}{ranInt()}}
+{\footnotesize\ttfamily virtual volatile uint64\+\_\+t samp\+Files\+::\+Generate\+::ran\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\hyperlink{classsamp_files_1_1_generate}{Generate} a (pseudo-\/)random 64-\/bit unsigned integer. 
+
+\begin{DoxyReturn}{Returns}
+random or pseudo-\/random 64-\/bit unsigned integer 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classsamp_files_1_1_generate_m_t_a500e163265b6fdae0a30fdacc1c37f80}{samp\+Files\+::\+Generate\+MT}, and \hyperlink{classsamp_files_1_1_generate_h_r_ac0c560c9ea17bc67470124040e0bd796}{samp\+Files\+::\+Generate\+HR}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{random_8hpp}{random.\+hpp}\end{DoxyCompactItemize}
