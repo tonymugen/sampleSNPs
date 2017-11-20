@@ -30,5 +30,9 @@ Running _sampleSNPs_ and _sampleLD_ without flags will cause these programs to p
 
 # Timing
 
-Expanding the _timingTrials.tar.gz_ archive will generate a directory with separate software, depending only on random.cpp and .hpp, that performs analyses of execution time using Vitter's Method D and Method S. There is a README.md file that explains how to compile and run these analyses.
+Expanding the _timingTrials.tar.gz_ archive will generate a directory with separate software, depending only on random.cpp and .hpp, that performs analyses of execution time using Vitter's Method D and Method S. The README.md file included there explains how to compile and run these analyses.
+
+# Citing this work
+
+The paper describing this work is available, and can be referenced, from [bioRxiv](https://www.biorxiv.org/content/early/2017/11/17/220871) and [arXiv](https://arxiv.org/abs/1711.06325).
 
