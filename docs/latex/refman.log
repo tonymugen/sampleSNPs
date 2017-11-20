@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.8)  16 NOV 2017 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.8)  20 NOV 2017 12:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1271,7 +1271,7 @@ Chapter 5.
 (./classsamp_files_1_1_bed_file.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
-<classsamp_files_1_1_bed_file__inherit__graph.pdf, id=1187, pagebox=cropbox, 31
+<classsamp_files_1_1_bed_file__inherit__graph.pdf, id=1190, pagebox=cropbox, 31
 1.1625pt x 264.99pt>
 File: classsamp_files_1_1_bed_file__inherit__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file__inherit__graph.pdf>
@@ -1279,7 +1279,7 @@ Package pdftex.def Info: classsamp_files_1_1_bed_file__inherit__graph.pdf  used
  on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 310.0pt x 264.00275pt on input line 18
 .
-<classsamp_files_1_1_bed_file__coll__graph.pdf, id=1188, pagebox=cropbox, 534.9
+<classsamp_files_1_1_bed_file__coll__graph.pdf, id=1191, pagebox=cropbox, 534.9
 9875pt x 315.1775pt>
 File: classsamp_files_1_1_bed_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file__coll__graph.pdf>
@@ -1318,7 +1318,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 91.
  [11])
 (./classsamp_files_1_1_bed_file_i.tex
-<classsamp_files_1_1_bed_file_i__inherit__graph.pdf, id=1274, pagebox=cropbox, 
+<classsamp_files_1_1_bed_file_i__inherit__graph.pdf, id=1277, pagebox=cropbox, 
 184.69pt x 264.99pt>
 File: classsamp_files_1_1_bed_file_i__inherit__graph.pdf Graphic file (type pdf
 )
@@ -1327,7 +1327,7 @@ Package pdftex.def Info: classsamp_files_1_1_bed_file_i__inherit__graph.pdf  us
 ed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 184.0pt x 264.00275pt on input line 18
 .
-<classsamp_files_1_1_bed_file_i__coll__graph.pdf, id=1275, pagebox=cropbox, 534
+<classsamp_files_1_1_bed_file_i__coll__graph.pdf, id=1278, pagebox=cropbox, 534
 .99875pt x 371.3875pt>
 File: classsamp_files_1_1_bed_file_i__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_i__coll__graph.pdf>
@@ -1340,7 +1340,7 @@ iles_1_1_bed_file_i__coll__graph.pdf>]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 72.
 <classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8_cgraph.pdf, i
-d=1351, pagebox=cropbox, 319.1925pt x 109.40875pt>
+d=1354, pagebox=cropbox, 319.1925pt x 109.40875pt>
 File: classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_i_abb33c9b143ab40ee37b56a62e7e999f8_cgraph.pd
@@ -1373,7 +1373,7 @@ Underfull \hbox (badness 10000) detected at line 147
 
 [16]
 <classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1_cgraph.pdf, i
-d=1394, pagebox=cropbox, 349.305pt x 109.40875pt>
+d=1397, pagebox=cropbox, 349.305pt x 109.40875pt>
 File: classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1_cgraph.pd
@@ -1390,7 +1390,7 @@ Underfull \hbox (badness 10000) detected at line 229
 [17 <./classsamp_files_1_1_bed_file_i_ac0ebb71cdebd43d1b024cfc747fd53d1_cgraph.
 pdf>]
 <classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3_cgraph.pdf, i
-d=1415, pagebox=cropbox, 322.20375pt x 109.40875pt>
+d=1418, pagebox=cropbox, 322.20375pt x 109.40875pt>
 File: classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3_cgraph.pd
@@ -1400,7 +1400,7 @@ Package pdftex.def Info: classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae0528
 Package pdftex.def Info: Requested size: 321.0pt x 109.00446pt on input line 25
 5.
 <classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694_cgraph.pdf, i
-d=1416, pagebox=cropbox, 330.23375pt x 109.40875pt>
+d=1419, pagebox=cropbox, 330.23375pt x 109.40875pt>
 File: classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694_cgraph.pd
@@ -1415,7 +1415,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [18 <./classsamp_files_1_1_bed_file_i_ac1050b3b8aec9108ae05285cbdfd85b3_cgraph
 .pdf>]
 <classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1_cgraph.pdf, i
-d=1439, pagebox=cropbox, 330.23375pt x 203.76125pt>
+d=1442, pagebox=cropbox, 330.23375pt x 203.76125pt>
 File: classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1_cgraph.pd
@@ -1430,7 +1430,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [19 <./classsamp_files_1_1_bed_file_i_ae502304386c409e9312a090a189ab694_cgraph
 .pdf>])
 (./classsamp_files_1_1_bed_file_o.tex
-<classsamp_files_1_1_bed_file_o__inherit__graph.pdf, id=1461, pagebox=cropbox, 
+<classsamp_files_1_1_bed_file_o__inherit__graph.pdf, id=1464, pagebox=cropbox, 
 189.70876pt x 264.99pt>
 File: classsamp_files_1_1_bed_file_o__inherit__graph.pdf Graphic file (type pdf
 )
@@ -1444,7 +1444,7 @@ Underfull \vbox (badness 6141) has occurred while \output is active []
 
  [20 <./classsamp_files_1_1_bed_file_i_aca4f3b7ba7fa45b6a0ed1341606858f1_cgraph
 .pdf>]
-<classsamp_files_1_1_bed_file_o__coll__graph.pdf, id=1480, pagebox=cropbox, 534
+<classsamp_files_1_1_bed_file_o__coll__graph.pdf, id=1483, pagebox=cropbox, 534
 .99875pt x 371.3875pt>
 File: classsamp_files_1_1_bed_file_o__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_o__coll__graph.pdf>
@@ -1456,7 +1456,7 @@ Package pdftex.def Info: Requested size: 350.0pt x 242.97441pt on input line 27
 [21 <./classsamp_files_1_1_bed_file_o__inherit__graph.pdf> <./classsamp_files_1
 _1_bed_file_o__coll__graph.pdf>]
 <classsamp_files_1_1_bed_file_o_a0abab96a74b4f8d92d85dbd147e7a9ae_cgraph.pdf, i
-d=1528, pagebox=cropbox, 324.21124pt x 109.40875pt>
+d=1531, pagebox=cropbox, 324.21124pt x 109.40875pt>
 File: classsamp_files_1_1_bed_file_o_a0abab96a74b4f8d92d85dbd147e7a9ae_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_bed_file_o_a0abab96a74b4f8d92d85dbd147e7a9ae_cgraph.pd
@@ -1470,7 +1470,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22])
 (./classsamp_files_1_1_gbin_file.tex
-<classsamp_files_1_1_gbin_file__inherit__graph.pdf, id=1546, pagebox=cropbox, 5
+<classsamp_files_1_1_gbin_file__inherit__graph.pdf, id=1549, pagebox=cropbox, 5
 01.875pt x 264.99pt>
 File: classsamp_files_1_1_gbin_file__inherit__graph.pdf Graphic file (type pdf)
 
@@ -1479,7 +1479,7 @@ Package pdftex.def Info: classsamp_files_1_1_gbin_file__inherit__graph.pdf  use
 d on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 350.0pt x 184.8084pt on input line 18.
 
-<classsamp_files_1_1_gbin_file__coll__graph.pdf, id=1547, pagebox=cropbox, 254.
+<classsamp_files_1_1_gbin_file__coll__graph.pdf, id=1550, pagebox=cropbox, 254.
 9525pt x 229.85875pt>
 File: classsamp_files_1_1_gbin_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file__coll__graph.pdf>
@@ -1491,7 +1491,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 229.00938pt on input line 27
 .pdf> <./classsamp_files_1_1_gbin_file__inherit__graph.pdf>] [24 <./classsamp_f
 iles_1_1_gbin_file__coll__graph.pdf>]
 <classsamp_files_1_1_gbin_file_ac88b766b15e644506fa4bca84a650f3b_cgraph.pdf, id
-=1628, pagebox=cropbox, 319.1925pt x 109.40875pt>
+=1631, pagebox=cropbox, 319.1925pt x 109.40875pt>
 File: classsamp_files_1_1_gbin_file_ac88b766b15e644506fa4bca84a650f3b_cgraph.pd
 f Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_ac88b766b15e644506fa4bca84a650f3b_cgraph.pdf
@@ -1503,7 +1503,7 @@ Package pdftex.def Info: Requested size: 318.0pt x 109.00111pt on input line 10
 )
 (./classsamp_files_1_1_gbin_file_i.tex [25 <./classsamp_files_1_1_gbin_file_ac8
 8b766b15e644506fa4bca84a650f3b_cgraph.pdf>]
-<classsamp_files_1_1_gbin_file_i__inherit__graph.pdf, id=1650, pagebox=cropbox,
+<classsamp_files_1_1_gbin_file_i__inherit__graph.pdf, id=1653, pagebox=cropbox,
  187.70125pt x 209.78375pt>
 File: classsamp_files_1_1_gbin_file_i__inherit__graph.pdf Graphic file (type pd
 f)
@@ -1512,7 +1512,7 @@ Package pdftex.def Info: classsamp_files_1_1_gbin_file_i__inherit__graph.pdf  u
 sed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 187.0pt x 209.01176pt on input line 18
 .
-<classsamp_files_1_1_gbin_file_i__coll__graph.pdf, id=1651, pagebox=cropbox, 25
+<classsamp_files_1_1_gbin_file_i__coll__graph.pdf, id=1654, pagebox=cropbox, 25
 4.9525pt x 286.06876pt>
 File: classsamp_files_1_1_gbin_file_i__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_i__coll__graph.pdf>
@@ -1524,7 +1524,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 285.0117pt on input line 27.
 _1_1_gbin_file_i__coll__graph.pdf>]
 [27]
 <classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a_cgraph.pdf, 
-id=1719, pagebox=cropbox, 322.20375pt x 109.40875pt>
+id=1722, pagebox=cropbox, 322.20375pt x 109.40875pt>
 File: classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_i_ac77637d71f66c575de57443d9220984a_cgraph.p
@@ -1539,7 +1539,7 @@ Underfull \hbox (badness 10000) detected at line 115
  []
 
 <classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0_icgraph.pdf,
- id=1720, pagebox=cropbox, 331.2375pt x 109.40875pt>
+ id=1723, pagebox=cropbox, 331.2375pt x 109.40875pt>
 File: classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0_icgraph
 .pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0_icgraph.
@@ -1552,7 +1552,7 @@ Package pdftex.def Info: Requested size: 330.0pt x 109.00446pt on input line 12
 .pdf> <./classsamp_files_1_1_gbin_file_i_a3d972257dc42d62b6c623abc591f75f0_icgr
 aph.pdf>]
 <classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e_cgraph.pdf, 
-id=1754, pagebox=cropbox, 331.2375pt x 109.40875pt>
+id=1757, pagebox=cropbox, 331.2375pt x 109.40875pt>
 File: classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e_cgraph.p
@@ -1562,7 +1562,7 @@ Package pdftex.def Info: classsamp_files_1_1_gbin_file_i_ac79d132333217db280395
 Package pdftex.def Info: Requested size: 330.0pt x 109.00446pt on input line 14
 8.
 ) (./classsamp_files_1_1_gbin_file_o.tex
-<classsamp_files_1_1_gbin_file_o__inherit__graph.pdf, id=1757, pagebox=cropbox,
+<classsamp_files_1_1_gbin_file_o__inherit__graph.pdf, id=1760, pagebox=cropbox,
  192.72pt x 209.78375pt>
 File: classsamp_files_1_1_gbin_file_o__inherit__graph.pdf Graphic file (type pd
 f)
@@ -1573,7 +1573,7 @@ Package pdftex.def Info: Requested size: 192.0pt x 208.99896pt on input line 18
 .
  [29 <./classsamp_files_1_1_gbin_file_i_ac79d132333217db28039510da20ce54e_cgrap
 h.pdf>]
-<classsamp_files_1_1_gbin_file_o__coll__graph.pdf, id=1776, pagebox=cropbox, 25
+<classsamp_files_1_1_gbin_file_o__coll__graph.pdf, id=1779, pagebox=cropbox, 25
 4.9525pt x 286.06876pt>
 File: classsamp_files_1_1_gbin_file_o__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_o__coll__graph.pdf>
@@ -1588,7 +1588,7 @@ Overfull \vbox (34.16048pt too high) has occurred while \output is active []
 
 [31]
 <classsamp_files_1_1_gbin_file_o_a3e3315ac7b1fe5e3a8f78f06e551e855_cgraph.pdf, 
-id=1839, pagebox=cropbox, 327.2225pt x 109.40875pt>
+id=1842, pagebox=cropbox, 327.2225pt x 109.40875pt>
 File: classsamp_files_1_1_gbin_file_o_a3e3315ac7b1fe5e3a8f78f06e551e855_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gbin_file_o_a3e3315ac7b1fe5e3a8f78f06e551e855_cgraph.p
@@ -1598,7 +1598,7 @@ f06e551e855_cgraph.pdf  used on input line 94. on input line 94.
 Package pdftex.def Info: Requested size: 326.0pt x 108.99944pt on input line 94
 .
 ) (./classsamp_files_1_1_generate.tex
-<classsamp_files_1_1_generate__inherit__graph.pdf, id=1842, pagebox=cropbox, 34
+<classsamp_files_1_1_generate__inherit__graph.pdf, id=1845, pagebox=cropbox, 34
 5.29pt x 154.5775pt>
 File: classsamp_files_1_1_generate__inherit__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_generate__inherit__graph.pdf>
@@ -1609,7 +1609,7 @@ Package pdftex.def Info: Requested size: 344.0pt x 154.00159pt on input line 18
  [32 <./classsamp_files_1_1_gbin_file_o_a3e3315ac7b1fe5e3a8f78f06e551e855_cgrap
 h.pdf> <./classsamp_files_1_1_generate__inherit__graph.pdf>] [33]
 <classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea_cgraph.pdf, id=
-1905, pagebox=cropbox, 335.2525pt x 109.40875pt>
+1908, pagebox=cropbox, 335.2525pt x 109.40875pt>
 File: classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea_cgraph.pdf
  Graphic file (type pdf)
 <use classsamp_files_1_1_generate_a12165e2b614b013d5eba3a893d298cea_cgraph.pdf>
@@ -1619,7 +1619,7 @@ Package pdftex.def Info: classsamp_files_1_1_generate_a12165e2b614b013d5eba3a89
 Package pdftex.def Info: Requested size: 334.0pt x 108.99944pt on input line 85
 .
 <classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66_icgraph.pdf, id
-=1908, pagebox=cropbox, 349.305pt x 250.9375pt>
+=1911, pagebox=cropbox, 349.305pt x 250.9375pt>
 File: classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66_icgraph.pd
 f Graphic file (type pdf)
 <use classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66_icgraph.pdf
@@ -1638,7 +1638,7 @@ Underfull \hbox (badness 10000) detected at line 138
  []
 
 <classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e_icgraph.pdf, id
-=1934, pagebox=cropbox, 349.305pt x 298.11375pt>
+=1937, pagebox=cropbox, 349.305pt x 298.11375pt>
 File: classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e_icgraph.pd
 f Graphic file (type pdf)
 <use classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e_icgraph.pdf
@@ -1649,7 +1649,7 @@ Package pdftex.def Info: Requested size: 348.0pt x 297.01674pt on input line 14
 9.
 [35 <./classsamp_files_1_1_generate_ab54ff8f5a2c497ce98a31833e2d43d66_icgraph.p
 df>]) (./classsamp_files_1_1_generate_h_r.tex
-<classsamp_files_1_1_generate_h_r__inherit__graph.pdf, id=1954, pagebox=cropbox
+<classsamp_files_1_1_generate_h_r__inherit__graph.pdf, id=1957, pagebox=cropbox
 , 203.76125pt x 154.5775pt>
 File: classsamp_files_1_1_generate_h_r__inherit__graph.pdf Graphic file (type p
 df)
@@ -1660,7 +1660,7 @@ Package pdftex.def Info: Requested size: 203.0pt x 154.0063pt on input line 18.
 
  [36 <./classsamp_files_1_1_generate_a86fe4e68cc0809d4d936615fc60c125e_icgraph.
 pdf>]
-<classsamp_files_1_1_generate_h_r__coll__graph.pdf, id=1974, pagebox=cropbox, 2
+<classsamp_files_1_1_generate_h_r__coll__graph.pdf, id=1977, pagebox=cropbox, 2
 03.76125pt x 154.5775pt>
 File: classsamp_files_1_1_generate_h_r__coll__graph.pdf Graphic file (type pdf)
 
@@ -1676,7 +1676,7 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 55.
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 <classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae_cgraph.pdf,
- id=2029, pagebox=cropbox, 349.305pt x 156.585pt>
+ id=2032, pagebox=cropbox, 349.305pt x 156.585pt>
 File: classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae_cgraph
 .pdf Graphic file (type pdf)
 <use classsamp_files_1_1_generate_h_r_adcda1d80769593770720f503e2be87ae_cgraph.
@@ -1696,7 +1696,7 @@ Underfull \hbox (badness 10000) detected at line 140
  []
 
 ) (./classsamp_files_1_1_generate_m_t.tex
-<classsamp_files_1_1_generate_m_t__inherit__graph.pdf, id=2067, pagebox=cropbox
+<classsamp_files_1_1_generate_m_t__inherit__graph.pdf, id=2070, pagebox=cropbox
 , 203.76125pt x 154.5775pt>
 File: classsamp_files_1_1_generate_m_t__inherit__graph.pdf Graphic file (type p
 df)
@@ -1705,7 +1705,7 @@ Package pdftex.def Info: classsamp_files_1_1_generate_m_t__inherit__graph.pdf
 used on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 203.0pt x 154.0063pt on input line 18.
 
-<classsamp_files_1_1_generate_m_t__coll__graph.pdf, id=2068, pagebox=cropbox, 2
+<classsamp_files_1_1_generate_m_t__coll__graph.pdf, id=2071, pagebox=cropbox, 2
 03.76125pt x 154.5775pt>
 File: classsamp_files_1_1_generate_m_t__coll__graph.pdf Graphic file (type pdf)
 
@@ -1721,7 +1721,7 @@ Underfull \hbox (badness 10000) detected at line 191
  []
 
 ) (./classsamp_files_1_1_gtxt_file.tex
-<classsamp_files_1_1_gtxt_file__inherit__graph.pdf, id=2182, pagebox=cropbox, 6
+<classsamp_files_1_1_gtxt_file__inherit__graph.pdf, id=2185, pagebox=cropbox, 6
 13.29124pt x 322.20375pt>
 File: classsamp_files_1_1_gtxt_file__inherit__graph.pdf Graphic file (type pdf)
 
@@ -1730,7 +1730,7 @@ Package pdftex.def Info: classsamp_files_1_1_gtxt_file__inherit__graph.pdf  use
 d on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 350.0pt x 183.87927pt on input line 18
 .
-<classsamp_files_1_1_gtxt_file__coll__graph.pdf, id=2183, pagebox=cropbox, 254.
+<classsamp_files_1_1_gtxt_file__coll__graph.pdf, id=2186, pagebox=cropbox, 254.
 9525pt x 229.85875pt>
 File: classsamp_files_1_1_gtxt_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file__coll__graph.pdf>
@@ -1745,7 +1745,7 @@ Overfull \vbox (7.11913pt too high) has occurred while \output is active []
 
 [46]
 <classsamp_files_1_1_gtxt_file_a401ff9bae54850c2bcd54722f80aa479_cgraph.pdf, id
-=2260, pagebox=cropbox, 317.185pt x 109.40875pt>
+=2263, pagebox=cropbox, 317.185pt x 109.40875pt>
 File: classsamp_files_1_1_gtxt_file_a401ff9bae54850c2bcd54722f80aa479_cgraph.pd
 f Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file_a401ff9bae54850c2bcd54722f80aa479_cgraph.pdf
@@ -1755,7 +1755,7 @@ Package pdftex.def Info: classsamp_files_1_1_gtxt_file_a401ff9bae54850c2bcd5472
 Package pdftex.def Info: Requested size: 316.0pt x 109.00946pt on input line 11
 5.
 ) (./classsamp_files_1_1_gtxt_file_i.tex
-<classsamp_files_1_1_gtxt_file_i__inherit__graph.pdf, id=2263, pagebox=cropbox,
+<classsamp_files_1_1_gtxt_file_i__inherit__graph.pdf, id=2266, pagebox=cropbox,
  184.69pt x 209.78375pt>
 File: classsamp_files_1_1_gtxt_file_i__inherit__graph.pdf Graphic file (type pd
 f)
@@ -1764,7 +1764,7 @@ Package pdftex.def Info: classsamp_files_1_1_gtxt_file_i__inherit__graph.pdf  u
 sed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 184.0pt x 209.00215pt on input line 18
 .
-<classsamp_files_1_1_gtxt_file_i__coll__graph.pdf, id=2264, pagebox=cropbox, 25
+<classsamp_files_1_1_gtxt_file_i__coll__graph.pdf, id=2267, pagebox=cropbox, 25
 4.9525pt x 286.06876pt>
 File: classsamp_files_1_1_gtxt_file_i__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file_i__coll__graph.pdf>
@@ -1776,7 +1776,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 285.0117pt on input line 27.
 pdf> <./classsamp_files_1_1_gtxt_file_i__inherit__graph.pdf>] [48 <./classsamp_
 files_1_1_gtxt_file_i__coll__graph.pdf>] [49]
 <classsamp_files_1_1_gtxt_file_i_a78dbd140e9f2e49d98c15c6360b0e88f_cgraph.pdf, 
-id=2353, pagebox=cropbox, 319.1925pt x 109.40875pt>
+id=2356, pagebox=cropbox, 319.1925pt x 109.40875pt>
 File: classsamp_files_1_1_gtxt_file_i_a78dbd140e9f2e49d98c15c6360b0e88f_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file_i_a78dbd140e9f2e49d98c15c6360b0e88f_cgraph.p
@@ -1793,7 +1793,7 @@ Underfull \hbox (badness 10000) detected at line 132
 [50 <./classsamp_files_1_1_gtxt_file_i_a78dbd140e9f2e49d98c15c6360b0e88f_cgraph
 .pdf>]
 <classsamp_files_1_1_gtxt_file_i_afcdc7d04dfb617103080bc1db2822c84_cgraph.pdf, 
-id=2375, pagebox=cropbox, 330.23375pt x 109.40875pt>
+id=2378, pagebox=cropbox, 330.23375pt x 109.40875pt>
 File: classsamp_files_1_1_gtxt_file_i_afcdc7d04dfb617103080bc1db2822c84_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file_i_afcdc7d04dfb617103080bc1db2822c84_cgraph.p
@@ -1804,7 +1804,7 @@ Package pdftex.def Info: Requested size: 329.0pt x 109.00446pt on input line 18
 3.
 ) (./classsamp_files_1_1_gtxt_file_o.tex [51 <./classsamp_files_1_1_gtxt_file_i
 _afcdc7d04dfb617103080bc1db2822c84_cgraph.pdf>]
-<classsamp_files_1_1_gtxt_file_o__inherit__graph.pdf, id=2398, pagebox=cropbox,
+<classsamp_files_1_1_gtxt_file_o__inherit__graph.pdf, id=2401, pagebox=cropbox,
  189.70876pt x 209.78375pt>
 File: classsamp_files_1_1_gtxt_file_o__inherit__graph.pdf Graphic file (type pd
 f)
@@ -1813,7 +1813,7 @@ Package pdftex.def Info: classsamp_files_1_1_gtxt_file_o__inherit__graph.pdf  u
 sed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 189.0pt x 209.00536pt on input line 18
 .
-<classsamp_files_1_1_gtxt_file_o__coll__graph.pdf, id=2399, pagebox=cropbox, 25
+<classsamp_files_1_1_gtxt_file_o__coll__graph.pdf, id=2402, pagebox=cropbox, 25
 4.9525pt x 286.06876pt>
 File: classsamp_files_1_1_gtxt_file_o__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file_o__coll__graph.pdf>
@@ -1824,7 +1824,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 285.0117pt on input line 27.
  [52 <./classsamp_files_1_1_gtxt_file_o__inherit__graph.pdf> <./classsamp_files
 _1_1_gtxt_file_o__coll__graph.pdf>] [53]
 <classsamp_files_1_1_gtxt_file_o_a84944d8c2b0e6c6eeb877b53e17fc104_cgraph.pdf, 
-id=2463, pagebox=cropbox, 324.21124pt x 109.40875pt>
+id=2466, pagebox=cropbox, 324.21124pt x 109.40875pt>
 File: classsamp_files_1_1_gtxt_file_o_a84944d8c2b0e6c6eeb877b53e17fc104_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_gtxt_file_o_a84944d8c2b0e6c6eeb877b53e17fc104_cgraph.p
@@ -1834,7 +1834,7 @@ b53e17fc104_cgraph.pdf  used on input line 109. on input line 109.
 Package pdftex.def Info: Requested size: 323.0pt x 109.00612pt on input line 10
 9.
 ) (./classsamp_files_1_1_hmp_file.tex
-<classsamp_files_1_1_hmp_file__inherit__graph.pdf, id=2466, pagebox=cropbox, 31
+<classsamp_files_1_1_hmp_file__inherit__graph.pdf, id=2469, pagebox=cropbox, 31
 9.1925pt x 264.99pt>
 File: classsamp_files_1_1_hmp_file__inherit__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file__inherit__graph.pdf>
@@ -1844,7 +1844,7 @@ Package pdftex.def Info: Requested size: 318.0pt x 264.00275pt on input line 18
 .
  [54 <./classsamp_files_1_1_gtxt_file_o_a84944d8c2b0e6c6eeb877b53e17fc104_cgrap
 h.pdf>]
-<classsamp_files_1_1_hmp_file__coll__graph.pdf, id=2486, pagebox=cropbox, 254.9
+<classsamp_files_1_1_hmp_file__coll__graph.pdf, id=2489, pagebox=cropbox, 254.9
 525pt x 286.06876pt>
 File: classsamp_files_1_1_hmp_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file__coll__graph.pdf>
@@ -1855,7 +1855,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 285.0117pt on input line 27.
  [55 <./classsamp_files_1_1_hmp_file__inherit__graph.pdf> <./classsamp_files_1_
 1_hmp_file__coll__graph.pdf>]
 <classsamp_files_1_1_hmp_file_a69e670927eea527587417d28e05734cd_cgraph.pdf, id=
-2532, pagebox=cropbox, 319.1925pt x 109.40875pt>
+2535, pagebox=cropbox, 319.1925pt x 109.40875pt>
 File: classsamp_files_1_1_hmp_file_a69e670927eea527587417d28e05734cd_cgraph.pdf
  Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file_a69e670927eea527587417d28e05734cd_cgraph.pdf>
@@ -1869,7 +1869,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56])
 (./classsamp_files_1_1_hmp_file_i.tex
-<classsamp_files_1_1_hmp_file_i__inherit__graph.pdf, id=2551, pagebox=cropbox, 
+<classsamp_files_1_1_hmp_file_i__inherit__graph.pdf, id=2554, pagebox=cropbox, 
 187.70125pt x 264.99pt>
 File: classsamp_files_1_1_hmp_file_i__inherit__graph.pdf Graphic file (type pdf
 )
@@ -1878,7 +1878,7 @@ Package pdftex.def Info: classsamp_files_1_1_hmp_file_i__inherit__graph.pdf  us
 ed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 187.0pt x 264.01488pt on input line 18
 .
-<classsamp_files_1_1_hmp_file_i__coll__graph.pdf, id=2552, pagebox=cropbox, 254
+<classsamp_files_1_1_hmp_file_i__coll__graph.pdf, id=2555, pagebox=cropbox, 254
 .9525pt x 342.27875pt>
 File: classsamp_files_1_1_hmp_file_i__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file_i__coll__graph.pdf>
@@ -1895,7 +1895,7 @@ Underfull \hbox (badness 10000) detected at line 104
  []
 
 <classsamp_files_1_1_hmp_file_i_a2a39e46be7d94f39a4c6250855c1da1c_icgraph.pdf, 
-id=2638, pagebox=cropbox, 331.2375pt x 109.40875pt>
+id=2641, pagebox=cropbox, 331.2375pt x 109.40875pt>
 File: classsamp_files_1_1_hmp_file_i_a2a39e46be7d94f39a4c6250855c1da1c_icgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file_i_a2a39e46be7d94f39a4c6250855c1da1c_icgraph.p
@@ -1905,7 +1905,7 @@ Package pdftex.def Info: classsamp_files_1_1_hmp_file_i_a2a39e46be7d94f39a4c625
 Package pdftex.def Info: Requested size: 330.0pt x 109.00446pt on input line 11
 1.
 <classsamp_files_1_1_hmp_file_i_afd02563de7ecb89a94e8af4110676710_cgraph.pdf, i
-d=2641, pagebox=cropbox, 331.2375pt x 156.585pt>
+d=2644, pagebox=cropbox, 331.2375pt x 156.585pt>
 File: classsamp_files_1_1_hmp_file_i_afd02563de7ecb89a94e8af4110676710_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file_i_afd02563de7ecb89a94e8af4110676710_cgraph.pd
@@ -1920,7 +1920,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [60 <./classsamp_files_1_1_hmp_file_i_a2a39e46be7d94f39a4c6250855c1da1c_icgrap
 h.pdf>])
 (./classsamp_files_1_1_hmp_file_o.tex
-<classsamp_files_1_1_hmp_file_o__inherit__graph.pdf, id=2662, pagebox=cropbox, 
+<classsamp_files_1_1_hmp_file_o__inherit__graph.pdf, id=2665, pagebox=cropbox, 
 192.72pt x 264.99pt>
 File: classsamp_files_1_1_hmp_file_o__inherit__graph.pdf Graphic file (type pdf
 )
@@ -1929,7 +1929,7 @@ Package pdftex.def Info: classsamp_files_1_1_hmp_file_o__inherit__graph.pdf  us
 ed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 192.0pt x 263.9987pt on input line 18.
 
-<classsamp_files_1_1_hmp_file_o__coll__graph.pdf, id=2663, pagebox=cropbox, 254
+<classsamp_files_1_1_hmp_file_o__coll__graph.pdf, id=2666, pagebox=cropbox, 254
 .9525pt x 342.27875pt>
 File: classsamp_files_1_1_hmp_file_o__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file_o__coll__graph.pdf>
@@ -1941,7 +1941,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 341.01398pt on input line 27
 .pdf> <./classsamp_files_1_1_hmp_file_o__inherit__graph.pdf>] [62 <./classsamp_
 files_1_1_hmp_file_o__coll__graph.pdf>]
 <classsamp_files_1_1_hmp_file_o_af360694580dc1cf427b0b59375f0751f_cgraph.pdf, i
-d=2735, pagebox=cropbox, 327.2225pt x 109.40875pt>
+d=2738, pagebox=cropbox, 327.2225pt x 109.40875pt>
 File: classsamp_files_1_1_hmp_file_o_af360694580dc1cf427b0b59375f0751f_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_hmp_file_o_af360694580dc1cf427b0b59375f0751f_cgraph.pd
@@ -1968,7 +1968,7 @@ Underfull \hbox (badness 10000) detected at line 135
  []
 
 <classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856_icgraph.pdf, i
-d=2795, pagebox=cropbox, 349.305pt x 146.5475pt>
+d=2798, pagebox=cropbox, 349.305pt x 146.5475pt>
 File: classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856_icgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_pop_index_ae478775b725c4cbae2be5b136c6e6856_icgraph.pd
@@ -1999,7 +1999,7 @@ Underfull \hbox (badness 10000) detected at line 204
  []
 
 <classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042_icgraph.pdf, i
-d=2820, pagebox=cropbox, 330.23375pt x 109.40875pt>
+d=2823, pagebox=cropbox, 330.23375pt x 109.40875pt>
 File: classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042_icgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_pop_index_a1de6bf81252ebc9d7d2521f62487b042_icgraph.pd
@@ -2020,7 +2020,7 @@ LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 35.
 <classsamp_files_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6_cgraph.pdf, id=
-2860, pagebox=cropbox, 349.305pt x 109.40875pt>
+2863, pagebox=cropbox, 349.305pt x 109.40875pt>
 File: classsamp_files_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6_cgraph.pdf
  Graphic file (type pdf)
 <use classsamp_files_1_1_ran_draw_aeda47451836b452b8fc819016242e6e6_cgraph.pdf>
@@ -2036,7 +2036,7 @@ Underfull \hbox (badness 10000) detected at line 136
  []
 
 <classsamp_files_1_1_ran_draw_adaa98fd478582702700f4c86884c0966_cgraph.pdf, id=
-2905, pagebox=cropbox, 335.2525pt x 109.40875pt>
+2908, pagebox=cropbox, 335.2525pt x 109.40875pt>
 File: classsamp_files_1_1_ran_draw_adaa98fd478582702700f4c86884c0966_cgraph.pdf
  Graphic file (type pdf)
 <use classsamp_files_1_1_ran_draw_adaa98fd478582702700f4c86884c0966_cgraph.pdf>
@@ -2051,7 +2051,7 @@ Underfull \hbox (badness 10000) detected at line 156
  []
 
 <classsamp_files_1_1_ran_draw_ae5224ecc69d0c12d37ab0b5a81049618_cgraph.pdf, id=
-2913, pagebox=cropbox, 335.2525pt x 109.40875pt>
+2916, pagebox=cropbox, 335.2525pt x 109.40875pt>
 File: classsamp_files_1_1_ran_draw_ae5224ecc69d0c12d37ab0b5a81049618_cgraph.pdf
  Graphic file (type pdf)
 <use classsamp_files_1_1_ran_draw_ae5224ecc69d0c12d37ab0b5a81049618_cgraph.pdf>
@@ -2073,7 +2073,7 @@ Underfull \hbox (badness 10000) detected at line 198
  []
 
 <classsamp_files_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701_icgraph.pdf, id
-=2948, pagebox=cropbox, 330.23375pt x 156.585pt>
+=2951, pagebox=cropbox, 330.23375pt x 156.585pt>
 File: classsamp_files_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701_icgraph.pd
 f Graphic file (type pdf)
 <use classsamp_files_1_1_ran_draw_a2dcd2540f148c4fa271156a46640f701_icgraph.pdf
@@ -2089,7 +2089,7 @@ Underfull \hbox (badness 10000) detected at line 227
  []
 
 ) (./classsamp_files_1_1_tped_file.tex
-<classsamp_files_1_1_tped_file__inherit__graph.pdf, id=2972, pagebox=cropbox, 3
+<classsamp_files_1_1_tped_file__inherit__graph.pdf, id=2975, pagebox=cropbox, 3
 21.2pt x 264.99pt>
 File: classsamp_files_1_1_tped_file__inherit__graph.pdf Graphic file (type pdf)
 
@@ -2098,7 +2098,7 @@ Package pdftex.def Info: classsamp_files_1_1_tped_file__inherit__graph.pdf  use
 d on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 320.0pt x 264.00679pt on input line 18
 .
-<classsamp_files_1_1_tped_file__coll__graph.pdf, id=2973, pagebox=cropbox, 283.
+<classsamp_files_1_1_tped_file__coll__graph.pdf, id=2976, pagebox=cropbox, 283.
 0575pt x 286.06876pt>
 File: classsamp_files_1_1_tped_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file__coll__graph.pdf>
@@ -2109,7 +2109,7 @@ Package pdftex.def Info: Requested size: 282.0pt x 285.0248pt on input line 27.
  [74 <./classsamp_files_1_1_tped_file__inherit__graph.pdf>] [75 <./classsamp_fi
 les_1_1_tped_file__coll__graph.pdf>]
 <classsamp_files_1_1_tped_file_a9796141665192340a076db97810c6699_cgraph.pdf, id
-=3038, pagebox=cropbox, 321.2pt x 109.40875pt>
+=3041, pagebox=cropbox, 321.2pt x 109.40875pt>
 File: classsamp_files_1_1_tped_file_a9796141665192340a076db97810c6699_cgraph.pd
 f Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file_a9796141665192340a076db97810c6699_cgraph.pdf
@@ -2121,7 +2121,7 @@ Package pdftex.def Info: Requested size: 320.0pt x 109.00278pt on input line 96
 
 [76 <./classsamp_files_1_1_tped_file_a9796141665192340a076db97810c6699_cgraph.p
 df>]) (./classsamp_files_1_1_tped_file_i.tex
-<classsamp_files_1_1_tped_file_i__inherit__graph.pdf, id=3063, pagebox=cropbox,
+<classsamp_files_1_1_tped_file_i__inherit__graph.pdf, id=3066, pagebox=cropbox,
  189.70876pt x 264.99pt>
 File: classsamp_files_1_1_tped_file_i__inherit__graph.pdf Graphic file (type pd
 f)
@@ -2130,7 +2130,7 @@ Package pdftex.def Info: classsamp_files_1_1_tped_file_i__inherit__graph.pdf  u
 sed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 189.0pt x 264.00679pt on input line 18
 .
-<classsamp_files_1_1_tped_file_i__coll__graph.pdf, id=3064, pagebox=cropbox, 28
+<classsamp_files_1_1_tped_file_i__coll__graph.pdf, id=3067, pagebox=cropbox, 28
 3.0575pt x 342.27875pt>
 File: classsamp_files_1_1_tped_file_i__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file_i__coll__graph.pdf>
@@ -2144,7 +2144,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [77 <./classsamp_files_1_1_tped_file_i__inherit__graph.pdf>] [78 <./classsamp_
 files_1_1_tped_file_i__coll__graph.pdf>]
 <classsamp_files_1_1_tped_file_i_aadd05bed48c0a265b0d95cf7e56b71de_cgraph.pdf, 
-id=3131, pagebox=cropbox, 324.21124pt x 109.40875pt>
+id=3134, pagebox=cropbox, 324.21124pt x 109.40875pt>
 File: classsamp_files_1_1_tped_file_i_aadd05bed48c0a265b0d95cf7e56b71de_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file_i_aadd05bed48c0a265b0d95cf7e56b71de_cgraph.p
@@ -2174,7 +2174,7 @@ Underfull \hbox (badness 10000) detected at line 173
 
 [81]
 <classsamp_files_1_1_tped_file_i_afa47ef808ac99f8800d19f2ea0056d2e_cgraph.pdf, 
-id=3172, pagebox=cropbox, 332.24126pt x 109.40875pt>
+id=3175, pagebox=cropbox, 332.24126pt x 109.40875pt>
 File: classsamp_files_1_1_tped_file_i_afa47ef808ac99f8800d19f2ea0056d2e_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file_i_afa47ef808ac99f8800d19f2ea0056d2e_cgraph.p
@@ -2184,7 +2184,7 @@ f2ea0056d2e_cgraph.pdf  used on input line 199. on input line 199.
 Package pdftex.def Info: Requested size: 331.0pt x 109.00612pt on input line 19
 9.
 ) (./classsamp_files_1_1_tped_file_o.tex
-<classsamp_files_1_1_tped_file_o__inherit__graph.pdf, id=3175, pagebox=cropbox,
+<classsamp_files_1_1_tped_file_o__inherit__graph.pdf, id=3178, pagebox=cropbox,
  194.7275pt x 264.99pt>
 File: classsamp_files_1_1_tped_file_o__inherit__graph.pdf Graphic file (type pd
 f)
@@ -2193,7 +2193,7 @@ Package pdftex.def Info: classsamp_files_1_1_tped_file_o__inherit__graph.pdf  u
 sed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 194.0pt x 264.01083pt on input line 18
 .
-<classsamp_files_1_1_tped_file_o__coll__graph.pdf, id=3176, pagebox=cropbox, 28
+<classsamp_files_1_1_tped_file_o__coll__graph.pdf, id=3179, pagebox=cropbox, 28
 3.0575pt x 342.27875pt>
 File: classsamp_files_1_1_tped_file_o__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file_o__coll__graph.pdf>
@@ -2205,7 +2205,7 @@ Package pdftex.def Info: Requested size: 282.0pt x 341.02965pt on input line 27
 h.pdf> <./classsamp_files_1_1_tped_file_o__inherit__graph.pdf>] [83 <./classsam
 p_files_1_1_tped_file_o__coll__graph.pdf>]
 <classsamp_files_1_1_tped_file_o_ae860f2f0261c1638579635e6c9d54bb2_cgraph.pdf, 
-id=3249, pagebox=cropbox, 329.23pt x 109.40875pt>
+id=3252, pagebox=cropbox, 329.23pt x 109.40875pt>
 File: classsamp_files_1_1_tped_file_o_ae860f2f0261c1638579635e6c9d54bb2_cgraph.
 pdf Graphic file (type pdf)
 <use classsamp_files_1_1_tped_file_o_ae860f2f0261c1638579635e6c9d54bb2_cgraph.p
@@ -2216,7 +2216,7 @@ Package pdftex.def Info: Requested size: 328.0pt x 109.00278pt on input line 89
 .
 ) (./classsamp_files_1_1_var_file.tex [84 <./classsamp_files_1_1_tped_file_o_ae
 860f2f0261c1638579635e6c9d54bb2_cgraph.pdf>]
-<classsamp_files_1_1_var_file__inherit__graph.pdf, id=3272, pagebox=cropbox, 61
+<classsamp_files_1_1_var_file__inherit__graph.pdf, id=3275, pagebox=cropbox, 61
 8.31pt x 451.6875pt>
 File: classsamp_files_1_1_var_file__inherit__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_var_file__inherit__graph.pdf>
@@ -2224,7 +2224,7 @@ Package pdftex.def Info: classsamp_files_1_1_var_file__inherit__graph.pdf  used
  on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 350.0pt x 255.68636pt on input line 18
 .
-<classsamp_files_1_1_var_file__coll__graph.pdf, id=3273, pagebox=cropbox, 178.6
+<classsamp_files_1_1_var_file__coll__graph.pdf, id=3276, pagebox=cropbox, 178.6
 675pt x 164.615pt>
 File: classsamp_files_1_1_var_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_var_file__coll__graph.pdf>
@@ -2234,7 +2234,7 @@ Package pdftex.def Info: Requested size: 178.0pt x 164.00923pt on input line 27
 .
  [85 <./classsamp_files_1_1_var_file__inherit__graph.pdf> <./classsamp_files_1_
 1_var_file__coll__graph.pdf>]) (./classsamp_files_1_1_vcf_file.tex
-<classsamp_files_1_1_vcf_file__inherit__graph.pdf, id=3320, pagebox=cropbox, 30
+<classsamp_files_1_1_vcf_file__inherit__graph.pdf, id=3323, pagebox=cropbox, 30
 5.14pt x 264.99pt>
 File: classsamp_files_1_1_vcf_file__inherit__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file__inherit__graph.pdf>
@@ -2243,7 +2243,7 @@ Package pdftex.def Info: classsamp_files_1_1_vcf_file__inherit__graph.pdf  used
 Package pdftex.def Info: Requested size: 304.0pt x 264.01083pt on input line 18
 .
  [86]
-<classsamp_files_1_1_vcf_file__coll__graph.pdf, id=3338, pagebox=cropbox, 254.9
+<classsamp_files_1_1_vcf_file__coll__graph.pdf, id=3341, pagebox=cropbox, 254.9
 525pt x 286.06876pt>
 File: classsamp_files_1_1_vcf_file__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file__coll__graph.pdf>
@@ -2257,7 +2257,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [87 <./classsamp_files_1_1_vcf_file__inherit__graph.pdf>] [88 <./classsamp_fil
 es_1_1_vcf_file__coll__graph.pdf>]
 <classsamp_files_1_1_vcf_file_acc4f8659e8bb2a827281b57062267b59_cgraph.pdf, id=
-3399, pagebox=cropbox, 313.17pt x 109.40875pt>
+3402, pagebox=cropbox, 313.17pt x 109.40875pt>
 File: classsamp_files_1_1_vcf_file_acc4f8659e8bb2a827281b57062267b59_cgraph.pdf
  Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file_acc4f8659e8bb2a827281b57062267b59_cgraph.pdf>
@@ -2267,7 +2267,7 @@ Package pdftex.def Info: classsamp_files_1_1_vcf_file_acc4f8659e8bb2a827281b570
 Package pdftex.def Info: Requested size: 312.0pt x 109.00446pt on input line 87
 .
 ) (./classsamp_files_1_1_vcf_file_i.tex
-<classsamp_files_1_1_vcf_file_i__inherit__graph.pdf, id=3402, pagebox=cropbox, 
+<classsamp_files_1_1_vcf_file_i__inherit__graph.pdf, id=3405, pagebox=cropbox, 
 182.6825pt x 264.99pt>
 File: classsamp_files_1_1_vcf_file_i__inherit__graph.pdf Graphic file (type pdf
 )
@@ -2278,7 +2278,7 @@ Package pdftex.def Info: Requested size: 182.0pt x 264.01083pt on input line 18
 .
  [89 <./classsamp_files_1_1_vcf_file_acc4f8659e8bb2a827281b57062267b59_cgraph.p
 df>]
-<classsamp_files_1_1_vcf_file_i__coll__graph.pdf, id=3423, pagebox=cropbox, 254
+<classsamp_files_1_1_vcf_file_i__coll__graph.pdf, id=3426, pagebox=cropbox, 254
 .9525pt x 342.27875pt>
 File: classsamp_files_1_1_vcf_file_i__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file_i__coll__graph.pdf>
@@ -2292,7 +2292,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [90 <./classsamp_files_1_1_vcf_file_i__inherit__graph.pdf>] [91 <./classsamp_f
 iles_1_1_vcf_file_i__coll__graph.pdf>]
 <classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48_cgraph.pdf, i
-d=3485, pagebox=cropbox, 316.18124pt x 109.40875pt>
+d=3488, pagebox=cropbox, 316.18124pt x 109.40875pt>
 File: classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48_cgraph.pd
@@ -2310,7 +2310,7 @@ Underfull \hbox (badness 10000) detected at line 112
  []
 
 <classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93_cgraph.pdf, i
-d=3498, pagebox=cropbox, 315.1775pt x 109.40875pt>
+d=3501, pagebox=cropbox, 315.1775pt x 109.40875pt>
 File: classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file_i_a1f8fcdba2d343654b3c9492a3dd80e93_cgraph.pd
@@ -2325,7 +2325,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [93 <./classsamp_files_1_1_vcf_file_i_a7d293b4303a5b293f8a3c27e4cc12f48_cgraph
 .pdf>])
 (./classsamp_files_1_1_vcf_file_o.tex
-<classsamp_files_1_1_vcf_file_o__inherit__graph.pdf, id=3520, pagebox=cropbox, 
+<classsamp_files_1_1_vcf_file_o__inherit__graph.pdf, id=3523, pagebox=cropbox, 
 185.69376pt x 264.99pt>
 File: classsamp_files_1_1_vcf_file_o__inherit__graph.pdf Graphic file (type pdf
 )
@@ -2334,7 +2334,7 @@ Package pdftex.def Info: classsamp_files_1_1_vcf_file_o__inherit__graph.pdf  us
 ed on input line 18. on input line 18.
 Package pdftex.def Info: Requested size: 185.0pt x 264.00679pt on input line 18
 .
-<classsamp_files_1_1_vcf_file_o__coll__graph.pdf, id=3521, pagebox=cropbox, 254
+<classsamp_files_1_1_vcf_file_o__coll__graph.pdf, id=3524, pagebox=cropbox, 254
 .9525pt x 342.27875pt>
 File: classsamp_files_1_1_vcf_file_o__coll__graph.pdf Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file_o__coll__graph.pdf>
@@ -2346,7 +2346,7 @@ Package pdftex.def Info: Requested size: 254.0pt x 341.01398pt on input line 27
 .pdf> <./classsamp_files_1_1_vcf_file_o__inherit__graph.pdf>] [95 <./classsamp_
 files_1_1_vcf_file_o__coll__graph.pdf>]
 <classsamp_files_1_1_vcf_file_o_adb76e03e9e9bbab5cee0f2c6fe2385f5_cgraph.pdf, i
-d=3593, pagebox=cropbox, 321.2pt x 109.40875pt>
+d=3596, pagebox=cropbox, 321.2pt x 109.40875pt>
 File: classsamp_files_1_1_vcf_file_o_adb76e03e9e9bbab5cee0f2c6fe2385f5_cgraph.p
 df Graphic file (type pdf)
 <use classsamp_files_1_1_vcf_file_o_adb76e03e9e9bbab5cee0f2c6fe2385f5_cgraph.pd
@@ -2360,7 +2360,7 @@ Package pdftex.def Info: Requested size: 320.0pt x 109.00278pt on input line 90
 pdf>]
 Chapter 6.
 (./populations_8cpp.tex
-<populations_8cpp__incl.pdf, id=3617, pagebox=cropbox, 314.17375pt x 209.78375p
+<populations_8cpp__incl.pdf, id=3620, pagebox=cropbox, 314.17375pt x 209.78375p
 t>
 File: populations_8cpp__incl.pdf Graphic file (type pdf)
 <use populations_8cpp__incl.pdf>
@@ -2386,7 +2386,7 @@ Underfull \hbox (badness 10000) detected at line 29
  []
 
 ) (./populations_8hpp.tex
-<populations_8hpp__incl.pdf, id=3635, pagebox=cropbox, 182.6825pt x 154.5775pt>
+<populations_8hpp__incl.pdf, id=3639, pagebox=cropbox, 182.6825pt x 154.5775pt>
 
 File: populations_8hpp__incl.pdf Graphic file (type pdf)
 <use populations_8hpp__incl.pdf>
@@ -2394,7 +2394,7 @@ Package pdftex.def Info: populations_8hpp__incl.pdf  used on input line 14. on
 input line 14.
 Package pdftex.def Info: Requested size: 182.0pt x 154.0063pt on input line 14.
 
-<populations_8hpp__dep__incl.pdf, id=3636, pagebox=cropbox, 356.33125pt x 209.7
+<populations_8hpp__dep__incl.pdf, id=3640, pagebox=cropbox, 356.33125pt x 209.7
 8375pt>
 File: populations_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use populations_8hpp__dep__incl.pdf>
@@ -2418,7 +2418,7 @@ Underfull \hbox (badness 10000) detected at line 40
  []
 
 ) (./random_8cpp.tex
-<random_8cpp__incl.pdf, id=3656, pagebox=cropbox, 372.39125pt x 209.78375pt>
+<random_8cpp__incl.pdf, id=3659, pagebox=cropbox, 372.39125pt x 209.78375pt>
 File: random_8cpp__incl.pdf Graphic file (type pdf)
 <use random_8cpp__incl.pdf>
 Package pdftex.def Info: random_8cpp__incl.pdf  used on input line 17. on input
@@ -2441,7 +2441,7 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 ) (./random_8hpp.tex
-<random_8hpp__incl.pdf, id=3676, pagebox=cropbox, 149.55875pt x 154.5775pt>
+<random_8hpp__incl.pdf, id=3679, pagebox=cropbox, 149.55875pt x 154.5775pt>
 File: random_8hpp__incl.pdf Graphic file (type pdf)
 <use random_8hpp__incl.pdf>
 Package pdftex.def Info: random_8hpp__incl.pdf  used on input line 13. on input
@@ -2449,7 +2449,7 @@ Package pdftex.def Info: random_8hpp__incl.pdf  used on input line 13. on input
 Package pdftex.def Info: Requested size: 149.0pt x 154.01102pt on input line 13
 .
  [100 <./random_8cpp__incl.pdf>]
-<random_8hpp__dep__incl.pdf, id=3694, pagebox=cropbox, 234.8775pt x 154.5775pt>
+<random_8hpp__dep__incl.pdf, id=3697, pagebox=cropbox, 234.8775pt x 154.5775pt>
 
 File: random_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use random_8hpp__dep__incl.pdf>
@@ -2473,7 +2473,7 @@ Underfull \hbox (badness 10000) detected at line 45
  []
 
 ) (./sample_l_d_8cpp.tex
-<sample_l_d_8cpp__incl.pdf, id=3730, pagebox=cropbox, 660.4675pt x 264.99pt>
+<sample_l_d_8cpp__incl.pdf, id=3733, pagebox=cropbox, 660.4675pt x 264.99pt>
 File: sample_l_d_8cpp__incl.pdf Graphic file (type pdf)
 <use sample_l_d_8cpp__incl.pdf>
 Package pdftex.def Info: sample_l_d_8cpp__incl.pdf  used on input line 18. on i
@@ -2496,7 +2496,7 @@ Underfull \hbox (badness 10000) detected at line 40
  []
 
 ) (./sample_s_n_ps_8cpp.tex
-<sample_s_n_ps_8cpp__incl.pdf, id=3753, pagebox=cropbox, 660.4675pt x 264.99pt>
+<sample_s_n_ps_8cpp__incl.pdf, id=3756, pagebox=cropbox, 660.4675pt x 264.99pt>
 
 File: sample_s_n_ps_8cpp__incl.pdf Graphic file (type pdf)
 <use sample_s_n_ps_8cpp__incl.pdf>
@@ -2520,7 +2520,7 @@ Underfull \hbox (badness 10000) detected at line 40
  []
 
 [104 <./sample_s_n_ps_8cpp__incl.pdf>]) (./varfiles_8cpp.tex
-<varfiles_8cpp__incl.pdf, id=3780, pagebox=cropbox, 824.07875pt x 264.99pt>
+<varfiles_8cpp__incl.pdf, id=3783, pagebox=cropbox, 824.07875pt x 264.99pt>
 File: varfiles_8cpp__incl.pdf Graphic file (type pdf)
 <use varfiles_8cpp__incl.pdf>
 Package pdftex.def Info: varfiles_8cpp__incl.pdf  used on input line 24. on inp
@@ -2543,14 +2543,14 @@ Underfull \hbox (badness 10000) detected at line 38
  []
 
 ) (./varfiles_8hpp.tex
-<varfiles_8hpp__incl.pdf, id=3800, pagebox=cropbox, 515.9275pt x 209.78375pt>
+<varfiles_8hpp__incl.pdf, id=3803, pagebox=cropbox, 515.9275pt x 209.78375pt>
 File: varfiles_8hpp__incl.pdf Graphic file (type pdf)
 <use varfiles_8hpp__incl.pdf>
 Package pdftex.def Info: varfiles_8hpp__incl.pdf  used on input line 19. on inp
 ut line 19.
 Package pdftex.def Info: Requested size: 350.0pt x 142.31813pt on input line 19
 .
-<varfiles_8hpp__dep__incl.pdf, id=3801, pagebox=cropbox, 356.33125pt x 154.5775
+<varfiles_8hpp__dep__incl.pdf, id=3804, pagebox=cropbox, 356.33125pt x 154.5775
 pt>
 File: varfiles_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use varfiles_8hpp__dep__incl.pdf>
@@ -2588,44 +2588,56 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
 (./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
-Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: F71E1584ADD0CA23E544470F86908BAD;42138.
+
+
+Package rerunfilecheck Warning: File `refman.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `refman.out':
+(rerunfilecheck)             Before: F71E1584ADD0CA23E544470F86908BAD;42138
+(rerunfilecheck)             After:  2D33AB40814596F3E6CCADDB8C60C948;42138.
 Package rerunfilecheck Info: File `refman.brf' has not changed.
 (rerunfilecheck)             Checksum: C815A5FF2633773D5B5B9E8AA3259B3F;779.
 
-
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 16792 strings out of 492985
- 290848 string characters out of 6132586
+ 16794 strings out of 492985
+ 290872 string characters out of 6132586
  326365 words of memory out of 5000000
  19090 multiletter control sequences out of 15000+600000
  70795 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,16n,92p,1200b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
-e1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/
-helvetic/uhvb8ac.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvet
-ic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr
-o8a.pfb>
-Output written on refman.pdf (120 pages, 1282522 bytes).
+pdfTeX warning (dest): name{chapter*.166} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/he
+lvetic/uhvb8ac.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic
+/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8
+a.pfb>
+Output written on refman.pdf (120 pages, 1282914 bytes).
 PDF statistics:
- 4116 PDF objects out of 4296 (max. 8388607)
- 3669 compressed objects within 37 object streams
- 841 named destinations out of 1000 (max. 500000)
+ 4120 PDF objects out of 4296 (max. 8388607)
+ 3673 compressed objects within 37 object streams
+ 843 named destinations out of 1000 (max. 500000)
  2008 words of extra memory for PDF output out of 10000 (max. 10000000)
 
