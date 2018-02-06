@@ -2398,7 +2398,7 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 	while (1) {
 		getline(_varFile, headLine);
 		if (headLine[0] != '#') {
-			fpos_t cur = _varFile.tellg();
+			uint64_t cur = _varFile.tellg();
 			if (cur < headLine.size()) {
 				cerr << "ERROR: current position (" << cur << ") smaller than header line length (" << headLine.size() << ")" << endl;
 				exit(6);
