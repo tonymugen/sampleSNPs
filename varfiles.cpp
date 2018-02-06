@@ -988,7 +988,8 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-    
+	
+	_nCols        = _famLines(out._famFile); // copying the .fam file
     uint64_t N    = _numLines(); // number of SNPs in the .bed file
     uint64_t Nbed = (_nCols/4UL) + static_cast<uint64_t>( (_nCols%4UL) > 0UL );
 	_varFile.close();
