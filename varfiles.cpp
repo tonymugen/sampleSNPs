@@ -67,6 +67,11 @@ uint64_t GbinFileI::_numLines(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in | ios::binary | ios::ate);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open binary file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -94,6 +99,11 @@ void GbinFileI::open(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open binary file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -130,6 +140,11 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         
         try {
             _varFile.open(_fileName.c_str(), ios::in | ios::binary);
+			if (!_varFile.is_open()) {
+				cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+				exit(2);
+			}
+
         } catch (system_error &error) {
             cerr << "ERROR: cannot open binary file " << _fileName << " for input: " << error.code().message() << flush;
             perror(" ");
@@ -137,6 +152,11 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         }
         try {
             out._varFile.open(out._fileName.c_str(), ios::out | ios::binary | ios::trunc);
+			if (!out._varFile.is_open()) {
+				cerr << "ERROR: failed to open file " << out._fileName << " for output" << endl;
+				exit(2);
+			}
+
         } catch (system_error &error) {
             cerr << "ERROR: cannot open binary file " << out._fileName << " for output: " << error.code().message() << flush;
             perror(" ");
@@ -165,6 +185,11 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
     
     try {
         _varFile.open(_fileName.c_str(), ios::in | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open binary file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -176,6 +201,11 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
     }
     try {
         out._varFile.open(out._fileName.c_str(), ios::out | ios::binary | ios::trunc);
+		if (!out._varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << out._fileName << " for output" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open binary file " << out._fileName << " for output: " << error.code().message() << flush;
         perror(" ");
@@ -221,6 +251,11 @@ void GbinFileO::open(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::out | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for output" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open binary file " << _fileName << " for output: " << error.code().message() << flush;
         perror(" ");
@@ -279,6 +314,11 @@ uint64_t BedFileI::_numLines(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in | ios::binary | ios::ate);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open binary file " << _fileName << " for output: " << error.code().message() << flush;
         perror(" ");
@@ -308,13 +348,16 @@ uint64_t BedFileI::_famLines(){
     string famName = _fileStub + ".fam";
     try {
         _famFile.open(famName.c_str(), ios::in);
+		if (!_famFile.is_open()) {
+			cerr << "ERROR: failed to open .fam file " << famName << " for input" << endl;
+			exit(2);
+		}
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .fam file " << famName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
     }
-    
+
 	const size_t bufSize = BUF_SIZE;
 	char *buf;
 	try {
@@ -334,7 +377,6 @@ uint64_t BedFileI::_famLines(){
 	}
 	delete [] buf;
 	_famFile.close();
-	
 	return N;
 }
 
@@ -350,6 +392,11 @@ uint64_t BedFileI::_famLines(fstream &fam){
     string famName = _fileStub + ".fam";
     try {
         _famFile.open(famName.c_str(), ios::in);
+		if (!_famFile.is_open()) {
+			cerr << "ERROR: failed to open .fam file " << famName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .fam file " << famName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -923,6 +970,11 @@ void BedFileI::open(){
 	
 	try {
 		_varFile.open(_fileName.c_str(), ios::in | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open BED file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -942,6 +994,11 @@ void BedFileI::open(){
 	
 	try {
 		_bimFile.open(bimName.c_str(), ios::in);
+		if (!_bimFile.is_open()) {
+			cerr << "ERROR: failed to open .bim file " << bimName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .bim file " << bimName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -951,6 +1008,11 @@ void BedFileI::open(){
 	
 	try {
 		_famFile.open(famName.c_str(), ios::in);
+		if (!_famFile.is_open()) {
+			cerr << "ERROR: failed to open .fam file " << famName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .fam file " << famName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -971,10 +1033,16 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		out.close();
 	}
 	// First have to know the number of lines
-	string outFam = out._fileStub + ".fam";
+	string outFam  = out._fileStub + ".fam";
+	string famName = _fileStub + ".fam";
 	
 	try {
-		_famFile.open(_fileName.c_str(), ios::in); // _fileName has the .bed file name, with the extension
+		_famFile.open(famName.c_str(), ios::in);
+		if (!_famFile.is_open()) {
+			cerr << "ERROR: failed to open .fam file " << famName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .fam file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -983,6 +1051,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	
 	try {
 		out._famFile.open(outFam.c_str(), ios::out | ios::trunc);
+		if (!out._famFile.is_open()) {
+			cerr << "ERROR: failed to open .fam file " << outFam << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .fam file " << out._fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -1014,6 +1087,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		// Copy .bed
 		try {
 			_varFile.open(_fileName.c_str(), ios::in | ios::binary);
+			if (!_varFile.is_open()) {
+				cerr << "ERROR: failed to open .bed file " << _fileName << " for input" << endl;
+				exit(2);
+			}
+
 			// check the magic bytes and SNP-major status
 			char magic[3];
 			_varFile.read(magic, 3);
@@ -1032,6 +1110,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		}
 		try {
 			out._varFile.open(out._fileName.c_str(), ios::out);
+			if (!out._varFile.is_open()) {
+				cerr << "ERROR: failed to open .bed file " << out._fileName << " for output" << endl;
+				exit(2);
+			}
+
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open .bed file " << out._fileName << " for output: " << error.code().message() << flush;
 			perror(" ");
@@ -1047,6 +1130,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		// Copy .bim
 		try {
 			_bimFile.open(inBim.c_str(), ios::in);
+			if (!_bimFile.is_open()) {
+				cerr << "ERROR: failed to open .bim file " << inBim << " for input" << endl;
+				exit(2);
+			}
+
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open .bim file " << inBim << " for input: " << error.code().message() << flush;
 			perror(" ");
@@ -1054,6 +1142,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		}
 		try {
 			out._bimFile.open(outBim.c_str(), ios::out);
+			if (!out._bimFile.is_open()) {
+				cerr << "ERROR: failed to open .bim file " << outBim << " for output" << endl;
+				exit(2);
+			}
+
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open .bim file " << outBim << " for output: " << error.code().message() << flush;
 			perror(" ");
@@ -1082,6 +1175,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	
 	try {
 		_bimFile.open(inBim.c_str(), ios::in);
+		if (!_bimFile.is_open()) {
+			cerr << "ERROR: failed to open .bim file " << inBim << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .bim file " << inBim << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -1089,6 +1187,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	}
 	try {
 		out._bimFile.open(outBim.c_str(), ios::out);
+		if (!out._bimFile.is_open()) {
+			cerr << "ERROR: failed to open .bim file " << outBim << " for output" << endl;
+			exit(2);
+		}
+
 		
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .bim file " << outBim << " for output: " << error.code().message() << flush;
@@ -1098,6 +1201,10 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	
 	try {
 		_varFile.open(_fileName.c_str(), ios::in | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .bed file " << _fileName << " for input" << endl;
+			exit(2);
+		}
 		// check the magic bytes and SNP-major status
 		char magic[3];
 		_varFile.read(magic, 3);
@@ -1115,6 +1222,11 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	}
 	try {
 		out._varFile.open(out._fileName.c_str(), ios::out | ios::binary | ios::trunc);
+		if (!out._varFile.is_open()) {
+			cerr << "ERROR: failed to open .bed file " << out._fileName << " for output" << endl;
+			exit(2);
+		}
+
 		// write the magic bytes and the SNP-major status byte
 		char magic[3] = {static_cast<char>(0x6C), static_cast<char>(0x1B), static_cast<char>(0x01)};
 		out._varFile.write(magic, 3);
@@ -1178,16 +1290,20 @@ void BedFileI::sampleLD(const uint64_t &n){
     try {
         string bimName = _fileStub + ".bim";
         _bimFile.open(bimName.c_str(), ios::in);
+		if (!_bimFile.is_open()) {
+			cerr << "ERROR: failed to open .bim file " << bimName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open BIM file for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
     }
 	uint64_t nSamp = 2UL * n; // n is the number of pairs
-	
+	uint64_t N           = _numLines(); // also sets _nCols correctly
     const uint16_t Npad  = _nCols % 4UL;
     const uint64_t Nbed  = (_nCols/4UL) + static_cast<uint64_t>(Npad > 0UL);
-    uint64_t N           = _numLines();
 	const string outName = _fileStub + "_LD.tsv";
 	if (nSamp > N) {
 		cerr << "ERROR: requested a sample of " << nSamp << " SNPs that is greater than the number of SNPs (" << N << ") in the input file." << endl;
@@ -1214,6 +1330,11 @@ void BedFileI::sampleLD(const uint64_t &n){
 		
         try {
             _varFile.open(_fileName.c_str(), ios::in | ios::binary);
+			if (!_varFile.is_open()) {
+				cerr << "ERROR: failed to open .bed file " << _fileName << " for input" << endl;
+				exit(2);
+			}
+
             // check the magic bytes and SNP-major status
             char magic[3];
             _varFile.read(magic, 3);
@@ -1274,6 +1395,11 @@ void BedFileI::sampleLD(const uint64_t &n){
 	}
 	try {
 		_varFile.open(_fileName.c_str(), ios::in | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .bed file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 		// check the magic bytes and SNP-major status
 		char magic[3];
 		_varFile.read(magic, 3);
@@ -1396,23 +1522,33 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 		try {
 			string bimName = _fileStub + ".bim";
 			_bimFile.open(bimName.c_str(), ios::in);
+			if (!_bimFile.is_open()) {
+				cerr << "ERROR: failed to open .bim file " << bimName << " for input" << endl;
+				exit(2);
+			}
+
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open BIM file for input: " << error.code().message() << flush;
 			perror(" ");
 			exit(1);
 		}
 	}
+	
+	uint64_t N = _numLines(); // have to do this first to set _nCols properly
 	if (_nCols != popID.size()) {
 		cerr << "Sample size the population index (" << popID.size() << ") not equal to sample size (" << _nCols << ") in the .fam file" << endl;
 		exit(5);
 	}
-    
 	const uint64_t Nbed = (_nCols/4UL) + static_cast<uint64_t>( (_nCols%4UL) > 0UL ); // 4 SNPs/byte plus padding in BED
-    uint64_t N          = _numLines();
     uint64_t nSamp      = 2 * n; // n is the number of pairs
     
     try { // has to be here, because _numLines() closes the file
         _varFile.open(_fileName.c_str(), ios::in | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .bed file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
         // check the magic bytes and SNP-major status
         char magic[3];
         _varFile.read(magic, 3);
@@ -1616,6 +1752,11 @@ void BedFileO::open(){
     }
 	try {
 		_varFile.open(_fileName.c_str(), ios::out | ios::binary);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .bed file " << _fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open BED file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -1628,6 +1769,11 @@ void BedFileO::open(){
 	
 	try {
 		_bimFile.open(bimName.c_str(), ios::out);
+		if (!_bimFile.is_open()) {
+			cerr << "ERROR: failed to open .bim file " << bimName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .bim file " << bimName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -1637,6 +1783,11 @@ void BedFileO::open(){
 	
 	try {
 		_famFile.open(famName.c_str(), ios::out);
+		if (!_famFile.is_open()) {
+			cerr << "ERROR: failed to open .fam file " << famName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .fam file " << famName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -1660,6 +1811,11 @@ void GtxtFileI::open(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open text file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -1680,6 +1836,11 @@ uint64_t GtxtFileI::_numLines(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open text file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -1725,6 +1886,11 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
     
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open text file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -1733,6 +1899,11 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
     
     try {
         out._varFile.open(out._fileName.c_str(), ios::out | ios::trunc);
+		if (!out._varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << out._fileName << " for output" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open text file " << out._fileName << " for output: " << error.code().message() << flush;
         perror(" ");
@@ -1831,6 +2002,11 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
     
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open text file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -1929,6 +2105,11 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
 void GtxtFileO::open(){
     try {
         _varFile.open(_fileName.c_str(), ios::out);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for output" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open text file " << _fileName << " for output: " << error.code().message() << flush;
         perror(" ");
@@ -1965,6 +2146,11 @@ uint64_t TpedFileI::_famLines(){
     string tfamName = _fileStub + ".tfam";
     try {
         _tfamFile.open(tfamName.c_str(), ios::in);
+		if (!_tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << tfamName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2006,6 +2192,11 @@ uint64_t TpedFileI::_famLines(fstream &fam){
     string tfamName = _fileStub + ".tfam";
     try {
         _tfamFile.open(tfamName.c_str(), ios::in);
+		if (!_tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << tfamName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2046,6 +2237,11 @@ void TpedFileI::_famCopy(fstream &fam){
     string tfamName = _fileStub + ".tfam";
     try {
         _tfamFile.open(tfamName.c_str(), ios::in);
+		if (!_tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << tfamName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2085,6 +2281,11 @@ uint64_t TpedFileI::_numLines(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .tped file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .tped file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2120,6 +2321,11 @@ void TpedFileI::open(){
 	
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .tped file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open TPED file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2129,6 +2335,11 @@ void TpedFileI::open(){
 	
 	try {
 		_tfamFile.open(tfamName.c_str(), ios::in);
+		if (!_tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << tfamName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2154,6 +2365,11 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 	
 	try {
 		_tfamFile.open(inFam.c_str(), ios::in);
+		if (!_tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << inFam << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .tfam file " << inFam << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2162,6 +2378,11 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 	
 	try {
 		out._tfamFile.open(outFam.c_str(), ios::out | ios::trunc);
+		if (!out._tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << outFam << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .tfam file " << outFam << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2173,6 +2394,11 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 	// Calculate number of SNPs in the input TPED file
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open BED file " << _fileName << ": " << error.code().message() << flush;
 		perror(" ");
@@ -2199,7 +2425,10 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		// Copy .tped
 		try {
 			_varFile.open(_fileName.c_str(), ios::in);
-			
+			if (!_varFile.is_open()) {
+				cerr << "ERROR: failed to open file " << _fileName << " for input" << endl;
+				exit(2);
+			}
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open .tped file " << _fileName << " for input: " << error.code().message() << flush;
 			perror(" ");
@@ -2207,6 +2436,11 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		}
 		try {
 			out._varFile.open(out._fileName.c_str(), ios::out);
+			if (!out._varFile.is_open()) {
+				cerr << "ERROR: failed to open file " << out._fileName << " for output" << endl;
+				exit(2);
+			}
+
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open .tped file " << out._fileName << " for output: " << error.code().message() << flush;
 			perror(" ");
@@ -2227,6 +2461,11 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 	
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .tped file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .tped file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2234,6 +2473,11 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 	}
 	try {
 		out._varFile.open(out._fileName.c_str(), ios::out| ios::trunc);
+		if (!out._varFile.is_open()) {
+			cerr << "ERROR: failed to open .tped file " << out._fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .tped file " << out._fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2277,6 +2521,11 @@ void TpedFileO::open(){
 	
 	try {
 		_varFile.open(_fileName.c_str(), ios::out);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .tped file " << _fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open TPED file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2286,6 +2535,11 @@ void TpedFileO::open(){
 	
 	try {
 		_tfamFile.open(tfamName.c_str(), ios::out);
+		if (!_tfamFile.is_open()) {
+			cerr << "ERROR: failed to open .tfam file " << tfamName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .tfam file " << tfamName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2313,6 +2567,11 @@ uint64_t VcfFileI::_numLines(){
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .vcf file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open .vcf file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2357,6 +2616,11 @@ void VcfFileI::open(){
     }
     try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .vcf file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open VCF file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2380,6 +2644,11 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 	uint64_t N = _numLines(); // Number of SNPs
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .vcf file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .vcf file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2388,6 +2657,11 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 	
 	try {
 		out._varFile.open(out._fileName.c_str(), ios::out | ios::trunc);
+		if (!out._varFile.is_open()) {
+			cerr << "ERROR: failed to open .vcf file " << out._fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .vcf file " << out._fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2477,6 +2751,11 @@ void VcfFileO::open(){
     }
     try {
 		_varFile.open(_fileName.c_str(), ios::out);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open .vcf file " << _fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open VCF file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2500,6 +2779,11 @@ HmpFileI::HmpFileI(const string &fileName) : HmpFile(fileName) {
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open HMP file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open HMP file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2521,6 +2805,11 @@ void HmpFileI::open(){
     }
     try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open HMP file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open HMP file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2540,6 +2829,11 @@ uint64_t HmpFileI::_numLines() {
     }
     try {
         _varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open HMP file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
     } catch (system_error &error) {
         cerr << "ERROR: cannot open HMP file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
@@ -2588,6 +2882,11 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 	
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open HMP file " << _fileName << " for input" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open HMP file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
@@ -2596,6 +2895,11 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 	
 	try {
 		out._varFile.open(out._fileName.c_str(), ios::out | ios::trunc);
+		if (!out._varFile.is_open()) {
+			cerr << "ERROR: failed to open HMP file " << out._fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open HMP file " << out._fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
@@ -2677,6 +2981,11 @@ void HmpFileO::open(){
     }
     try {
 		_varFile.open(_fileName.c_str(), ios::out);
+		if (!_varFile.is_open()) {
+			cerr << "ERROR: failed to open HMP file " << _fileName << " for output" << endl;
+			exit(2);
+		}
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open HMP file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
