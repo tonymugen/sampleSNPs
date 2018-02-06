@@ -138,10 +138,9 @@ int main(int argc, char *argv[]){
 			ext = (*flNit) + ext;
 		}
 		// get rid of the extension
-		if (haveExt) {
-			if (ext != "bed") {
-				cerr << "WARNING: extension " << ext << " non-standard for BED files" << endl;
-			}
+		if (haveExt && (ext != "bed")) {
+			cerr << "WARNING: extension " << ext << " non-standard for BED files; will assume that it is not an extension" << endl;
+		} else if (haveExt){
 			inFileName.erase(flNit, inFileName.end());
 		}
 		string outFileStub = inFileName + "_s" + nSampTxt;
@@ -162,10 +161,9 @@ int main(int argc, char *argv[]){
 			ext = (*flNit) + ext;
 		}
 		// get rid of the extension
-		if (haveExt) {
-			if (ext != "tped") {
-				cerr << "WARNING: extension " << ext << " non-standard for TPED files" << endl;
-			}
+		if (haveExt && (ext != "tped")) {
+			cerr << "WARNING: extension " << ext << " non-standard for TPED files; will assume that it is not an extension" << endl;
+		} else if (haveExt){
 			inFileName.erase(flNit, inFileName.end());
 		}
 		string outFileStub = inFileName + "_s" + nSampTxt;
@@ -188,12 +186,22 @@ int main(int argc, char *argv[]){
 		// get rid of the extension
 		if (haveExt) {
 			if (ext != "vcf") {
-				cerr << "WARNING: extension " << ext << " non-standard for VCF files" << endl;
+				// Did they specify a file name stub that has periods in it? If yes, the file with the .vcf added should exist
+				string testNam = inFileName + ".vcf";
+				if (FILE *file = fopen(testNam.c_str(), "r")) {
+					ext = "vcf";
+					fclose(file);
+				} else {
+					cerr << "WARNING: extension " << ext << " non-standard for VCF files" << endl;
+					inFileName.erase(flNit, inFileName.end());
+				}
+			} else {
+				inFileName.erase(flNit, inFileName.end());
 			}
-			inFileName.erase(flNit, inFileName.end());
+			
 		}
-		string outFileName = inFileName + "_s" + nSampTxt + ".vcf";
-		inFileName         = inFileName + ".vcf";
+		string outFileName = inFileName + "_s" + nSampTxt + "." + ext; // not messing with the provided extension
+		inFileName         = inFileName + "." + ext;
 		
 		VcfFileI vcfIn(inFileName);
 		VcfFileO vcfOut(outFileName);
@@ -217,13 +225,27 @@ int main(int argc, char *argv[]){
 		}
 		// get rid of the extension
 		if (haveExt) {
-			if (ext != "hmp.txt") {
-				cerr << "WARNING: extension " << ext << " non-standard for HapMap files" << endl;
+			if ( (ext != "hmp.txt") && (ext != "hmp") ) {
+				// Did they specify a file name stub that has periods in it? If yes, the file with the .hmp.txt added should exist
+				string testNam1 = inFileName + ".hmp.txt";
+				string testNam2 = inFileName + ".hmp";
+				if (FILE *file = fopen(testNam1.c_str(), "r")) {
+					ext = "hmp.txt";
+					fclose(file);
+				} else if (FILE *file = fopen(testNam2.c_str(), "r")){
+					ext = "hmp";
+					fclose(file);
+				}
+				else {
+					cerr << "WARNING: extension " << ext << " non-standard for HapMap files" << endl;
+					inFileName.erase(flNit, inFileName.end());
+				}
+			} else {
+				inFileName.erase(flNit, inFileName.end());
 			}
-			inFileName.erase(flNit, inFileName.end());
 		}
-		string outFileName = inFileName + "_s" + nSampTxt + ".hmp.txt";
-		inFileName         = inFileName + ".hmp.txt";
+		string outFileName = inFileName + "_s" + nSampTxt + "." + ext;
+		inFileName         = inFileName + "." + ext;
 		HmpFileI hmpIn(inFileName);
 		HmpFileO hmpOut(outFileName);
 		hmpIn.sample(hmpOut, n);
@@ -276,12 +298,12 @@ int main(int argc, char *argv[]){
 				VcfFileO vcfOut(outFileName);
 				vcfIn.sample(vcfOut, n);
 
-			} else if (ext == "hmp.txt") {
+			} else if ( (ext == "hmp.txt") || (ext == "hmp") ) {
 				if (!fileType.empty()) {
 					cerr << "WARNING: unrecognized file type " << fileType << " specified. Assuming HapMap file based on extension" << endl;
 				}
 				inFileName.erase(flNit, inFileName.end());
-				string outFileName = inFileName + "_s" + nSampTxt + ".hmp.txt";
+				string outFileName = inFileName + "_s" + nSampTxt + ext;
 				inFileName         = inFileName + "." + ext;
 				HmpFileI hmpIn(inFileName);
 				HmpFileO hmpOut(outFileName);
