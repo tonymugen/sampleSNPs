@@ -41,6 +41,7 @@
 #include <cstdint>
 #include <cmath>
 #include <limits>
+#include <system_error>
 
 using std::fstream;
 using std::ofstream;
