@@ -32,6 +32,8 @@ Running _sampleSNPs_ and _sampleLD_ without flags will cause these programs to p
 
 `sampleLD` calculates LD between sampled pairs of loci. The paper cited below gives the details. The flag `-s` controls the number of locus pairs picked for estimates, and as this number increases, the average distance between pairs gets smaller. This leads to an increased precision of LD estimates between SNPs close to each other, at the expense of undersamling and hence diminished accuracy of disequilibrium calculations between distant loci. The user should keep this trade-off in mind when selecting the sample size. A further increase in LD estimate precision between distant variants can be achieved if one collects several sparse samples. However, care must be taken to eliminate redundant locus pairs because sampling without replacement is not guaranteed in this case.
 
+An optional population index file can be provided after the `-p` flag. This file should contain space-delimited integer values that relate each individual in the .fam file to a population. An example file is in the archived _tests_ directory.
+
 # Timing
 
 Expanding the _timingTrials.tar.gz_ archive will generate a directory with separate software, depending only on random.cpp and .hpp, that performs analyses of execution time using Vitter's Method D and Method S. The README.md file included there explains how to compile and run these analyses.
