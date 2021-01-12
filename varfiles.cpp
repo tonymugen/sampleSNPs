@@ -62,7 +62,7 @@ using namespace sampFiles;
 // GbinFile methods
 
 uint64_t GbinFileI::_numLines(){
-    
+
     if (_varFile.is_open()) {
         _varFile.close();
     }
@@ -77,7 +77,7 @@ uint64_t GbinFileI::_numLines(){
         cerr << "ERROR: cannot open binary file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
     size_t Ntot = _varFile.tellg();
     _varFile.close();
@@ -113,17 +113,17 @@ void GbinFileI::open(){
 }
 
 void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
-    
+
     if (n == 0) {
         cerr << "WARNING: zero SNPs requested. Nothing to be done." << endl;
         return;
     }
     // start by figuring out the number of rows
-    
-    
+
+
     // calculate number of rows in the input binary file; file is closed before the function exits.
     uint64_t N = _numLines();
-    
+
     // Test for potential problems
     if (N < n) {
         cerr << "ERROR: requested a sample of " << n << " rows that is greater than the number of rows (" << N << ") in the input file." << endl;
@@ -138,7 +138,7 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
             cerr << "ERROR: failed to allocate buffer" << endl;
             exit(4);
         }
-        
+
         try {
             _varFile.open(_fileName.c_str(), ios::in | ios::binary);
 			if (!_varFile.is_open()) {
@@ -163,7 +163,7 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
             perror(" ");
             exit(1);
         }
-        
+
         while (_varFile) {
             _varFile.read(buf, bufSize);
             out._varFile.write(buf, _varFile.gcount()); // must be gcount() in case we got to the end of the file
@@ -173,7 +173,7 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         delete [] buf;
         return;
     }
-    
+
     // Passed all the tests, proceed to sampling
     char *ROWbuf;
     size_t rowSize = _nCols*_elemSize;
@@ -183,7 +183,7 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         cerr << "ERROR: failed to allocate the row buffer" << endl;
         exit(4);
     }
-    
+
     try {
         _varFile.open(_fileName.c_str(), ios::in | ios::binary);
 		if (!_varFile.is_open()) {
@@ -196,7 +196,7 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         perror(" ");
         exit(1);
     }
-    
+
     if (out._varFile.is_open()) {
         out.close();
     }
@@ -212,7 +212,7 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         perror(" ");
         exit(1);
     }
-    
+
     uint64_t nloc = n; // local copy of n
     uint64_t S;
     uint64_t cumS = 0; // cumulative position in the file
@@ -237,13 +237,13 @@ void GbinFileI::sample(GbinFileO &out, const uint64_t &n){
         cumS++;                        // step up cumS because seekg() will not change it (unlike the getline() that automatially advances)
         out._varFile.write(ROWbuf, rowSize);
         nloc--;
-        
+
     }
     _varFile.close();
     out._varFile.close();
     delete [] ROWbuf;
     delete rowSamp;
-    
+
 }
 
 void GbinFileO::open(){
@@ -261,7 +261,7 @@ void GbinFileO::open(){
         cerr << "ERROR: cannot open binary file " << _fileName << " for output: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
 }
 
@@ -324,7 +324,7 @@ uint64_t BedFileI::_numLines(){
         cerr << "ERROR: cannot open binary file " << _fileName << " for output: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
     uint64_t Nbed = (_nCols/4UL) + static_cast<uint64_t>( (_nCols%4UL) > 0UL );
     uint64_t N = static_cast<uint64_t>(_varFile.tellg()) - 3UL; // 3 is the number of magic bytes
@@ -333,13 +333,13 @@ uint64_t BedFileI::_numLines(){
         exit(7);
     }
     _varFile.close();
-    
+
     return N/Nbed;
 }
 
 uint64_t BedFileI::_famLines(){
 	uint64_t N = 0;
-	
+
 	/*
 	 * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
 	 */
@@ -367,7 +367,7 @@ uint64_t BedFileI::_famLines(){
 		cerr << "ERROR: failed to allocate buffer in BedFile::_famLines(): " << error.what() << endl;
 		exit(4);
 	}
-	
+
 	while (_famFile) {
 		_famFile.read(buf, bufSize);
 		for (size_t i = 0; i < _famFile.gcount(); i++) {
@@ -383,7 +383,7 @@ uint64_t BedFileI::_famLines(){
 
 uint64_t BedFileI::_famLines(fstream &fam){
 	uint64_t N = 0;
-	
+
 	/*
 	 * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
 	 */
@@ -402,7 +402,7 @@ uint64_t BedFileI::_famLines(fstream &fam){
         cerr << "ERROR: cannot open .fam file " << famName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
 	const size_t bufSize = BUF_SIZE;
 	char *buf;
@@ -412,7 +412,7 @@ uint64_t BedFileI::_famLines(fstream &fam){
 		cerr << "ERROR: failed to allocate buffer in BedFile::_famLines(): " << error.what() << endl;
 		exit(4);
 	}
-    
+
     if (!fam.is_open()) {
         throw string("Output .fam filestream not open");
     }
@@ -428,7 +428,7 @@ uint64_t BedFileI::_famLines(fstream &fam){
 	delete [] buf;
 	_famFile.close();
 	fam.close();
-	
+
 	return N;
 }
 
@@ -438,11 +438,11 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 	// Using derived alleles because they are mostly at low frequency so the expected number of calculations is low
 	// However, then convert everything to the most common allele frequencies to make things compatible with Gaunt et al.
 	// Using the notation in that paper, too, to make things more clear
-	
+
 	// constants
 	const char allMiss = static_cast<char>(0x55); // all genotypes missing in a byte
 	const char homDerv = static_cast<char>(0x00); // homozygous derived for all bit-pair positions
-	
+
 	// modifiable parameters
 	double D     = 0.0;
 	double p1    = 0.0; // frequency of the derived allele at snp1
@@ -474,21 +474,21 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 	double hSq;
 	double gammaN;
 	double Delta3;
-	
+
 	char curBitPair1;
 	char curBitPair2;
-	
+
 	// Data missing at either locus are ignored (i.e. I am using pairwise-complete observations)
 	for (size_t ind = 0; ind < N-1; ind++) { // leave the last byte out for now since it has padding bits (in general)
 		if ( (snp1[ind] == allMiss) || (snp2[ind] == allMiss) ) { // a byte with all data missing; ignore (NOTE the OR)
 			continue;
 		}
-		
+
 		// go through the byte from the end
 		for (size_t inByte = 0; inByte < 4; inByte++) {
 			curBitPair1 = snp1[ind] & _masks[inByte];
 			curBitPair2 = snp2[ind] & _masks[inByte];
-			
+
 			// Test missingness
 			if ( (curBitPair1 == _tests.at('M')[inByte]) || (curBitPair2 == _tests.at('M')[inByte]) ) { // must use .at() because _tests is const
 				continue;
@@ -526,7 +526,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 	for (size_t inByte = 0; inByte < (4 - pad); inByte++) { // not testing for sane values of pad, since this is a protected function and I can expect sane values in correct class implementation
 		curBitPair1 = snp1[N-1] & _masks[inByte];
 		curBitPair2 = snp2[N-1] & _masks[inByte];
-		
+
 		// Test missingness
 		if ( (curBitPair1 == _tests.at('M')[inByte]) || (curBitPair2 == _tests.at('M')[inByte]) ) { // must use .at() because _tests is const
 			continue;
@@ -559,11 +559,11 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 			}
 		}
 	}
-	
+
 	// minor allele counts
 	dcnt1 = (p1 <= Npres - p1 ? 2.0*p1 : 2.0*(Npres - p1));
 	dcnt2 = (q1 <= Npres - q1 ? 2.0*q1 : 2.0*(Npres - q1));
-	
+
 	if (Npres <= 1.0) {
 		rSq    = -9.0;
 		Dprime = -9.0;
@@ -590,14 +590,14 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 		D    = f11 - p1q1;
 		p2q2 = (1.0-p1)*(1.0-q1);
 		rSq  = (D*D)/(p1q1*p2q2);
-		
+
 		if (D < -10.0*EPS) {
 			double Dmax = ( p1q1 <= p2q2 ? -p1q1 : -p2q2 ); // (9) of Gaunt et al.
 			Dprime      = D/Dmax;
 		} else if (D > 10.0*EPS) {
 			p1q1 = p1*(1.0 - q1);
 			p2q2 = (1.0 - p1)*q1;
-			
+
 			double Dmax = ( p1q1 <= p2q2 ? p1q1 : p2q2 ); // (9) of Gaunt et al.
 			Dprime      = D/Dmax;
 		} else {
@@ -606,7 +606,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 
 		return;
 	}
-	
+
 	// There is n22, so need to estimate f11 via ML (using Gaunt et al. cubic equation); they say f11 is between major alleles, but that is not necessary. Results will be the same for minor or any other combination
 	// Calculate the bracketing values for f11:
 	f11Min = n11 + 0.5*(n12 + n21); // i.e., all the het/het haplotypes are crossovers
@@ -630,7 +630,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 	hSq     = 4.0*a*a*deltaSq*deltaSq*deltaSq;
 	gammaN  = xN*( xN*( a*xN + b ) + c ) + d;
 	Delta3  = gammaN*gammaN - hSq;
-	
+
 	// now decide how many roots we have
 	if (Delta3 > 100.0*EPS) { // everything is cool, only one distinct root
 		f11 = xN + cbrt((sqrt(Delta3) - gammaN)/(2.0*a)) + cbrt(-(sqrt(Delta3) + gammaN)/(2.0*a));
@@ -640,13 +640,13 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 		double alpha  = xN + ddelta*cos(theta);
 		double beta   = xN + ddelta*cos(2.0*PI/3.0 + theta);
 		double gamma  = xN + ddelta*cos(4.0*PI/3.0 + theta);
-		
+
 		if ( (alpha < f11Min) || (alpha > f11Max) ) {
 			if ( (beta < f11Min) || (beta > f11Max) ) {
 				if ( (gamma < f11Min) || (gamma > f11Max) ) {
 					rSq    = -9.0;
 					Dprime = -9.0;
-					
+
 					return;
 
 				} else {
@@ -684,7 +684,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 			if ( (gamma < f11Min) || (gamma > f11Max) ) {
 				rSq    = -9.0;
 				Dprime = -9.0;
-				
+
 				return;
 			} else {
 				f11 = gamma;
@@ -696,36 +696,36 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const size_t &N, const un
 				f11 = (fabs(alpha - p1q1) <= fabs(gamma - p1q1) ? alpha : gamma);
 			}
 		}
-		
+
 	}
-	
+
 	D    = f11 - p1q1;
 	p2q2 = (1.0-p1)*(1.0-q1);
 	rSq  = (D*D)/(p1q1*p2q2);
-	
+
 	if (D < -10.0*EPS) {
 		double Dmax = ( p1q1 <= p2q2 ? -p1q1 : -p2q2 ); // (9) of Gaunt et al.
 		Dprime      = D/Dmax;
 	} else if (D > 10.0*EPS) {
 		p1q1 = p1*(1.0 - q1);
 		p2q2 = (1.0 - p1)*q1;
-		
+
 		double Dmax = ( p1q1 <= p2q2 ? p1q1 : p2q2 ); // (9) of Gaunt et al.
 		Dprime      = D/Dmax;
 	} else {
 		Dprime = 0.0;
 	}
-	
+
 }
 
 void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, vector<double> &rSq, vector<double> &Dprime, vector<double> &dcnt1, vector<double> &dcnt2){
-	
+
 	// The data in .bed files are strictly biallelic by definition of the format, so that makes things easier.
 	// Using derived alleles because they are mostly at low frequency so the expected number of calculations is low
-	
+
 	// constants
 	const char homDerv = static_cast<char>(0x00); // homozygous derived for all bit-pair positions
-	
+
 	// modifiable parameters
 	double D;
 	double p1;     // frequency of the derived allele at snp1
@@ -757,7 +757,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 	double hSq;
 	double gammaN;
 	double Delta3;
-	
+
 	char curBitPair1;
 	char curBitPair2;
 
@@ -777,7 +777,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 			size_t bitPairInd = (*popIt) % 4; // will automatically index from the end of the byte
 			curBitPair1 = snp1[byteInd] & _masks[bitPairInd];
 			curBitPair2 = snp2[byteInd] & _masks[bitPairInd];
-			
+
 			// Test miss
 			if ( (curBitPair1 == _tests.at('M')[bitPairInd]) || (curBitPair2 == _tests.at('M')[bitPairInd]) ) { // must use .at() because _tests is const
 				continue;
@@ -812,7 +812,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 		}
 		dcnt1[iPop]  = (p1 <= Npres - p1 ? 2.0*p1 : 2.0*(Npres - p1));
 		dcnt2[iPop]  = (q1 <= Npres - q1 ? 2.0*q1 : 2.0*(Npres - q1));
-		
+
 		if (Npres <= 1.0) {
 			rSq[iPop]    = -9.0;
 			Dprime[iPop] = -9.0;
@@ -833,26 +833,26 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 		q1   = q1/Npres;
 		// intermediate values
 		p1q1 = p1*q1;
-		
+
 		if (n22 == 0.0) { // no het/het match-ups; means I can directly enumerate haplotypes
 			f11        = (n11 + 0.5*(n12 + n21))/Npres;
 			D          = f11 - p1q1;
 			p2q2       = (1.0-p1)*(1.0-q1);
 			rSq[iPop]  = (D*D)/(p1q1*p2q2);
-			
+
 			if (D < -10.0*EPS) {
 				double Dmax  = ( p1q1 <= p2q2 ? -p1q1 : -p2q2 ); // (9) of Gaunt et al.
 				Dprime[iPop] = D/Dmax;
 			} else if (D > 10.0*EPS) {
 				p1q1 = p1*(1.0 - q1);
 				p2q2 = (1.0 - p1)*q1;
-				
+
 				double Dmax  = ( p1q1 <= p2q2 ? p1q1 : p2q2 ); // (9) of Gaunt et al.
 				Dprime[iPop] = D/Dmax;
 			} else {
 				Dprime[iPop] = 0.0;
 			}
-			
+
 		} else {
 			// There is n22, so need to estimate f11 via ML (using Gaunt et al. cubic equation); they say f11 is between major alleles, but that is not necessary. Results will be the same for minor or any other combination
 			// Calculate the bracketing values for f11:
@@ -877,7 +877,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 			hSq     = 4.0*a*a*deltaSq*deltaSq*deltaSq;
 			gammaN  = xN*( xN*( a*xN + b ) + c ) + d;
 			Delta3  = gammaN*gammaN - hSq;
-			
+
 			// now decide how many roots we have
 			if (Delta3 > 100.0*EPS) { // everything is cool, only one distinct root
 				f11 = xN + cbrt((sqrt(Delta3) - gammaN)/(2.0*a)) + cbrt(-(sqrt(Delta3) + gammaN)/(2.0*a));
@@ -887,7 +887,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 				double alpha  = xN + ddelta*cos(theta);
 				double beta   = xN + ddelta*cos(2.0*PI/3.0 + theta);
 				double gamma  = xN + ddelta*cos(4.0*PI/3.0 + theta);
-				
+
 				if ( (alpha < f11Min) || (alpha > f11Max) ) {
 					if ( (beta < f11Min) || (beta > f11Max) ) {
 						if ( (gamma < f11Min) || (gamma > f11Max) ) {
@@ -919,7 +919,7 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 						double minAB = (fabs(beta - p1q1) <= fabs(alpha - p1q1) ? beta : alpha);
 						f11 = (fabs(minAB - p1q1) <= fabs(gamma - p1q1) ? minAB : gamma);
 					}
-					
+
 				}
 			} else { // Delta3 == 0; two different roots
 				double mu    = cbrt(gammaN/(2.0*a));
@@ -940,20 +940,20 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 						f11 = (fabs(alpha - p1q1) <= fabs(gamma - p1q1) ? alpha : gamma);
 					}
 				}
-				
+
 			}
-			
+
 			D         = f11 - p1q1;
 			p2q2      = (1.0-p1)*(1.0-q1);
 			rSq[iPop] = (D*D)/(p1q1*p2q2);
-			
+
 			if (D < -10.0*EPS) {
 				double Dmax  = ( p1q1 <= p2q2 ? -p1q1 : -p2q2 ); // (9) of Gaunt et al.
 				Dprime[iPop] = D/Dmax;
 			} else if (D > 10.0*EPS) {
 				p1q1 = p1*(1.0 - q1);
 				p2q2 = (1.0 - p1)*q1;
-				
+
 				double Dmax  = ( p1q1 <= p2q2 ? p1q1 : p2q2 ); // (9) of Gaunt et al.
 				Dprime[iPop] = D/Dmax;
 			} else {
@@ -967,8 +967,8 @@ void BedFileI::_ld(const char *snp1, const char *snp2, const PopIndex &popID, ve
 void BedFileI::open(){
 	string bimName = _fileStub + ".bim";
 	string famName = _fileStub + ".fam";
-	
-	
+
+
 	try {
 		_varFile.open(_fileName.c_str(), ios::in | ios::binary);
 		if (!_varFile.is_open()) {
@@ -992,7 +992,7 @@ void BedFileI::open(){
 		cerr << "ERROR: binary file " << _fileName << " not SNP-major. Run a newer version of plink to fix it." << endl;
 		exit(3);
 	}
-	
+
 	try {
 		_bimFile.open(bimName.c_str(), ios::in);
 		if (!_bimFile.is_open()) {
@@ -1006,7 +1006,7 @@ void BedFileI::open(){
 		exit(1);
 
 	}
-	
+
 	try {
 		_famFile.open(famName.c_str(), ios::in);
 		if (!_famFile.is_open()) {
@@ -1020,11 +1020,11 @@ void BedFileI::open(){
 		exit(1);
 
 	}
-	
+
 }
 
 void BedFileI::sample(BedFileO &out, const uint64_t &n){
-	
+
 	if (n == 0) {
 		cerr << "WARNING: zero SNPs requested. Nothing to be done." << endl;
 		return;
@@ -1036,7 +1036,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	// First have to know the number of lines
 	string outFam  = out._fileStub + ".fam";
 	string famName = _fileStub + ".fam";
-	
+
 	try {
 		_famFile.open(famName.c_str(), ios::in);
 		if (!_famFile.is_open()) {
@@ -1049,7 +1049,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	try {
 		out._famFile.open(outFam.c_str(), ios::out | ios::trunc);
 		if (!out._famFile.is_open()) {
@@ -1062,12 +1062,12 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	_nCols        = _famLines(out._famFile); // copying the .fam file
     uint64_t N    = _numLines(); // number of SNPs in the .bed file
     uint64_t Nbed = (_nCols/4UL) + static_cast<uint64_t>( (_nCols%4UL) > 0UL );
 	_varFile.close();
-	
+
 	// Test for potential problems
 	string inBim  = _fileStub + ".bim";
 	string outBim = out._fileStub + ".bim";
@@ -1084,7 +1084,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 			cerr << "ERROR: failed to allocate buffer" << endl;
 			exit(4);
 		}
-		
+
 		// Copy .bed
 		try {
 			_varFile.open(_fileName.c_str(), ios::in | ios::binary);
@@ -1103,7 +1103,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 				cerr << "ERROR: binary file " << _fileName << " not SNP-major. Run a newer version of plink to fix it." << endl;
 				exit(3);
 			}
-			
+
 		} catch (system_error &error) {
 			cerr << "ERROR: cannot open .bed file " << _fileName << " for input: " << error.code().message() << flush;
 			perror(" ");
@@ -1127,7 +1127,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		}
 		_varFile.close();
 		out._varFile.close();
-		
+
 		// Copy .bim
 		try {
 			_bimFile.open(inBim.c_str(), ios::in);
@@ -1162,7 +1162,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		delete [] buf;
 		return;
 	}
-	
+
 	// Passed all the tests, proceed to sampling
 	char *SNPbuf;
 	try {
@@ -1173,7 +1173,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 
 	}
 	string bimLine;
-	
+
 	try {
 		_bimFile.open(inBim.c_str(), ios::in);
 		if (!_bimFile.is_open()) {
@@ -1193,13 +1193,13 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 			exit(2);
 		}
 
-		
+
 	} catch (system_error &error) {
 		cerr << "ERROR: cannot open .bim file " << outBim << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
 	}
-	
+
 	try {
 		_varFile.open(_fileName.c_str(), ios::in | ios::binary);
 		if (!_varFile.is_open()) {
@@ -1237,7 +1237,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	uint64_t nloc = n; // local copy of n
 	uint64_t S;
 	uint64_t cumS = 0; // cumulative position in the file
@@ -1268,7 +1268,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 		getline(_bimFile, bimLine);
 		out._bimFile << bimLine << endl;
 		nloc--;
-		
+
 	}
 	_varFile.close();
 	out._varFile.close();
@@ -1276,7 +1276,7 @@ void BedFileI::sample(BedFileO &out, const uint64_t &n){
 	out._bimFile.close();
 	delete [] SNPbuf;
 	delete snpSamp;
-	
+
 }
 
 void BedFileI::sampleLD(const uint64_t &n){
@@ -1284,7 +1284,7 @@ void BedFileI::sampleLD(const uint64_t &n){
 		cerr << "WARNING: zero SNPs requested. Nothing to be done." << endl;
 		return;
 	}
-	
+
     if (_bimFile.is_open()) {
         _bimFile.close();
     }
@@ -1325,10 +1325,10 @@ void BedFileI::sampleLD(const uint64_t &n){
 		string bimLine; // line in the .bim file
 		string field;   // single field in the .bim file
 		stringstream lineStream;
-		
+
 		ofstream outFile(outName);
 		outFile << "ChrID\tpos1\tpos2\tDistance\trSq\tDprime\tn1\tn2"  << endl;
-		
+
         try {
             _varFile.open(_fileName.c_str(), ios::in | ios::binary);
 			if (!_varFile.is_open()) {
@@ -1358,20 +1358,20 @@ void BedFileI::sampleLD(const uint64_t &n){
 			getline(_bimFile, bimLine);
 			cumS++;
 			nSamp--;
-			
+
 			lineStream.str(bimLine); // replaces whatever was there from before
 			lineStream >> field;
 			chrID = field;
 			lineStream >> field >> field >> field;
 			pos1 = atoi(field.c_str());
-			
+
 			// second locus
 			_varFile.seekg(cumS*Nbed + 3);
 			_varFile.read(locus2, Nbed);
 			getline(_bimFile, bimLine);
 			cumS++;
 			nSamp--;
-			
+
 			lineStream.str(bimLine);
 			lineStream >> field;
 			if (chrID != field) { // if the chromosome number changes, we discard this pair and continue
@@ -1386,7 +1386,7 @@ void BedFileI::sampleLD(const uint64_t &n){
 			_ld(locus1, locus2, Nbed, Npad, rSq, Dprime, cnt1, cnt2);
 			outFile << chrID << "\t" << pos1 << "\t" << pos2 << "\t" << pos2 - pos1 << "\t" << rSq << "\t" << Dprime << "\t" << cnt1 << "\t" << cnt2 << endl;
 		}
-		
+
 		delete [] locus1;
 		delete [] locus2;
 		_varFile.close();
@@ -1431,10 +1431,10 @@ void BedFileI::sampleLD(const uint64_t &n){
 	string bimLine; // line in the .bim file
 	string field;   // single field in the .bim file
 	stringstream lineStream;
-	
+
 	ofstream outFile(outName);
 	outFile << "ChrID\tpos1\tpos2\tDistance\trSq\tDprime\tn1\tn2"  << endl;
-	
+
 	RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
 	try {
 		snpSamp = new RanDraw();
@@ -1467,7 +1467,7 @@ void BedFileI::sampleLD(const uint64_t &n){
 		lineStream >> field >> field >> field;
 		pos1 = atoi(field.c_str());
 		nSamp--;
-		
+
 		// second locus
 		try {
 			S = snpSamp->vitter(nSamp, N);
@@ -1485,7 +1485,7 @@ void BedFileI::sampleLD(const uint64_t &n){
 			S--;
 		}
 		getline(_bimFile, bimLine);
-		
+
 		lineStream.str(bimLine);
 		lineStream >> field;
 		if (chrID != field) { // if the chromosome number changes, we discard this pair and start over
@@ -1503,7 +1503,7 @@ void BedFileI::sampleLD(const uint64_t &n){
 		outFile << chrID << "\t" << pos1 << "\t" << pos2 << "\t" << pos2 - pos1 << "\t" << rSq << "\t" << Dprime << "\t" << cnt1 << "\t" << cnt2 << endl;
 		nSamp--;
 	}
-	
+
 	delete [] locus1;
 	delete [] locus2;
 	_varFile.close();
@@ -1534,7 +1534,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 			exit(1);
 		}
 	}
-	
+
 	uint64_t N = _numLines(); // have to do this first to set _nCols properly
 	if (_nCols != popID.size()) {
 		cerr << "Sample size the population index (" << popID.size() << ") not equal to sample size (" << _nCols << ") in the .fam file" << endl;
@@ -1542,7 +1542,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 	}
 	const uint64_t Nbed = (_nCols/4UL) + static_cast<uint64_t>( (_nCols%4UL) > 0UL ); // 4 SNPs/byte plus padding in BED
     uint64_t nSamp      = 2 * n; // n is the number of pairs
-    
+
     try { // has to be here, because _numLines() closes the file
         _varFile.open(_fileName.c_str(), ios::in | ios::binary);
 		if (!_varFile.is_open()) {
@@ -1586,14 +1586,14 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 		string bimLine; // line in the .bim file
 		string field;   // single field in the .bim file
 		stringstream lineStream;
-		
+
 		ofstream outFile(outName);
 		outFile << "ChrID\tpos1\tpos2\tDistance"  << flush;
 		for (unsigned short iPop = 1; iPop <= popID.popNumber(); iPop++) {
 			outFile << "\trSq_" << iPop << "\tDprime_" << iPop << "\tn1_" << iPop << "\tn2_" << iPop << flush;
 		}
 		outFile << endl;
-		
+
 		while (nSamp) {
 			// first locus in the pair
 			_varFile.seekg(cumS*Nbed + 3); // seekg() index is base-0
@@ -1601,20 +1601,20 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 			getline(_bimFile, bimLine);
 			cumS++;
 			nSamp--;
-			
+
 			lineStream.str(bimLine); // replaces whatever was there from before
 			lineStream >> field;
 			chrID = field;
 			lineStream >> field >> field >> field;
 			pos1 = atoi(field.c_str());
-			
+
 			// second locus
 			_varFile.seekg(cumS*Nbed + 3);
 			_varFile.read(locus2, Nbed);
 			getline(_bimFile, bimLine);
 			cumS++;
 			nSamp--;
-			
+
 			lineStream.str(bimLine);
 			lineStream >> field;
 			if (chrID != field) { // if the chromosome number changes, we discard this pair and continue
@@ -1633,7 +1633,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 			}
 			outFile << endl;
 		}
-		
+
 		delete [] locus1;
 		delete [] locus2;
 		_varFile.close();
@@ -1656,14 +1656,14 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 	string bimLine; // line in the .bim file
 	string field;   // single field in the .bim file
 	stringstream lineStream;
-	
+
 	ofstream outFile(outName);
 	outFile << "ChrID\tpos1\tpos2\tDistance"  << flush;
 	for (unsigned short iPop = 1; iPop <= popID.popNumber(); iPop++) {
 		outFile << "\trSq_" << iPop << "\tDprime_" << iPop << "\tn1_" << iPop << "\tn2_" << iPop << flush;
 	}
 	outFile << endl;
-	
+
 	RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
 	try {
 		snpSamp = new RanDraw();
@@ -1671,7 +1671,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 		cerr << "ERROR: " << error << endl;
 		exit(5);
 	}
-	
+
 	while (nSamp) {
 		// first locus in the pair
 		try {
@@ -1696,7 +1696,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 		lineStream >> field >> field >> field;
 		pos1 = atoi(field.c_str());
 		nSamp--;
-		
+
 		// second locus
 		try {
 			S = snpSamp->vitter(nSamp, N);
@@ -1714,7 +1714,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 			S--;
 		}
 		getline(_bimFile, bimLine);
-		
+
 		lineStream.str(bimLine);
 		lineStream >> field;
 		if (chrID != field) { // if the chromosome number changes, we discard this pair and start over
@@ -1736,7 +1736,7 @@ void BedFileI::sampleLD(const PopIndex &popID, const uint64_t &n){
 		outFile << endl;
 		nSamp--;
 	}
-	
+
 	delete [] locus1;
 	delete [] locus2;
 	_varFile.close();
@@ -1762,12 +1762,12 @@ void BedFileO::open(){
 		cerr << "ERROR: cannot open BED file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
 	// write the magic bytes and the SNP-major status byte
 	char magic[3] = {static_cast<char>(0x6C), static_cast<char>(0x1B), static_cast<char>(0x01)};
 	_varFile.write(magic, 3);
-	
+
 	try {
 		_bimFile.open(bimName.c_str(), ios::out);
 		if (!_bimFile.is_open()) {
@@ -1779,9 +1779,9 @@ void BedFileO::open(){
 		cerr << "ERROR: cannot open .bim file " << bimName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
-	
+
 	try {
 		_famFile.open(famName.c_str(), ios::out);
 		if (!_famFile.is_open()) {
@@ -1793,9 +1793,9 @@ void BedFileO::open(){
 		cerr << "ERROR: cannot open .fam file " << famName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
-	
+
 }
 
 // GtxtFile methods
@@ -1821,14 +1821,14 @@ void GtxtFileI::open(){
         cerr << "ERROR: cannot open text file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
-    
+
 }
 
 uint64_t GtxtFileI::_numLines(){
     uint64_t N = 0;
-    
+
     /*
      * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
      */
@@ -1846,9 +1846,9 @@ uint64_t GtxtFileI::_numLines(){
         cerr << "ERROR: cannot open text file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
-    
+
     const size_t bufSize = BUF_SIZE;
     char *buf;
     try {
@@ -1857,7 +1857,7 @@ uint64_t GtxtFileI::_numLines(){
         cerr << "ERROR: failed to allocate buffer in GtxtFile::_numLines(): " << error.what() << endl;
         exit(4);
     }
-    
+
     while (_varFile) {
         _varFile.read(buf, bufSize);
         for (size_t i = 0; i < _varFile.gcount(); i++) {
@@ -1868,9 +1868,9 @@ uint64_t GtxtFileI::_numLines(){
     }
     _varFile.close();
     delete [] buf;
-    
+
     return N - _head; // subtracting 1 for the header if present
-    
+
 }
 
 void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
@@ -1882,9 +1882,9 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
     if (out._varFile.is_open()) {
         out._varFile.close();
     }
-    
+
     uint64_t N = _numLines(); // Number of rows
-    
+
     try {
         _varFile.open(_fileName.c_str(), ios::in);
 		if (!_varFile.is_open()) {
@@ -1897,7 +1897,7 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
         perror(" ");
         exit(1);
     }
-    
+
     try {
         out._varFile.open(out._fileName.c_str(), ios::out | ios::trunc);
 		if (!out._varFile.is_open()) {
@@ -1910,7 +1910,7 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
         perror(" ");
         exit(1);
     }
-    
+
     // Test for potential problems
     if (N < n) {
         cerr << "ERROR: requested a sample of " << n << " rows that is greater than the number of rows (" << N << ") in the input file." << endl;
@@ -1934,7 +1934,7 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
                 out._varFile << header << endl;
             }
         }
-        
+
         // Copy the file
         while (_varFile) {
             _varFile.read(buf, bufSize);
@@ -1945,7 +1945,7 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
         delete [] buf;
         return;
     }
-    
+
     // Passed all the tests, proceed to sampling
     string curLine;
     if (_head) {
@@ -1957,7 +1957,7 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
             curLine.erase();
         }
     }
-    
+
     uint64_t nloc = n; // local copy of n
     uint64_t S;
     RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
@@ -1982,12 +1982,12 @@ void GtxtFileI::sample(GtxtFileO &out, const uint64_t &n, const bool &headSkip){
         getline(_varFile, curLine);
         out._varFile << curLine << endl;
         nloc--;
-        
+
     }
     _varFile.close();
     out._varFile.close();
     delete snpSamp;
-    
+
 }
 
 void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &delim, vector<string> &out){
@@ -1998,9 +1998,9 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
     if (out.size()) {
         out.resize(0);
     }
-    
+
     uint64_t N = _numLines(); // Number of rows
-    
+
     try {
         _varFile.open(_fileName.c_str(), ios::in);
 		if (!_varFile.is_open()) {
@@ -2013,7 +2013,7 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
         perror(" ");
         exit(1);
     }
-    
+
     // Test for potential problems
     if (N < n) {
         cerr << "ERROR: requested a sample of " << n << " rows that is greater than the number of rows (" << N << ") in the input file." << endl;
@@ -2031,11 +2031,11 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
                 while (lineSS) {
                     getline(lineSS, field, delim);
                     out.push_back(field);
-                    
+
                 }
             }
         }
-        
+
         // Copy the file
         string field;
         while (_varFile) {
@@ -2049,7 +2049,7 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
         _varFile.close();
         return;
     }
-    
+
     // Passed all the tests, proceed to sampling
     string curLine;
     string field;
@@ -2062,11 +2062,11 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
             while (lineSS) {
                 getline(lineSS, field, delim);
                 out.push_back(field);
-                
+
             }
         }
     }
-    
+
     uint64_t nloc = n; // local copy of n
     uint64_t S;
     RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
@@ -2093,14 +2093,14 @@ void GtxtFileI::sample(const uint64_t &n, const bool &headSkip, const char &deli
         while (lineSS) {
             getline(lineSS, field, delim);
             out.push_back(field);
-            
+
         }
         nloc--;
-        
+
     }
     _varFile.close();
     delete snpSamp;
-    
+
 }
 
 void GtxtFileO::open(){
@@ -2115,7 +2115,7 @@ void GtxtFileO::open(){
         cerr << "ERROR: cannot open text file " << _fileName << " for output: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
 }
 
@@ -2137,7 +2137,7 @@ void TpedFile::close(){
 
 uint64_t TpedFileI::_famLines(){
 	uint64_t N = 0;
-	
+
 	/*
 	 * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
 	 */
@@ -2156,9 +2156,9 @@ uint64_t TpedFileI::_famLines(){
         cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
-    
+
 	const size_t bufSize = BUF_SIZE; // 10M seems optimal based on experiments on my MacBook Pro (with SSD)
 	char *buf;
 	try {
@@ -2167,7 +2167,7 @@ uint64_t TpedFileI::_famLines(){
 		cerr << "ERROR: failed to allocate buffer in TpedFile::_numLines(): " << error.what() << endl;
 		exit(4);
 	}
-	
+
 	while (_tfamFile) {
 		_tfamFile.read(buf, bufSize);
 		for (size_t i = 0; i < _tfamFile.gcount(); i++) {
@@ -2178,12 +2178,12 @@ uint64_t TpedFileI::_famLines(){
 	}
 	delete [] buf;
 	_tfamFile.close();
-	
+
 	return N;
 }
 uint64_t TpedFileI::_famLines(fstream &fam){
 	uint64_t N = 0;
-	
+
 	/*
 	 * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
 	 */
@@ -2214,7 +2214,7 @@ uint64_t TpedFileI::_famLines(fstream &fam){
         cerr << "ERROR: failed to allocate buffer in TpedFile::_famLines(): " << error.what() << endl;
         exit(4);
     }
-    
+
     while (_tfamFile) {
         _tfamFile.read(buf, bufSize);
         for (size_t i = 0; i < _tfamFile.gcount(); i++) {
@@ -2247,7 +2247,7 @@ void TpedFileI::_famCopy(fstream &fam){
         cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
     if (!fam.is_open()) {
         throw string("Output .fam filestream not open");
@@ -2261,7 +2261,7 @@ void TpedFileI::_famCopy(fstream &fam){
         cerr << "ERROR: failed to allocate buffer in TpedFile::_famCopy(): " << error.what() << endl;
         exit(4);
     }
-    
+
     while (_tfamFile) {
         _tfamFile.read(buf, bufSize);
         fam.write(buf, _tfamFile.gcount());
@@ -2273,7 +2273,7 @@ void TpedFileI::_famCopy(fstream &fam){
 
 uint64_t TpedFileI::_numLines(){
     uint64_t N = 0;
-    
+
     /*
      * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
      */
@@ -2291,9 +2291,9 @@ uint64_t TpedFileI::_numLines(){
         cerr << "ERROR: cannot open .tped file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
-    
+
     const size_t bufSize = BUF_SIZE;
     char *buf;
     try {
@@ -2302,7 +2302,7 @@ uint64_t TpedFileI::_numLines(){
         cerr << "ERROR: failed to allocate buffer in TpedFile::_numLines(): " << error.what() << endl;
         exit(4);
     }
-    
+
     while (_varFile) {
         _varFile.read(buf, bufSize);
         for (size_t i = 0; i < _varFile.gcount(); i++) {
@@ -2313,13 +2313,13 @@ uint64_t TpedFileI::_numLines(){
     }
     _varFile.close();
     delete [] buf;
-    
+
     return N;
 }
 
 void TpedFileI::open(){
 	string tfamName = _fileStub + ".tfam";
-	
+
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
 		if (!_varFile.is_open()) {
@@ -2331,9 +2331,9 @@ void TpedFileI::open(){
 		cerr << "ERROR: cannot open TPED file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
-	
+
 	try {
 		_tfamFile.open(tfamName.c_str(), ios::in);
 		if (!_tfamFile.is_open()) {
@@ -2345,13 +2345,13 @@ void TpedFileI::open(){
 		cerr << "ERROR: cannot open .tfam file " << tfamName << " for input: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
-	
+
 }
 
 void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
-	
+
 	if (n == 0) {
 		cerr << "WARNING: zero SNPs requested. Nothing to be done." << endl;
 		return;
@@ -2360,10 +2360,10 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 	if (out._varFile.is_open()) {
 		out.close();
 	}
-	
+
 	string inFam  = _fileStub + ".tfam";
 	string outFam = out._fileStub + ".tfam";
-	
+
 	try {
 		_tfamFile.open(inFam.c_str(), ios::in);
 		if (!_tfamFile.is_open()) {
@@ -2376,7 +2376,7 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	try {
 		out._tfamFile.open(outFam.c_str(), ios::out | ios::trunc);
 		if (!out._tfamFile.is_open()) {
@@ -2389,7 +2389,7 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	// Copy the .tfam file
 	_famCopy(out._tfamFile);
 	// Calculate number of SNPs in the input TPED file
@@ -2405,9 +2405,9 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	uint64_t N = _numLines(); // Number of SNPs
-	
+
 	// Test for potential problems
 	if (N < n) {
 		cerr << "ERROR: requested a sample of " << n << " SNPs that is greater than the number of SNPs (" << N << ") in the input file." << endl;
@@ -2422,7 +2422,7 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 			cerr << "ERROR: failed to allocate buffer" << endl;
 			exit(4);
 		}
-		
+
 		// Copy .tped
 		try {
 			_varFile.open(_fileName.c_str(), ios::in);
@@ -2456,10 +2456,10 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		delete [] buf;
 		return;
 	}
-	
+
 	// Passed all the tests, proceed to sampling
 	string tpedLine;
-	
+
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
 		if (!_varFile.is_open()) {
@@ -2484,7 +2484,7 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	uint64_t nloc = n; // local copy of n
 	uint64_t S;
 	RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
@@ -2509,7 +2509,7 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 		getline(_varFile, tpedLine);
 		out._varFile << tpedLine << endl;
 		nloc--;
-		
+
 	}
 	_varFile.close();
 	out._varFile.close();
@@ -2519,7 +2519,7 @@ void TpedFileI::sample(TpedFileO &out, const uint64_t &n){
 
 void TpedFileO::open(){
 	string tfamName = _fileStub + ".tfam";
-	
+
 	try {
 		_varFile.open(_fileName.c_str(), ios::out);
 		if (!_varFile.is_open()) {
@@ -2531,9 +2531,9 @@ void TpedFileO::open(){
 		cerr << "ERROR: cannot open TPED file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
-	
+
 	try {
 		_tfamFile.open(tfamName.c_str(), ios::out);
 		if (!_tfamFile.is_open()) {
@@ -2545,9 +2545,9 @@ void TpedFileO::open(){
 		cerr << "ERROR: cannot open .tfam file " << tfamName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
-	
+
 }
 
 // VcfFile methods
@@ -2559,7 +2559,7 @@ void VcfFile::close(){
 
 uint64_t VcfFileI::_numLines(){
 	uint64_t N = 0;
-	
+
 	/*
 	 * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
 	 */
@@ -2577,7 +2577,7 @@ uint64_t VcfFileI::_numLines(){
         cerr << "ERROR: cannot open .vcf file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
 	string trash;
 	// skip header lines. Will also read the one after the last header line.
@@ -2587,7 +2587,7 @@ uint64_t VcfFileI::_numLines(){
 			break;
 		}
 	}
-	
+
 	const size_t bufSize = BUF_SIZE;
 	char *buf;
 	try {
@@ -2596,7 +2596,7 @@ uint64_t VcfFileI::_numLines(){
 		cerr << "ERROR: failed to allocate buffer in VcfFileI::_numLines(): " << error.what() << endl;
 		exit(4);
 	}
-	
+
 	while (_varFile) {
 		_varFile.read(buf, bufSize);
 		for (size_t i = 0; i < _varFile.gcount(); i++) {
@@ -2607,7 +2607,7 @@ uint64_t VcfFileI::_numLines(){
 	}
 	_varFile.close();
 	delete [] buf;
-	
+
 	return N + 1; // adding 1 for the line immediately after the header
 }
 
@@ -2626,7 +2626,7 @@ void VcfFileI::open(){
 		cerr << "ERROR: cannot open VCF file " << _fileName << " for input: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
 
 }
@@ -2640,8 +2640,8 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 	if (out._varFile.is_open()) {
 		out.close();
 	}
-	
-	
+
+
 	uint64_t N = _numLines(); // Number of SNPs
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
@@ -2655,7 +2655,7 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	try {
 		out._varFile.open(out._fileName.c_str(), ios::out | ios::trunc);
 		if (!out._varFile.is_open()) {
@@ -2684,7 +2684,7 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 		}
 		out._varFile << headLine << endl;
 	}
-	
+
 	// Test for potential problems
 	if (N < n) {
 		cerr << "ERROR: requested a sample of " << n << " SNPs that is greater than the number of SNPs (" << N << ") in the input file." << endl;
@@ -2699,7 +2699,7 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 			cerr << "ERROR: failed to allocate buffer" << endl;
 			exit(4);
 		}
-		
+
 		// Copy .vcf
 		while (_varFile) {
 			_varFile.read(buf, bufSize);
@@ -2710,10 +2710,10 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 		delete [] buf;
 		return;
 	}
-	
+
 	// Passed all the tests, proceed to sampling
 	string curLine;
-	
+
 	uint64_t nloc = n; // local copy of n
 	uint64_t S;
 	RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
@@ -2738,7 +2738,7 @@ void VcfFileI::sample(VcfFileO &out, const uint64_t &n){
 		getline(_varFile, curLine);
 		out._varFile << curLine << endl;
 		nloc--;
-		
+
 	}
 	_varFile.close();
 	out._varFile.close();
@@ -2761,7 +2761,7 @@ void VcfFileO::open(){
 		cerr << "ERROR: cannot open VCF file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
 
 }
@@ -2789,7 +2789,7 @@ HmpFileI::HmpFileI(const string &fileName) : HmpFile(fileName) {
         cerr << "ERROR: cannot open HMP file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
     char buf[3];
     _varFile.read(buf, 3);
@@ -2797,7 +2797,7 @@ HmpFileI::HmpFileI(const string &fileName) : HmpFile(fileName) {
         _head = true;
     }
     _varFile.close();
-    
+
 }
 
 void HmpFileI::open(){
@@ -2821,7 +2821,7 @@ void HmpFileI::open(){
 
 uint64_t HmpFileI::_numLines() {
     uint64_t N = 0;
-    
+
     /*
      * I am using the line-end counting method. It is > 2-fold faster than reading lines with getline().
      */
@@ -2839,14 +2839,14 @@ uint64_t HmpFileI::_numLines() {
         cerr << "ERROR: cannot open HMP file " << _fileName << " for input: " << error.code().message() << flush;
         perror(" ");
         exit(1);
-        
+
     }
     // skip header line if present.
     string trash;
     if (_head) {
         getline(_varFile, trash);
     }
-    
+
     const size_t bufSize = BUF_SIZE;
     char *buf;
     try {
@@ -2855,7 +2855,7 @@ uint64_t HmpFileI::_numLines() {
         cerr << "ERROR: failed to allocate buffer in HmpFileI::_numLines(): " << error.what() << endl;
         exit(4);
     }
-    
+
     while (_varFile) {
         _varFile.read(buf, bufSize);
         for (size_t i = 0; i < _varFile.gcount(); i++) {
@@ -2866,7 +2866,7 @@ uint64_t HmpFileI::_numLines() {
     }
     _varFile.close();
     delete [] buf;
-    
+
     return N;
 }
 void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
@@ -2878,9 +2878,9 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 	if (out._varFile.is_open()) {
 		out.close();
 	}
-	
+
 	uint64_t N = _numLines(); // Number of SNPs
-	
+
 	try {
 		_varFile.open(_fileName.c_str(), ios::in);
 		if (!_varFile.is_open()) {
@@ -2893,7 +2893,7 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	try {
 		out._varFile.open(out._fileName.c_str(), ios::out | ios::trunc);
 		if (!out._varFile.is_open()) {
@@ -2906,7 +2906,7 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 		perror(" ");
 		exit(1);
 	}
-	
+
 	// Test for potential problems
 	if (N < n) {
 		cerr << "ERROR: requested a sample of " << n << " SNPs that is greater than the number of SNPs (" << N << ") in the input file." << endl;
@@ -2921,7 +2921,7 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 			cerr << "ERROR: failed to allocate buffer" << endl;
 			exit(4);
 		}
-		
+
 		// Copy .hmp
 		while (_varFile) {
 			_varFile.read(buf, bufSize);
@@ -2932,7 +2932,7 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 		delete [] buf;
 		return;
 	}
-	
+
 	// Passed all the tests, proceed to sampling
 	string curLine;
 	char tag[3];
@@ -2943,7 +2943,7 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 		getline(_varFile, header);
 		out._varFile << header << endl;
 	}
-	
+
 	uint64_t nloc = n; // local copy of n
 	uint64_t S;
 	RanDraw *snpSamp;  // so that I can catch RanDraw constructor exceptions
@@ -2968,7 +2968,7 @@ void HmpFileI::sample(HmpFileO &out, const uint64_t &n){
 		getline(_varFile, curLine);
 		out._varFile << curLine << endl;
 		nloc--;
-		
+
 	}
 	_varFile.close();
 	out._varFile.close();
@@ -2991,7 +2991,7 @@ void HmpFileO::open(){
 		cerr << "ERROR: cannot open HMP file " << _fileName << " for output: " << error.code().message() << flush;
 		perror(" ");
 		exit(1);
-		
+
 	}
 }
 

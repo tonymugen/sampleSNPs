@@ -23,7 +23,7 @@
  * \copyright Copyright (c) 2017 Anthony J. Greenberg
  * \version 0.5
  *
- * Using the _varfiles_ library to sampple SNPs from a variety of file formats.
+ * Using the _varfiles_ library to sample SNPs from a variety of file formats.
  *
  */
 
@@ -35,11 +35,9 @@
 
 #include "varfiles.hpp"
 
-using std::cout;
 using std::cerr;
 using std::endl;
 using std::string;
-using std::vector;
 using std::unordered_map;
 
 using namespace sampFiles;
@@ -59,10 +57,10 @@ void parseCL(int &argc, char **argv, unordered_map<char, string> &cli){
 	bool val = false;
 	// store the token value here
 	char curFlag;
-	
+
 	for (int iArg = 1; iArg < argc; iArg++) {
 		const char *pchar = argv[iArg];
-		
+
 		if (pchar[0] == '-') { // encountered the dash, look for the token after it
 			if (!pchar[1]) {
 				cerr << "WARNING: forgot character after dash. Ignoring." << endl;
@@ -71,7 +69,7 @@ void parseCL(int &argc, char **argv, unordered_map<char, string> &cli){
 			// what follows the dash?
 			val     = true;
 			curFlag = pchar[1];
-			
+
 		} else {
 			if (val) {
 				val = false;
@@ -79,9 +77,9 @@ void parseCL(int &argc, char **argv, unordered_map<char, string> &cli){
 			} else {
 				cerr << "WARNING: command line value " << pchar << " ignored because it is not preceded by a flag" << endl;
 			}
-			
+
 		}
-		
+
 	}
 }
 
@@ -90,13 +88,13 @@ int main(int argc, char *argv[]){
 	string inFileName; // input file name; will strip off the extension if necessary
 	string nSampTxt;   // string version of the number of samples
 	uint64_t n;        // number of samples
-	
+
 	// set usage message
 	string cliHelp = "Command line flags required (in any order):\n  -s NNN (number of samples)\n  -i fileName (input file name, with or without extension)\n  -t fileType (type of SNP file; required if no extension in the input file name)";
 	unordered_map <char, string> clInfo;
 	parseCL(argc, argv, clInfo);
 	auto clIter = clInfo.begin(); // iterator of the command line flags
-	
+
 	// Process CLI flags
 	clIter = clInfo.find('s');
 	if (clIter == clInfo.end()) { // if not there, complain
@@ -107,7 +105,7 @@ int main(int argc, char *argv[]){
 		n        = stoi(clIter->second);
 		nSampTxt = clIter->second;
 	}
-	
+
 	clIter = clInfo.find('i');
 	if (clIter == clInfo.end()) { // if not there, complain
 		cerr << "ERROR: specification of the input file name is required" << endl;
@@ -123,7 +121,7 @@ int main(int argc, char *argv[]){
 	} else {
 		fileType = clIter->second;
 	}
-	
+
 	// Processing file types first
 	if (fileType == "BED") {
 		// Doing BED. First figure out if there is an extension on the file name
@@ -147,7 +145,7 @@ int main(int argc, char *argv[]){
 		BedFileI bedIn(inFileName);
 		BedFileO bedOut(outFileStub);
 		bedIn.sample(bedOut, n);
-		
+
 	} else if (fileType == "TPED"){
 		// Doing TPED. First figure out if there is an extension on the file name
 		string ext;
@@ -198,15 +196,15 @@ int main(int argc, char *argv[]){
 			} else {
 				inFileName.erase(flNit, inFileName.end());
 			}
-			
+
 		}
 		string outFileName = inFileName + "_s" + nSampTxt + "." + ext; // not messing with the provided extension
 		inFileName         = inFileName + "." + ext;
-		
+
 		VcfFileI vcfIn(inFileName);
 		VcfFileO vcfOut(outFileName);
 		vcfIn.sample(vcfOut, n);
-		
+
 	} else if (fileType == "HMP"){
 		// Doing hapmap. First figure out if there is an extension on the file name
 		string ext;
@@ -249,7 +247,7 @@ int main(int argc, char *argv[]){
 		HmpFileI hmpIn(inFileName);
 		HmpFileO hmpOut(outFileName);
 		hmpIn.sample(hmpOut, n);
-		
+
 	} else { // no (or an unrecognized) file type specified on CL
 		// First figure out if there is an extension on the file name
 		string ext;
@@ -311,7 +309,7 @@ int main(int argc, char *argv[]){
 
 			} else {
 				if (fileType.empty()) {
-					cerr << "ERROR: urecognized extension (" << ext << ") in input file name " << inFileName << " and no file type specified" << endl;
+					cerr << "ERROR: unrecognized extension (" << ext << ") in input file name " << inFileName << " and no file type specified" << endl;
 					exit(3);
 				} else {
 					cerr << "ERROR: unrecognized extension (" << ext << ") in input file name " << inFileName << " and unrecognized file type (" << fileType  << ") specified" << endl;
@@ -329,7 +327,7 @@ int main(int argc, char *argv[]){
 			}
 		}
 	}
-	
+
 }
 
 

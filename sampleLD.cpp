@@ -23,7 +23,7 @@
  * \copyright Copyright (c) 2017 Anthony J. Greenberg
  * \version 0.5
  *
- * Using the _varfiles_ library to sampple SNPs calculate pairwise LD. 
+ * Using the _varfiles_ library to sample SNPs calculate pairwise LD.
  *
  */
 
@@ -35,11 +35,9 @@
 
 #include "varfiles.hpp"
 
-using std::cout;
 using std::cerr;
 using std::endl;
 using std::string;
-using std::vector;
 using std::unordered_map;
 
 using namespace sampFiles;
@@ -59,10 +57,10 @@ void parseCL(int &argc, char **argv, unordered_map<char, string> &cli){
 	bool val = false;
 	// store the token value here
 	char curFlag;
-	
+
 	for (int iArg = 1; iArg < argc; iArg++) {
 		const char *pchar = argv[iArg];
-		
+
 		if (pchar[0] == '-') { // encountered the dash, look for the token after it
 			if (!pchar[1]) {
 				cerr << "WARNING: forgot character after dash. Ignoring." << endl;
@@ -71,7 +69,7 @@ void parseCL(int &argc, char **argv, unordered_map<char, string> &cli){
 			// what follows the dash?
 			val     = true;
 			curFlag = pchar[1];
-			
+
 		} else {
 			if (val) {
 				val = false;
@@ -79,9 +77,9 @@ void parseCL(int &argc, char **argv, unordered_map<char, string> &cli){
 			} else {
 				cerr << "WARNING: command line value " << pchar << " ignored because it is not preceded by a flag" << endl;
 			}
-			
+
 		}
-		
+
 	}
 }
 
@@ -91,13 +89,13 @@ int main(int argc, char *argv[]){
 	string nSampTxt;    // string version of the number of samples
 	uint64_t n;         // number of samples
 	bool pop = false;   // are we stratifying by population?
-	
+
 	// set usage message
 	string cliHelp = "Command line flags required (in any order):\n  -s NNN (number of samples)\n  -i fileStub (input file name, without extension)\n  -p popIndexFile (optional file with the population index)";
 	unordered_map <char, string> clInfo;
 	parseCL(argc, argv, clInfo);
 	auto clIter = clInfo.begin(); // iterator of the command line flags
-	
+
 	// processing CL input
 	clIter = clInfo.find('s');
 	if (clIter == clInfo.end()) { // if not there, complain
@@ -116,7 +114,7 @@ int main(int argc, char *argv[]){
 	} else {
 		inFileStub = clIter->second;
 	}
-	
+
 	clIter = clInfo.find('p');
 	if (clIter != clInfo.end()) {
 		pop         = true;
